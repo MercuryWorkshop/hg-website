@@ -1,3 +1,6 @@
+window.onload = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
  sketchWidth = document.getElementById("stars").offsetWidth;
  sketchHeight = document.getElementById("stars").offsetHeight;
@@ -5,12 +8,9 @@
  const NUMBER_OF_STARS = Math.sqrt(Math.pow(sketchHeight, 2) + Math.pow(sketchWidth, 2))/8;
  
  function setup(){
-  
      var canvas = createCanvas(sketchWidth, sketchHeight);
      canvas.parent("stars");
      frameRate(60);
-     //document.documentElement.scrollTop = document.body.scrollTop = 0;
- 
  }
  var starX = [];
  var starY = [];
