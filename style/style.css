@@ -5,12 +5,19 @@ html{
     scroll-behavior: smooth;
 }
 
+*{
+    transition: 0.5s;
+}
+
 body{
     width: 99vw;
     height: 300vh;
     background: rgb(7,11,52);
 background: linear-gradient(190deg, rgba(7,11,52,1) 0%, rgba(20,24,82,1) 35%, rgba(43,47,119,1) 61%, rgba(72,52,117,1) 73%, rgba(107,73,132,1) 87%, rgba(133,89,136,1) 100%);
 overflow-x: hidden;
+position: relative;
+display: flex;
+justify-content:center;
 }
 
 p {
@@ -32,17 +39,27 @@ p {
 }
 
 #grid {
+    position: absolute; 
     display: flex;
+    height:50vh;
+    width: 85%;
+    align-items:center;
+    flex-direction: column;
 }
 
 .box {
+    background-color:green;
+    width: 85%;
+    height:50vh;
     backdrop-filter: blur(10px);
-    width:100vh;
-    height: 100vh;
     z-index: 1000000;
     background: rgba(255, 255, 255, 0.2);
     position:absolute;
     top:0;
     pointer-events: none;
+    border-radius:15px;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
+    margin:5%;
+    border:1px solid rgba(255,255,255,0.2);
 }
 
