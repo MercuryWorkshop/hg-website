@@ -129,7 +129,7 @@ li {
     }
 
     .membername>p {
-        font-size: calc(1.15rem + 0.75vw);
+        font-size: calc(1.15rem + 1.15vw);
     }
   }
 .membername{
