@@ -1,20 +1,24 @@
 /**
  * My code is on the verge of death
  *
- * Website made by Ember314 (https://github.com/ember3141)
+ * Website made by 
+ * Ember314 (https://github.com/ember3141)
+ * CoolElectronics (https://github.com/CoolElectronics)
+ * 
  * p5js is at https://p5js.org/
  */
 /*haha*/
 const mobile = mobileCheck();
 const sleep = (millis) => new Promise((resolve) => setTimeout(resolve, millis));
 const framerate = 60;
-const starScaling = 15;
+const starScaling = 16;
 
 
-var starX, starY, starSize, smoothScrollY, lastScrollY
+var starX, starY, starSize, smoothScrollY, lastScrollY;
 
 console.log("%c SH!MMER HARDER!", "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%");
 console.log("%cThis website was made by Ember314 (@ember3141 on github)", "color:green");
+console.log("%cThis website was also made by CoolElectronics (@CoolElectronics on github)", "color:lightBlue");
 window.onload = function () { //this makes the page load 'smoothly'
     window.scrollTo({
         top: 0,
@@ -40,9 +44,10 @@ function setup() {
     canvas.parent("stars"); //this sets what div the canvas is in
     frameRate(framerate); //maybe I'll do a variable refresh rate
     if (mobile) return;
-
     renderStars();
     smoothScrollY = 0;
+    stroke('white');
+    fill('white');
 }
 
 function renderStars() { //this generates the stars, they are regenerated on resize
@@ -58,23 +63,25 @@ function renderStars() { //this generates the stars, they are regenerated on res
 
 function draw() {
     if (mobile) return;
-
-    setSizes();
-    stroke('white');
-    fill('white');
     clear();
-    smoothScrollY = lerp(smoothScrollY, window.scrollY, 0.35);
+    if(frameCount%50==0){
+        setSizes();
+    }
+    smoothScrollY = lerp(smoothScrollY, window.scrollY, 0.15);
     for (var i = 0; i < starNumber; i++) { //draws the stars adjusted for paralax for each frame
         circle(starX[i], starY[i] + ((smoothScrollY * starSize[i]) * -0.36), starSize[i])
     }
 }
 
 function windowResized() { //regenerates stars on window resize
+    sleep(500).then(function() {
     clear();
+    setSizes();
     starNumber = calcStarNumber();
     resizeCanvas(sketchWidth, sketchHeight);
     renderStars();
     draw();
+    })
 }
 function calcStarNumber() {
     return Math.sqrt(Math.pow(sketchHeight, 2) + Math.pow(sketchWidth, 2)) / starScaling;
