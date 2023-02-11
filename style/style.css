@@ -51,7 +51,7 @@ li {
     align-self: flex-start;
 }
 
-button {
+.button {
     transition: 0.5s;
     border-radius: 10px;
     width: auto;
@@ -64,7 +64,7 @@ button {
     margin: 1%;
 }
 
-button:hover {
+.button:hover {
     border-radius: 10px;
     width: auto;
     height: auto;
@@ -77,7 +77,7 @@ button:hover {
     cursor: pointer;
 }
 
-button:active {
+.button:active {
     transition: 0.1s;
     border-radius: 10px;
     width: auto;
@@ -91,6 +91,55 @@ button:active {
     cursor: pointer;
 }
 
+
+.member{
+    display: block;
+    justify-content: left;
+    /* break-inside: avoid-column; */
+    /* page-break-inside: avoid; */
+}
+.membergrid{
+    width: 100%;
+    display: grid;
+    grid-gap:1em;
+    grid-auto-rows: min-content;
+    grid-template-columns: repeat(4,25fr);
+    justify-content: center;
+}
+@media only screen and (max-aspect-ratio: 99/100) {
+    .membergrid {
+    grid-template-columns: repeat(3,33fr);
+
+    }
+  }
+  @media only screen and (max-aspect-ratio: 80/100) {
+    .membergrid {
+    grid-template-columns: repeat(3,33fr);
+
+    }
+  }
+.membername{
+    align-self:flex-start;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.membername>p{
+    font-size: 1.6vw;
+}
+
+.pfp{
+    border-radius: 50%;
+        margin: 0.5em;
+        width: 40px;
+        height: 40px;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+}
+
 #stars {
     top: 0px;
     z-index: 0;
@@ -99,6 +148,8 @@ button:active {
     display: block;
     position: absolute;
     /*Ember314 Mercury Workshop*/
+    filter: blur(1.5px);
+
 }
 
 #grid {
@@ -111,7 +162,7 @@ button:active {
 }
 
 #blurStars {
-    backdrop-filter: blur(1.5px);
+    filter: blur(1.5px);
     position: absolute;
     left: 0;
     right: 0;
@@ -145,6 +196,11 @@ button:active {
     gap: 0px;
     padding: 3%;
 }
+
+.hiddenbox {
+    max-width: 50em;
+}
+
 
 #header {
     display: flex;
@@ -230,3 +286,20 @@ button:active {
     flex-direction: row;
     justify-content: space-between;
 }
+@media only screen and (max-aspect-ratio: 3/4) {
+    .footer {
+        flex-direction: column;
+        /* justify-content: center !important; */
+        align-items: center;
+        text-align: center;
+
+    }
+    #takedown{
+        /* display: flex;
+        align-items: center;
+        justify-content: center;*/
+        margin-right: 0;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+  }
