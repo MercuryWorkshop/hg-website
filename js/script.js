@@ -15,7 +15,7 @@ var starX, starY, starSize, smoothScrollY, lastScrollY
 
 console.log("%c SH!MMER HARDER!", "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%");
 console.log("%cThis website was made by Ember314 (@ember3141 on github)", "color:green");
-window.onload = function () { //this makes the page load 'smoothly'
+window.onload = () => { //this makes the page load 'smoothly'
     window.scrollTo({
         top: 0,
     });
@@ -43,6 +43,7 @@ function setup() {
 
     renderStars();
     smoothScrollY = 0;
+    window.onresize = windowResized;
 }
 
 function renderStars() { //this generates the stars, they are regenerated on resize
@@ -69,7 +70,8 @@ function draw() {
     }
 }
 
-function windowResized() { //regenerates stars on window resize
+async function windowResized() { //regenerates stars on window resize
+    await sleep(100);
     clear();
     starNumber = calcStarNumber();
     resizeCanvas(sketchWidth, sketchHeight);
