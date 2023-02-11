@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
     <title>MercuryWorkshop</title>
     <link rel="icon" type="image/x-icon" href="style/favicon.ico">
     <link rel="stylesheet" href="style/style.css">
-    <div id="hide" rel="preload"></div>
     <meta name="darkreader-lock">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Mercury Workshop - A small team of active developers typically focused around finding flaws in methods of ChromeOS user restriction">
+    <script src="js/p5.min.js" defer></script>
+    <script src="js/script.js" defer></script>
     <script src="js/data.js"></script>
     <script src="https://unpkg.com/alpinejs"></script>
 </head>
 
 <body id="body">
+    <div id="hide" rel="preload"></div>
     <credit made_by="Ember314 and CoolElectronics from Mercury Workshop"></credit>
     <div id="stars"></div>
     <div id="blurStars"></div>
     <div id="grid">
         <div id="header">
-            <img src="style/mercury.png" id="logo" style="order:1;" alt="Mercury Workshop Logo">
+            <img src="style/mercury.png" id="logo" style="order:1;" alt="Mercury Workshop Logo" width="127px"
+                height="127px">
             <h1 style="order:2;">Mercury Workshop</h1>
         </div>
         <div class="hiddenbox">
@@ -50,9 +56,9 @@
                     <template x-for="dev in collection[1]">
                         <div class="box member" x-data="{ expanded: false }" @click="alert()">
                             <span class="membername">
-                                <img x-show="dev.pfp" class="pfp"
-                                    x-bind:src="'https://cdn.discordapp.com/avatars/' + dev.pfp + '.webp?size=40'">
-                                <div x-show="!dev.pfp" class="pfp"></div>
+                                <img x-cloak x-show="dev.pfp" class="pfp" x-bind:alt="dev.name"
+                                    x-bind:src="'https://cdn.discordapp.com/avatars/' + dev.pfp + '.webp?size=80'">
+                                <div x-cloak x-show="!dev.pfp" class="pfp"></div>
                                 <p x-text="dev.name"></p>
                             </span>
                         </div>
@@ -70,7 +76,6 @@
         <div id="takedown">Legal requests? Contact legal@mercurywork.shop</div>
     </div>
 </body>
-<script src="js/p5.min.js"></script>
-<script src="js/script.js"></script>
+
 
 </html>

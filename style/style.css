@@ -1,6 +1,7 @@
 @font-face {
     font-family: space-grotesk;
     src: url(SpaceGrotesk-Medium.ttf);
+    font-display: swap;
 }
 
 /*this is the good stuff https://www.schemecolor.com/night-sky-color-palette.php*/
@@ -126,7 +127,7 @@ li {
     align-items: center;
 }
 .membername>p{
-    font-size: 1.6vw;
+    font-size: calc(0.9vh + 1vw);
 }
 
 .pfp{
@@ -218,6 +219,10 @@ li {
     align-items: center;
     margin-top: 5%;
 }
+#header >img{
+    width:127px;
+    height:127px;
+}
 
 #logo {
     height: calc(5vh + 5vw);
@@ -264,7 +269,7 @@ li {
 
 #hide {
     margin-left: auto;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
