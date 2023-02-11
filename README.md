@@ -1,4 +1,4 @@
-# hg-website-ember-edition-
+# better hg website
 Almost done!
 
 
