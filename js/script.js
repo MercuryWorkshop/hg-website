@@ -72,6 +72,7 @@ function draw() {
 }
 
 function windowResized() { //regenerates stars on window resize
+    sleep(500).then(function() {
     clear();
     setSizes();
     starNumber = calcStarNumber();
@@ -79,7 +80,8 @@ function windowResized() { //regenerates stars on window resize
     renderStars();
     draw();
     })
-}
+    }
+
 function calcStarNumber() {
     return Math.sqrt(Math.pow(sketchHeight, 2) + Math.pow(sketchWidth, 2)) / starScaling;
 }
