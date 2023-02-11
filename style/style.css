@@ -111,16 +111,6 @@ li {
     justify-content: center;
 }
 
-.membername{
-    align-self:flex-start;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.membername>p{
-    font-size: calc(0.5rem + 0.75vw);
-}
 
 @media only screen and (max-aspect-ratio: 99/100) {
     .membergrid {
@@ -149,7 +139,7 @@ li {
     align-items: center;
 }
 .membername>p{
-    font-size: calc(0.9vh + 1vw);
+    font-size: calc(0.75vh + 0.75vw);
 }
 
 .pfp{
