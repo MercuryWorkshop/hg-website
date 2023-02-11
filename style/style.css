@@ -111,6 +111,10 @@ li {
     justify-content: center;
 }
 
+/* btw the shit doesn't work if you put this below the media queries */
+.membername>p{
+    font-size: calc(0.85vh + 0.85vw);
+}
 
 @media only screen and (max-aspect-ratio: 99/100) {
     .membergrid {
@@ -118,9 +122,9 @@ li {
 
     }
 
-    .membername>p {
+    /* .membername>p {
         font-size: calc(0.75rem + 0.75vw);
-    }
+    } */
   }
   @media only screen and (max-aspect-ratio: 80/100) {
     .membergrid {
@@ -129,7 +133,8 @@ li {
     }
 
     .membername>p {
-        font-size: calc(1.15rem + 1.15vw);
+        font-size: calc(1vh + 1.15vw);
+
     }
   }
 .membername{
@@ -137,9 +142,6 @@ li {
     display: flex;
     justify-content: left;
     align-items: center;
-}
-.membername>p{
-    font-size: calc(0.75vh + 0.75vw);
 }
 
 .pfp{
@@ -242,7 +244,7 @@ li {
 
 .hiddenbox {
     max-width: 50em;
-    
+
 }
 
 
@@ -350,5 +352,5 @@ li {
         margin-bottom: 1em;
         text-align: center;
     }
-    
+
   }

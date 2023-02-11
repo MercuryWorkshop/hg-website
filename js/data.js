@@ -24,10 +24,15 @@ const exploiters = [
         tag: "TheMemeSniper#6065",
         pfp: "391271835901362198/8fc58755580980450e965d83d2322c68",
     },
+    // {
+    //     name: "SprinkzMC",
+    //     tag: "SprinkzMC#8421",
+    //     pfp: "824066884231495709/6d66d97d0e874a65e8240134fd48ea83",
+    // },
     {
-        name: "SprinkzMC",
-        tag: "SprinkzMC#8421",
-        pfp: "824066884231495709/6d66d97d0e874a65e8240134fd48ea83",
+        name: "Bypassi",
+        tag: "Bypassi#7037",
+        pfp: "904829646145720340/c12ea6aa4c73eb5d1775c62ad9778527"
     },
     {
         name: "OlyB",
