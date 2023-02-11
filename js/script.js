@@ -46,6 +46,8 @@ function setup() {
     if (mobile) return;
     renderStars();
     smoothScrollY = 0;
+    stroke("white");
+    fill("white");
 }
 
 function renderStars() { //this generates the stars, they are regenerated on resize
