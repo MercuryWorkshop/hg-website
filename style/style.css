@@ -152,6 +152,7 @@ li {
 }
 
 #projects{
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,26 +185,12 @@ li {
     flex-direction: column;
 }
 
-#blurStars {
-    filter: blur(1.5px);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -20px;
-    pointer-events: none;
-    overflow: hidden;
-}
+
 
 .box {
     transition: background 0.25s;
     position: static;
     max-width: 50em;
-    backdrop-filter: blur(10px);
     z-index: 3;
     background: rgba(255, 255, 255, 0.2);
     pointer-events: all;
@@ -224,7 +211,6 @@ li {
 .box:hover {
     position: static;
     max-width: 50em;
-    backdrop-filter: blur(10px);
     z-index: 3;
     background: rgba(255, 255, 255, 0.1);
     pointer-events: all;
