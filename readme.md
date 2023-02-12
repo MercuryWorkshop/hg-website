@@ -1,9 +1,7 @@
-# better hg website
-Almost done!
+# HG Website
+Mercury Workshop Site
 
-
-### PLANS
-
+## Plans
 - [X] Night sky with stars
 - [X] Scroll paralax
 - [X] HG logo is moon with glow
