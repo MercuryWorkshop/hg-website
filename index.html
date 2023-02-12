@@ -15,9 +15,21 @@
     <script src="https://unpkg.com/alpinejs"></script>
 </head>
 
-<body id="body">
+<body id="body" x-data="{ membermodal: null, projectmodal:null }"
+    x-bind:class="membermodal != null ? 'modal-open' : ''">
     <div id="hide" rel="preload"></div>
     <credit made_by="Ember314 and CoolElectronics from Mercury Workshop"></credit>
+
+    <div x-bind:class="membermodal == null ? 'opacityzero' : ''">
+        <div class="modal modal-effect" @click="membermodal = null">
+        </div>
+        <div class="modal">
+            <div class="modal-inner">
+
+            </div>
+        </div>
+    </div>
+
     <div id="stars"></div>
     <div id="grid">
         <div id="header">
@@ -48,12 +60,12 @@
 
         </div>
         <!-- god i love alpine -->
-        <template x-for="collection in [['Members',exploiters],['Advisors',advisors],['Apprentices',apprentices]]">
+        <template x-for="collection in [['Members',exploiters],['Advisors',advisors]]">
             <div class="" style="width: 100%;">
                 <h1 x-text="collection[0]"></h1>
                 <div class="membergrid">
                     <template x-for="dev in collection[1]">
-                        <div class="box member" x-data="{ expanded: false }" @click="alert()">
+                        <div class="box member" x-data="{ expanded: false }" @click="membermodal = dev">
                             <span class="membername">
                                 <img x-cloak x-show="dev.pfp" class="pfp" x-bind:alt="dev.name"
                                     x-bind:src="'https://cdn.discordapp.com/avatars/' + dev.pfp + '.webp?size=80'">

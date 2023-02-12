@@ -11,11 +11,11 @@
 /*haha*/
 const mobile = mobileCheck();
 const sleep = (millis) => new Promise((resolve) => setTimeout(resolve, millis));
-const framerate = 60;
-const starScaling = 16;
+const framerate = 30;
+const starScaling = 32; // cumbook lag moment
 
 
-var starX, starY, starSize, smoothScrollY, lastScrollY;
+var starX, starY, starSize, smoothScrollY, lastScrollY, redraw;
 
 console.log("%c SH!MMER HARDER!", "font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113); margin-bottom: 12px; padding: 5%");
 console.log("%cThis website was made by Ember314 (@ember3141 on github)", "color:green");
@@ -47,9 +47,10 @@ function stars(p) {
         canvas.parent("stars"); //this sets what div the canvas is in
         p.frameRate(framerate); //maybe I'll do a variable refresh rate
         renderStars();
-        smoothScrollY = 0;
+        smoothScrollY = -100;
         p.stroke("white");
         p.fill("white");
+        redraw = true;
     }
 
     function renderStars() { //this generates the stars, they are regenerated on resize
@@ -64,6 +65,8 @@ function stars(p) {
     }
 
     function draw() {
+        if (Math.abs(smoothScrollY - window.scrollY) < 3 && !redraw) return;
+        redraw = false;
         p.clear();
         if (p.frameCount % 50 == 0) {
             setSizes();
@@ -81,6 +84,8 @@ function stars(p) {
             starNumber = calcStarNumber();
             p.resizeCanvas(sketchWidth, sketchHeight);
             renderStars();
+            redraw = true;
+
             draw();
         })
     }

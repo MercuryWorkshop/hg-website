@@ -43,6 +43,17 @@ const exploiters = [
         name: "Scarat3k",
         tag: "Scarat3k#0001",
         pfp: "894587716619108385/a_4d3cca7ee282a9ba8966108fd33a32b4",
+        bio: `Hi, I'm Scaratek and I code things!
+        Member of Mercury Workshop.
+        https://www.buymeacoffee.com/scarat3k
+
+
+        dating Maddie(madjikdotpng) <3`,
+        links: {
+            github: "https://github.com/scaratek",
+            "discord server": "https://discord.gg/JawyTs5zsh",
+        }
+
     },
     {
         name: "Sharp_Jack",
@@ -71,12 +82,15 @@ const exploiters = [
         name: "avd3",
         pfp: "856786186117971979/264be908565e96cfe1701891bc86389f",
     },
-];
-const apprentices = [
     {
         name: "Unciaur",
         tag: "Unciaur#1408",
         pfp: "465682780320301077/f794fdbf8f9352932d69e6726e128f2a",
+        bio: `Hey! I’m a student in secondary at the time of writing this. In my free time, I usually find myself reading some fantasy series, coding, breaking my chromebook (def mine), or writing a fun D&D campaign for my friends.`,
+        links: {
+            website: "https://unciaur.live",
+            github: "https://github.com/Unciaur"
+        }
     },
     {
         name: "Bagel",
@@ -117,10 +131,19 @@ const apprentices = [
         name: "CyberClone",
         tag: "CyberClone#9080",
         pfp: "417892585068036096/cfdd012a4359c45e97a7991a0215971c",
+        bio: `High school student with extensive mechanical and electrical engineering experience; ultimately, a love of building new things from the ground up.
+        Currently launching a nonprofit organization to promote engineering education in the Bay Area, check it out if interested in getting involved`,
+        links: {
+            nonprofit: "https://engineeringexploration.org/",
+            "bio.site": "https://bio.site/Vaughn",
+        }
     },
     {
         name: "He",
         tag: "He#7273",
+        links: {
+            matrix: "chaseddraco:matrix.org",
+        }
     },
 ];
 const advisors = [
