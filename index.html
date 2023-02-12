@@ -1,72 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
     <title>MercuryWorkshop</title>
     <link rel="icon" type="image/x-icon" href="style/favicon.ico">
     <link rel="stylesheet" href="style/style.css">
-    <div id="hide" rel="preload"></div>
-
+    <meta name="darkreader-lock">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Mercury Workshop - A small team of active developers typically focused around finding flaws in methods of ChromeOS user restriction">
+    <script src="js/p5.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/data.js"></script>
+    <script src="https://unpkg.com/alpinejs"></script>
 </head>
 
 <body id="body">
-    <credit made_by="Ember314 from Mercury Workshop"></credit>
+    <div id="hide" rel="preload"></div>
+    <credit made_by="Ember314 and CoolElectronics from Mercury Workshop"></credit>
     <div id="stars"></div>
     <div id="blurStars"></div>
     <div id="grid">
         <div id="header">
-            <img src="style/mercury.png" id="logo" style="order:1;" alt="Mercury Workshop Logo">
+            <img src="style/mercury.png" id="logo" style="order:1;" alt="Mercury Workshop Logo" width="127px"
+                height="127px">
             <h1 style="order:2;">Mercury Workshop</h1>
         </div>
-        <div class="box">
-            <p>Mercury Workshop is a private exploit development Team. We focus mainly on flaws of user restriction such as Windows Intune with Applocker and ChromeOS Enrollment</p>
+        <div class="hiddenbox">
+            <p>A small team of active developers typically focused around finding flaws in methods of ChromeOS user
+                restriction
+            </p>
         </div>
-        <div class="box">
-            <h1>Current Public Projects</h1>
-
-            <button onclick="nav('https://discord.gg/unblock/')">Pollen (Working latest)</button>
-            <button onclick="nav('https://sh1mmer.me/')">SH1mmer (low level/board dependent, Working latest)</button>
+        <div class="spacer">
 
         </div>
-        <div class="box">
-            <h1>Members (exploiter level)</h1>
-            <li>Rafflesia (allice@mercurywork.shop)</li>
-            <li>r58playz (r58playz@mercurywork.shop)</li>
-            <li>CoolElectronics (coolelectronics@mercurywork.shop)</li>
-            <li>UltraBlue</li>
-            <li>Scarlly</li>
-            <li>Sharp_jack</li>
-            <li>Generic</li>
-            <li>Bypassi</li>
-        </div>
-        <div class="box">
-            <h1>Members (Advisor level)</h1>
-            <li>Luphoria</li>
-            <li>Quite A Fancy Emerald</li>
-            <li>Aub</li>
-            <li>Justinchrm</li>
+        <div style="width: 100%;">
+            <h1>Public Projects</h1>
+            <div id="projects">
+                <template x-for="project in projects">
+                    <div class="project box">
+                        <h1 class="projectname" x-text="project.name">
+
+                        </h1>
+                        <p x-text="project.desc"></p>
+                    </div>
+                </template>
+            </div>
 
         </div>
-        <div class="box">
-            <h1>Members (Apprentice level)</h1>
-            <li>Ember (coolest)</li>
-            <li>cbass (cbass@mercurywork.shop)</li>
-            <li>Melitha</li>
-            <li>zuh</li>
-            <li>Bagel</li>
-            <li>siggaddj</li>
-
-        </div>
+        <!-- god i love alpine -->
+        <template x-for="collection in [['Members',exploiters],['Advisors',advisors],['Apprentices',apprentices]]">
+            <div class="" style="width: 100%;">
+                <h1 x-text="collection[0]"></h1>
+                <div class="membergrid">
+                    <template x-for="dev in collection[1]">
+                        <div class="box member" x-data="{ expanded: false }" @click="alert()">
+                            <span class="membername">
+                                <img x-cloak x-show="dev.pfp" class="pfp" x-bind:alt="dev.name"
+                                    x-bind:src="'https://cdn.discordapp.com/avatars/' + dev.pfp + '.webp?size=80'">
+                                <div x-cloak x-show="!dev.pfp" class="pfp"></div>
+                                <p x-text="dev.name"></p>
+                            </span>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </template>
     </div>
     <div class="footer">
-        <div id="takedown">Takedown requests? Contact legal@mercurywork.shop</div>
 
         <div class="footerSpace">
             <img src="style/mercury.png" id="footerLogo" alt="Mercury Workshop Logo">
             <div id="brand">Mercury Workshop</div>
         </div>
+        <div id="takedown">Legal requests? Contact legal@mercurywork.shop</div>
     </div>
 </body>
-<script src="js/p5.min.js"></script>
-<script src="js/script.js"></script>
+
 
 </html>
