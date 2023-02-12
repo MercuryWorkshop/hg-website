@@ -25,13 +25,14 @@
         </div>
         <div class="modal">
             <div class="modal-inner">
-
+                <h1 x-text="membermodal.name"></h1>
+                <p x-text="membermodal.bio"></p>
             </div>
         </div>
     </div>
 
     <div id="stars"></div>
-    <div id="grid">
+    <div id="grid" x-bind:class="membermodal != null ? 'modal-blur' : ''">
         <div id="header">
             <img src="style/mercury.png" id="logo" style="order:1;" alt="Mercury Workshop Logo" width="127px"
                 height="127px">
@@ -86,6 +87,8 @@
         </div>
         <div id="takedown">Legal requests? Contact legal@mercurywork.shop</div>
     </div>
+    <div class="modal-blur"></div>
+
 </body>
 
 

@@ -240,14 +240,14 @@ li {
 
     transition: background 0.25s;
     z-index: 3;
-    background-color: rgba(43, 47, 119, 1);
+    background: #5b5466;
     pointer-events: all;
     border-radius: 15px;
-    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    margin: 2%;
-    border: 3px solid rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0 0 100px 6vw rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 100px 6vw rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 100px 6vw rgba(0, 0, 0, 0.3);
+
+    /* border: 3px solid rgba(255, 255, 255, 0.2); */
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -271,11 +271,15 @@ li {
     justify-content:center;
     align-items: center;
     pointer-events: none;
+    z-index: 3;
 }
 .modal-effect{
     background-color: rgb(1, 1, 10);
-    opacity: 90%;
+    opacity: 60%;
     pointer-events: all;
+}
+.modal-blur{
+    filter: blur(2.5px);
 }
 
 .opacityzero{
