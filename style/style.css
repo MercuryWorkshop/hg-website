@@ -152,7 +152,6 @@ li {
 }
 
 #projects{
-    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,6 +161,7 @@ li {
 }
 .project{
     width: 100%;
+    backdrop-filter: blur(10px);
 }
 
 #stars {
@@ -173,7 +173,6 @@ li {
     position: absolute;
     /*Ember314 and Coolelectronics Mercury Workshop*/
     filter: blur(1.5px);
-
 }
 
 #grid {
@@ -253,7 +252,6 @@ li {
     -moz-box-shadow: 0 0 35px 15px rgba(255, 255, 255, 0.4);
     -webkit-box-shadow: 0 0 35px 15px rgba(255, 255, 255, 0.4);
     box-shadow: 0 0 55px 15px rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(5px);
     z-index: 3;
 }
 
@@ -308,7 +306,6 @@ li {
 .footer {
     position: static;
     width: 90%;
-    backdrop-filter: blur(10px);
     z-index: 2;
     background: rgba(255, 255, 255, 0.2);
     pointer-events: all;
