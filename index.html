@@ -25,8 +25,21 @@
         </div>
         <div class="modal">
             <div class="modal-inner">
-                <h1 x-text="membermodal.name"></h1>
+                <span class="modalmembername">
+                    <img x-cloak x-show=" membermodal.pfp" class="modal-pfp pfp" x-bind:alt="dev.name"
+                        x-bind:src="'https://cdn.discordapp.com/avatars/' + membermodal.pfp + '.webp?size=80'">
+                    <h1 x-text="membermodal.name"></h1>
+                </span>
+
                 <p x-text="membermodal.bio"></p>
+                <table>
+                    <template x-for="link in Object.entries(membermodal.links)">
+                        <tr>
+                            <th x-text="link[0]"></th>
+                            <td><a x-bind:href="link[1]" x-text="link[1]"></a></td>
+                        </tr>
+                    </template>
+                </table>
             </div>
         </div>
     </div>
