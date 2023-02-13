@@ -37,9 +37,7 @@ const exploiters = [
         links: {
             "Click": "javascript:alert('Me trying to resist the urge to do code execution for 0.0001 seconds')",
             "Pyramid Scheme Simulator": "https://buymeacoffee.com/bypassi",
-            "What happens if I don't put a value here": undefined,
-            "Point blank reference", "about:blank",
-            "Hmm wonder what happens if I write a really long worddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd": undefined
+            "Point blank reference": "about:blank",
         }
     },
     {

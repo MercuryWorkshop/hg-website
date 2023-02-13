@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     align-content: center;
+    margin: 0;
 }
 
 p,h1 {
@@ -277,18 +278,29 @@ li {
     gap: 0px;
     padding: 3%;
 }
+.modal-inner-dumbass-fucking-padding-hack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
 @media only screen and (max-aspect-ratio: 3/4) {
     .modal-inner {
         position: fixed;
         width: 100%;
         height: fit-content;
-        padding: 6vw;
+        padding: 0;
+        margin: 0;
         left: 0;
-        right: 0;
+        /* right: 0; */
         bottom: 0;
         border-radius:0;
         border-top-left-radius:15px;
         border-top-right-radius:15px;
+    }
+    .modal-inner-dumbass-fucking-padding-hack{
+        /* for some reason padding breaks 100% and there's no way to compensate unless you either use ugly calc shit or make a wrapper */
+        padding:6vw;
     }
     .modal p{
         font-size: calc(1.2vh + 1.2vw);
