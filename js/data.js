@@ -162,7 +162,6 @@ const exploiters = [
         Currently launching a nonprofit organization to promote engineering education in the Bay Area, check it out if interested in getting involved`,
         links: {
             nonprofit: "https://engineeringexploration.org/",
-            "bio.site": "https://bio.site/Vaughn",
         }
     },
     {
