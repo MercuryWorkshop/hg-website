@@ -32,7 +32,15 @@ const exploiters = [
     {
         name: "Bypassi",
         tag: "Bypassi#7037",
-        pfp: "904829646145720340/c12ea6aa4c73eb5d1775c62ad9778527"
+        pfp: "904829646145720340/c12ea6aa4c73eb5d1775c62ad9778527",
+        bio: `Proud skidphobic individual. Discovered LTBEEF, [swamp], point-blank, and some more silly Chromebook exploits. I stopped taking life seriously a long time ago.`,
+        links: {
+            "Click": "javascript:alert('Me trying to resist the urge to do code execution for 0.0001 seconds')",
+            "Pyramid Scheme Simulator": "https://buymeacoffee.com/bypassi",
+            "What happens if I don't put a value here": undefined,
+            "Point blank reference", "about:blank",
+            "Hmm wonder what happens if I write a really long worddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd": undefined
+        }
     },
     {
         name: "OlyB",
@@ -112,7 +120,7 @@ const exploiters = [
     {
         name: "Melitha",
         tag: "Melitha#8130",
-        // pfp: "668635787755257887/146e1014a18b807f13ae028196a0726d" ... yeah no i'm not putting that shit on the website
+        // pfp: "668635787755257887/146e1014a18b807f13ae028196a0726d" ... yeah no i'm not putting that shit on the website NOOOOOOOOOOOOOOOO
     },
     {
         name: "siggaddj",
