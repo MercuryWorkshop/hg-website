@@ -32,6 +32,10 @@ p,h1 {
     font-family: space-grotesk;
     color: white;
     font-size: calc(1vh + 1vw);
+    text-decoration: initial;
+}
+a{
+    text-decoration:none;
 }
 
 h1 {

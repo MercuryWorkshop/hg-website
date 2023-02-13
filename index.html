@@ -34,12 +34,16 @@
 
                     <p x-text="membermodal.bio"></p>
                     <table>
-                        <template x-for="link in Object.entries(membermodal.links)">
+                        <template x-for="link in Object.entries(membermodal.links || {})">
                             <tr>
                                 <th x-text="link[0]"></th>
                                 <td><a x-bind:href="link[1]" x-text="link[1]"></a></td>
                             </tr>
                         </template>
+                        <tr>
+                            <th>discord</th>
+                            <td x-text="membermodal.tag"></td>
+                        </tr>
                     </table>
                 </div>
             </div>
@@ -65,12 +69,12 @@
             <h1>Public Projects</h1>
             <div id="projects">
                 <template x-for="project in projects">
-                    <div class="project box">
+                    <a x-bind:href="project.link" class="project box">
                         <h1 class="projectname" x-text="project.name">
 
                         </h1>
                         <p x-text="project.desc"></p>
-                    </div>
+                    </a>
                 </template>
             </div>
 
