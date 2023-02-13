@@ -13,6 +13,12 @@ const exploiters = [
         name: "CoolElectronics",
         tag: "CoolElectronics#4683",
         pfp: "696392247205298207/40154cf9e9717bd72d3257ac202f57da",
+        bio: `
+        programmer who tries to occasionally make games, developed https://sh1mmer.me.
+        oneshot, ultrakill and tally hall enthusiast, lover of percury merkshop`,
+        website: "https://coolelectronics.me",
+        github: "https://github.com/CoolElectronics"
+
     },
     {
         name: "Ultra Blue",
@@ -20,9 +26,17 @@ const exploiters = [
         pfp: "904487572301021265/366e868748ba7d2e50be57cc3e45fa57",
     },
     {
-        name: "TheMemeSniper",
+        name: "kaitlin",
         tag: "TheMemeSniper#6065",
         pfp: "391271835901362198/8fc58755580980450e965d83d2322c68",
+        bio: `
+        professional shitposter
+        goofnut
+        transgener :3
+        she/her`,
+        links: {
+            mastodon: "https://wetdry.world/@thememesniper",
+        }
     },
     // {
     //     name: "SprinkzMC",
@@ -99,6 +113,12 @@ const exploiters = [
         name: "Bagel",
         tag: "Bagel#6705",
         pfp: "662424921967951912/2b89289fe5ea970b00567d31031071eb",
+        bio: `professional idiot, SlimeVR contributor. king lurker.`,
+        links: {
+            github: "https://github.com/LordBagel42",
+            website: "bagelindustries.cf",
+            click: "https://youtu.be/X_8Nh5XfRw0",
+        }
     },
     {
         name: "colacraft",
@@ -114,11 +134,15 @@ const exploiters = [
         name: "JimJam",
         tag: "JimSh1m#7404",
         pfp: "590672204107350037/1fb39ef5bb0b911e05c24bb6c6a03fa5",
+        bio: `Your average idiot, loves to make money, and runs stupid servers`,
+        links: {
+            github: "https://github.com/JimDude7404",
+        }
     },
     {
         name: "Melitha",
         tag: "Melitha#8130",
-        // pfp: "668635787755257887/146e1014a18b807f13ae028196a0726d" ... yeah no i'm not putting that shit on the website NOOOOOOOOOOOOOOOO
+        // pfp: "668635787755257887/146e1014a18b807f13ae028196a0726d" ... yeah no i'm not putting that shit on the website
     },
     {
         name: "siggaddj",
