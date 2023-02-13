@@ -8,6 +8,11 @@ const exploiters = [
         name: "r58Playz",
         tag: "r58Playz#3467",
         pfp: "803355425835188224/59096175f6add3bb28d9f465d9129590",
+        bio: `Middle schooler (soon to be a high schooler) with a passion for programming and security.`,
+        links: {
+            "Site": "https://r58playz.ml",
+            "Github": "https://github.com/r58Playz"
+        }
     },
     {
         name: "CoolElectronics",
