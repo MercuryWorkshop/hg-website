@@ -43,15 +43,12 @@ const exploiters = [
         name: "Scarat3k",
         tag: "Scarat3k#0001",
         pfp: "894587716619108385/a_4d3cca7ee282a9ba8966108fd33a32b4",
-        bio: `Hi, I'm Scaratek and I code things!
-        Member of Mercury Workshop.
-        https://www.buymeacoffee.com/scarat3k
-
-
-        dating Maddie(madjikdotpng) <3`,
+        bio: `Hi, I'm Scaratek and I code things! I also created Pollen :D
+        dating Madjik <3`,
         links: {
             github: "https://github.com/scaratek",
-            "discord server": "https://discord.gg/JawyTs5zsh",
+            "Discord Server": "https://discord.gg/JawyTs5zsh",
+            "Buy Me A Coffee": "https://www.buymeacoffee.com/scarat3k",
         }
 
     },
@@ -172,7 +169,7 @@ const projects = [
     {
         name: "sh1mmer",
         desc: "A recovery based enrollment jailbreak targeting chromebooks and chromeboxes",
-        link: "https://discord.gg/unblock",
+        link: "https://sh1mmer.me",
     },
     {
         name: "Pollen",
