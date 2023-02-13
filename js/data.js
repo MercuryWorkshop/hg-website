@@ -3,11 +3,19 @@ const exploiters = [
         name: "Rafflesia",
         tag: "Rafflesia#8396",
         pfp: "247349845298249728/c37fc65834e2705bfd452d82ccfdad68",
+        website: "https://alicesworld.tech",
+        github: "https://github.com/ProgrammerIn-wonderland",
+        bio: "あたしの名前はRafflesia!!\n\nこの前 友達と MERCURY WORKSHOP CLUB というサークルを組むことにしたよ\n\nアタシたちの 活躍を これから よろしくね!\nhttps://youtu.be/jsaxhdvl8UE",
     },
     {
         name: "r58Playz",
         tag: "r58Playz#3467",
         pfp: "803355425835188224/59096175f6add3bb28d9f465d9129590",
+        bio: `Middle schooler (soon to be a high schooler) with a passion for programming and security.`,
+        links: {
+            "Site": "https://r58playz.ml",
+            "Github": "https://github.com/r58Playz"
+        }
     },
     {
         name: "CoolElectronics",
