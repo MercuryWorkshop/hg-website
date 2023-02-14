@@ -32,6 +32,7 @@ const exploiters = [
         name: "Ultra Blue",
         tag: "Ultra Blue#1850",
         pfp: "904487572301021265/366e868748ba7d2e50be57cc3e45fa57",
+        bio: "Mercury workshop member who unfortunately passed away on February 7th"
     },
     {
         name: "kaitlin",
