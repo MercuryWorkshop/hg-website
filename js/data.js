@@ -69,6 +69,20 @@ const exploiters = [
         pfp: "476169716998733834/b81090b1228facc23c85ccfc96f0ca5c",
     },
     {
+        name: "Scarat3k",
+        tag: "Scarat3k#0001",
+        pfp: "894587716619108385/a_4d3cca7ee282a9ba8966108fd33a32b4",
+        bio: `Hi I'm Scaratek and I code things!
+        Creator of Pollen
+        Dating madjikun <3`,
+        links: {
+            "github": "https://github.com/scaratek",
+            "Discord Server": "https://discord.gg/JawyTs5zsh",
+            "Buy Me A Coffee": "https://www.buymeacoffee.com/scarat3k",
+        }
+
+    },
+    {
         name: "Sharp_Jack",
         tag: "Sharp_Jack#4374",
         pfp: "1006048734708240434/fcc5b5a3b225cb638821ce920ddc045e",
