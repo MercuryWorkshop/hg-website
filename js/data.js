@@ -72,11 +72,11 @@ const exploiters = [
         name: "Scarat3k",
         tag: "Scarat3k#0001",
         pfp: "894587716619108385/a_4d3cca7ee282a9ba8966108fd33a32b4",
-        bio: `Hi I'm Scaratek and I code things!
-        Creator of Pollen
-        Dating madjikun <3`,
+        bio: `Hi I'm Scarat3k and I code things!
+        Creator of Pollen.
+        Dating Majikun <3`,
         links: {
-            "github": "https://github.com/scaratek",
+            "Github": "https://github.com/scaratek",
             "Discord Server": "https://discord.gg/JawyTs5zsh",
             "Buy Me A Coffee": "https://www.buymeacoffee.com/scarat3k",
         }
@@ -213,6 +213,11 @@ const projects = [
     {
         name: "Pollen",
         desc: "A simple and easy to use UserPolicy editor for ChromeOS",
-        link: "https://discord.gg/unblock",
+        link: "https://github.com/MercuryWorkshop/Pollen",
+    },
+        {
+        name: "Fakemurk",
+        desc: "A set of scripts for Spoofing verified on an Enrolled Chromebook",
+        link: "https://github.com/MercuryWorkshop/fakemurk",
     },
 ];
