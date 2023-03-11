@@ -229,4 +229,9 @@ const projects = [
         desc: "A simple MAC address randomizer for chromeOS",
         link: "https://github.com/MercuryWorkshop/mac-address-randomizer",
     },
+    {
+        name: "anuraOS",
+        desc: "(frogOS) a webOS with x86 applications from a vm",
+        link: "https://github.com/MercuryWorkshop/anuraOS",
+    },
 ];
