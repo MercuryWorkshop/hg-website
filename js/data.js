@@ -2,7 +2,7 @@ const exploiters = [
     {
         name: "Rafflesia",
         tag: "Rafflesia#8396",
-        pfp: "247349845298249728/c37fc65834e2705bfd452d82ccfdad68",
+        pfp: "247349845298249728/704d6d95e5aaf76faa8a8b7f9b84c64c",
         website: "https://alicesworld.tech",
         github: "https://github.com/ProgrammerIn-wonderland",
         bio: "あたしの名前はRafflesia!!\n\nこの前 友達と MERCURY WORKSHOP CLUB というサークルを組むことにしたよ\n\nアタシたちの 活躍を これから よろしくね!\nアタシたちの 活躍を これから よろしくね！\nhttps://youtu.be/jsaxhdvl8UE",
@@ -67,12 +67,21 @@ const exploiters = [
         name: "OlyB",
         tag: "OlyB#9420",
         pfp: "476169716998733834/b81090b1228facc23c85ccfc96f0ca5c",
+        bio: `hi`,
+        links: {
+            github: "https://github.com/BinBashBanana"
+        }
     },
     {
-        name: "Scarat3k",
-        tag: "Scarat3k#0001",
-        pfp: "894587716619108385/a_4d3cca7ee282a9ba8966108fd33a32b4",
-        bio: `Hi I'm Scarat3k and I code things!
+        name: "luphoria",
+        tag: "luphoria#1313",
+        pfp: "325116477185196033/20fb547c84244c8e4ebff84d76cdba69",
+    },
+    {
+        name: "Scaratek",
+        tag: "Scarlett Yuko#0001",
+        pfp: "894587716619108385/a_d518dcaf658155711e2669a227d4e840",
+        bio: `Hi I'm Scaratek and I code things!
         Creator of Pollen.
         Dating Majikun <3`,
         links: {
@@ -133,7 +142,7 @@ const exploiters = [
     {
         name: "colacraft",
         tag: "colacraft#0744",
-        pfp: "727683704528306258/5398bcfd04632eea07b0d99f0a88bca2",
+        pfp: "727683704528306258/61745b302363e498f3f582bd146a6ea7",
     },
     {
         name: "Catakang",
@@ -184,11 +193,6 @@ const exploiters = [
 ];
 const advisors = [
     {
-        name: "luphoria",
-        tag: "luphoria#1313",
-        pfp: "325116477185196033/20fb547c84244c8e4ebff84d76cdba69",
-    },
-    {
         name: "Quite A Fancy Emerald",
         tag: "Quite A Fancy Emerald#0001",
         pfp: "725438522877804657/a_dba01ef721f49c998bc1ba4578dd3a72",
@@ -211,13 +215,23 @@ const projects = [
         link: "https://sh1mmer.me",
     },
     {
+        name: "Fakemurk",
+        desc: "A set of scripts for spoofing verified on an enrolled chromebook",
+        link: "https://github.com/MercuryWorkshop/fakemurk",
+    },
+    {
         name: "Pollen",
-        desc: "A simple and easy to use UserPolicy editor for ChromeOS",
+        desc: "A simple and easy to use script for modifying user policies",
         link: "https://github.com/MercuryWorkshop/Pollen",
     },
-        {
-        name: "Fakemurk",
-        desc: "A set of scripts for Spoofing verified on an Enrolled Chromebook",
-        link: "https://github.com/MercuryWorkshop/fakemurk",
+    {
+        name: "MAC Address Randomizer",
+        desc: "A simple MAC address randomizer for chromeOS",
+        link: "https://github.com/MercuryWorkshop/mac-address-randomizer",
+    },
+    {
+        name: "anuraOS",
+        desc: "(frogOS) a webOS with x86 applications from a vm",
+        link: "https://github.com/MercuryWorkshop/anuraOS",
     },
 ];
