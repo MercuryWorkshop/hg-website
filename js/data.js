@@ -216,12 +216,12 @@ const projects = [
     },
     {
         name: "Fakemurk",
-        desc: "A set of scripts for Spoofing verified on an Enrolled Chromebook",
+        desc: "A set of scripts for spoofing verified on an enrolled chromebook",
         link: "https://github.com/MercuryWorkshop/fakemurk",
     },
     {
         name: "Pollen",
-        desc: "A simple and easy to use UserPolicy editor for ChromeOS",
+        desc: "A simple and easy to use script for modifying user policies",
         link: "https://github.com/MercuryWorkshop/Pollen",
     },
     {
