@@ -85,8 +85,7 @@ const exploiters = [
         Creator of Pollen.
         Dating Majikun <3`,
         links: {
-            "Github": "https://github.com/scaratek",
-            "Discord Server": "https://discord.gg/JawyTs5zsh",
+            "Github": "https://github.com/scaratek",,
             "Buy Me A Coffee": "https://www.buymeacoffee.com/scarat3k",
         }
 
