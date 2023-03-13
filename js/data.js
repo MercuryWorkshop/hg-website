@@ -190,6 +190,11 @@ const exploiters = [
             matrix: "chaseddraco:matrix.org",
         }
     },
+    {
+        name: "Madjikun Yuko",
+        pfp: "927240253272645662/d3f8fdb93badf3f10669fae08450551a",
+        tag: "Madjikun Yuko#7624",
+    },
 ];
 const advisors = [
     {
@@ -206,6 +211,11 @@ const advisors = [
         name: "peter∆",
         tag: "peter∆#2987",
         pfp: "455493575233372170/34e7f93bafa062617a41b617b5a9fdfb",
+    },
+    {
+        name: "Astral",
+        tag: "AstralPhnx#1224",
+        pfp: "715087220360347678/c554ca7d610df3b25104e69b7a2a15c2",
     },
 ];
 const projects = [
