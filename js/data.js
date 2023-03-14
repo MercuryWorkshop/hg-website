@@ -189,9 +189,9 @@ const exploiters = [
         }
     },
     {
-        name: "Madjikun Yuko",
+        name: "Majikun Yuko",
         pfp: "927240253272645662/d3f8fdb93badf3f10669fae08450551a",
-        tag: "Madjikun Yuko#7624",
+        tag: "Majikun Yuko#7624",
     },
 ];
 const advisors = [
