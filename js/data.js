@@ -214,10 +214,12 @@ const advisors = [
         name: "Astral",
         tag: "AstralPhnx#1224",
         pfp: "715087220360347678/c554ca7d610df3b25104e69b7a2a15c2",
-        bio: `Thing doer, digital privacy advocate, computer fiddler and gigantic nerd.
-        When I'm not messing around with computers you'll find me playing arcade games, slinging around shiny cardboard at Yu-Gi-Oh events and being hopelessly gay on the internet
-        
-        Multi Billion Dollar Company Moment`,
+        bio: `Thing doer, VTuber, digital privacy advocate, computer fiddler and gigantic hecking nerd.
+        When I'm not messing around with computers you'll find me playing arcade games, slinging around shiny cardboard at Yu-Gi-Oh events and being hopelessly gay on the internet`,
+        links: {
+            "Github": "https://github.com/AstralPhnx",
+            "Twitch": "https://www.twitch.tv/astral_phnx"
+        }
     },
 ];
 const projects = [
