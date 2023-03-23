@@ -192,6 +192,11 @@ const exploiters = [
         name: "Majikun Yuko",
         pfp: "927240253272645662/d3f8fdb93badf3f10669fae08450551a",
         tag: "Majikun Yuko#7624",
+        bio: "I'm MW's CSS girl. I do all the styling and stuff.",
+        links: {
+            "Github": "https://github.com/MadjikDotPng",
+            "Portfolio": "https://madjikware.tech/",
+        }
     },
 ];
 const advisors = [
