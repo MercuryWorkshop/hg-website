@@ -78,18 +78,6 @@ const exploiters = [
         pfp: "325116477185196033/20fb547c84244c8e4ebff84d76cdba69",
     },
     {
-        name: "Scarlett Yuko",
-        tag: "Scarlett Yuko#0001",
-        pfp: "894587716619108385/a_d518dcaf658155711e2669a227d4e840",
-        bio: `Hi I'm Scaratek and I code things!
-        Dating Majikun Yuko <3`,
-        links: {
-            "Github": "https://github.com/scaratek",
-            "Buy Me A Coffee": "https://www.buymeacoffee.com/scarat3k",
-        }
-
-    },
-    {
         name: "Sharp_Jack",
         tag: "Sharp_Jack#4374",
         pfp: "1006048734708240434/fcc5b5a3b225cb638821ce920ddc045e",
@@ -215,6 +203,18 @@ const advisors = [
             "Github": "https://github.com/AstralPhnx",
             "Twitch": "https://www.twitch.tv/astral_phnx"
         }
+    },
+    {
+        name: "Scarlett Yuko",
+        tag: "Scarlett Yuko#0001",
+        pfp: "894587716619108385/a_d518dcaf658155711e2669a227d4e840",
+        bio: `Hi I'm Scaratek and I code things!
+        Dating Majikun Yuko <3`,
+        links: {
+            "Github": "https://github.com/scaratek",
+            "Buy Me A Coffee": "https://www.buymeacoffee.com/scarat3k",
+        }
+
     },
 ];
 const projects = [
