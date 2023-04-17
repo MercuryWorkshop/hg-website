@@ -162,7 +162,7 @@ const exploiters = [
     {
         name: "Koaku",
         pfp: "927240253272645662/c97fabae88685a9a997e5719967e596e",
-        tag: "Koaku#0001",
+        tag: "koaku#0001",
         bio: "I'm MW's CSS girl. I do all the styling and stuff.",
         links: {
             "Github": "https://github.com/MadjikDotPng",
