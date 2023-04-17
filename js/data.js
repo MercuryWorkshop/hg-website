@@ -160,6 +160,16 @@ const exploiters = [
         tag: "c-bass#7433",
     },
     {
+        name: "Koaku",
+        pfp: "927240253272645662/c97fabae88685a9a997e5719967e596e",
+        tag: "Koaku#0001",
+        bio: "I'm MW's CSS girl. I do all the styling and stuff.",
+        links: {
+            "Github": "https://github.com/MadjikDotPng",
+            "Portfolio": "https://madjikware.tech/",
+        }
+    },
+    {
         name: "CyberClone",
         tag: "CyberClone#9080",
         pfp: "417892585068036096/cfdd012a4359c45e97a7991a0215971c",
