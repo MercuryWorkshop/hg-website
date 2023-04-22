@@ -195,6 +195,14 @@ const exploiters = [
             github: "https://github.com/ading2210"
         }
     },
+    {
+        name: "1/2 stack developer",
+        pfp: "788875092837924898/a_19cce993830a1179f4db2dcf688c1040",
+        tag: "1/2 stack developer#0101",
+        links: {
+            github: "https://github.com/Pogo-Bash"
+        }
+    },
 ];
 const advisors = [
     {
