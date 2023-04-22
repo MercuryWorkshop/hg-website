@@ -186,6 +186,15 @@ const exploiters = [
             matrix: "chaseddraco:matrix.org",
         }
     },
+    {
+        name: "vk6",
+        pfp: "530198926129627146/f7c2cc055eddc57cc385841bca8cc65d",
+        tag: "vk6#7391",
+        links: {
+            website: "https://ading.fr.to",
+            github: "https://github.com/ading2210"
+        }
+    },
 ];
 const advisors = [
     {
