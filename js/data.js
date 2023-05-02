@@ -170,6 +170,17 @@ const exploiters = [
         }
     },
     {
+        name: "Violetence",
+        tag: "Violetence#0001",
+        pfp: "894587716619108385/a_d518dcaf658155711e2669a227d4e840",
+        bio: `I honestly have no purpose here anymore. I'm useless :/`,
+        links: {
+            "Website": "https://scarat3k.me",
+            "Github": "https://github.com/scaratek",
+        }
+
+    },
+    {
         name: "CyberClone",
         tag: "CyberClone#9080",
         pfp: "417892585068036096/cfdd012a4359c45e97a7991a0215971c",
@@ -222,18 +233,6 @@ const advisors = [
             "Github": "https://github.com/AstralPhnx",
             "Twitch": "https://www.twitch.tv/astral_phnx"
         }
-    },
-    {
-        name: "Scarlett Yuko",
-        tag: "Scarlett Yuko#0001",
-        pfp: "894587716619108385/a_d518dcaf658155711e2669a227d4e840",
-        bio: `Hi I'm Scaratek and I code things!
-        Dating Majikun Yuko <3`,
-        links: {
-            "Github": "https://github.com/scaratek",
-            "Buy Me A Coffee": "https://www.buymeacoffee.com/scarat3k",
-        }
-
     },
 ];
 const projects = [
