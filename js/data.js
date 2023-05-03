@@ -240,6 +240,9 @@ const advisors = [
         pfp: "https://cdn.discordapp.com/attachments/1053451014595940362/1103140153100349510/EC0D9428-7852-4910-8F37-8DA5199CA6E5.png",
         bio: `Just another Furry doing cybersecurity.
 Chromium Project Member`,
+        links: {
+            mastodon: "https://hackers.town/@mark",
+        }
     }
 ];
 const projects = [
