@@ -218,11 +218,11 @@ const advisors = [
         tag: "aub#3033",
         pfp: "327470218005708810/a_ad6a27c8649fbee34e7984989293dc62",
     },
-    {
-        name: "peter∆",
-        tag: "peter∆#2987",
-        pfp: "455493575233372170/34e7f93bafa062617a41b617b5a9fdfb",
-    },
+    // {
+    //     name: "peter∆",
+    //     tag: "peter∆#2987",
+    //     pfp: "455493575233372170/34e7f93bafa062617a41b617b5a9fdfb",
+    // },
     {
         name: "Astral",
         tag: "AstralPhnx#1224",
@@ -234,6 +234,13 @@ const advisors = [
             "Twitch": "https://www.twitch.tv/astral_phnx"
         }
     },
+    {
+        name: "Mark",
+        tag: "markrosenbaum#5782",
+        pfp: "https://cdn.discordapp.com/attachments/1053451014595940362/1103140153100349510/EC0D9428-7852-4910-8F37-8DA5199CA6E5.png",
+        bio: `Just another Furry doing cybersecurity.
+Chromium Project Member`,
+    }
 ];
 const projects = [
     {
