@@ -263,7 +263,7 @@ const projects = [
     },
     {
         name: "Lilac",
-        desc: "A not as simple and easy to use C++ program for modifying device policies",
+        desc: "A not as simple and not as easy to use C++ program for modifying device policies",
         link: "https://github.com/MercuryWorkshop/lilac",
     },
     {
