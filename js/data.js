@@ -262,6 +262,11 @@ const projects = [
         link: "https://github.com/MercuryWorkshop/Pollen",
     },
     {
+        name: "Lilac",
+        desc: "A not as simple and easy to use C++ program for modifying device policies",
+        link: "https://github.com/MercuryWorkshop/lilac",
+    },
+    {
         name: "MAC Address Randomizer",
         desc: "A simple MAC address randomizer for chromeOS",
         link: "https://github.com/MercuryWorkshop/mac-address-randomizer",
