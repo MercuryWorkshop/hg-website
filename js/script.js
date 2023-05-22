@@ -9,6 +9,8 @@
  */
 
 /*haha*/
+
+p5.disableFriendlyErrors = true;
 const mobile = mobileCheck();
 const sleep = (millis) => new Promise((resolve) => setTimeout(resolve, millis));
 const framerate = 30;
