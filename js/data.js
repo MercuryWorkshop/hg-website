@@ -105,9 +105,9 @@ const exploiters = [
         pfp: "856786186117971979/272609db2b127f30cff89d5a7de07a7b",
     },
     {
-        name: "Unciaur",
-        tag: "Unciaur#1408",
-        pfp: "465682780320301077/f794fdbf8f9352932d69e6726e128f2a",
+        name: "Down Cat",
+        tag: "Down Cat#1408",
+        pfp: "465682780320301077/a99bb8886fa9bd26092074ed105d70a1",
         bio: `Hey! I’m a student in secondary at the time of writing this. In my free time, I usually find myself reading some fantasy series, coding, breaking my chromebook (def mine), or writing a fun D&D campaign for my friends.`,
         links: {
             website: "https://unciaur.live",
