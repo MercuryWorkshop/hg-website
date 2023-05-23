@@ -101,8 +101,8 @@ const exploiters = [
         pfp: "314891043038429184/63eb9092f9e85f204aa5c28ff648ee91",
     },
     {
-        name: "avd3",
-        pfp: "856786186117971979/264be908565e96cfe1701891bc86389f",
+        name: "8btyh",
+        pfp: "856786186117971979/272609db2b127f30cff89d5a7de07a7b",
     },
     {
         name: "Unciaur",
