@@ -20,7 +20,7 @@ const exploiters = [
     {
         name: "CoolElectronics",
         tag: "CoolElectronics#4683",
-        pfp: "696392247205298207/40154cf9e9717bd72d3257ac202f57da",
+        pfp: "696392247205298207/f119a3c709a3fefb6e3c22957a44d213",
         bio: `
         programmer who tries to occasionally make games, developed https://sh1mmer.me.
         oneshot, ultrakill and tally hall enthusiast, lover of percury merkshop`,
@@ -98,7 +98,7 @@ const exploiters = [
     },
     {
         name: "zuh",
-        pfp: "314891043038429184/400dba9b10d1b18284ec3cfb4d18479b",
+        pfp: "314891043038429184/63eb9092f9e85f204aa5c28ff648ee91",
     },
     {
         name: "avd3",
@@ -136,9 +136,9 @@ const exploiters = [
         pfp: "402603973959221248/625037142993ec58c8aa6d4e111b4673",
     },
     {
-        name: "JimJam",
-        tag: "JimSh1m#7404",
-        pfp: "590672204107350037/1fb39ef5bb0b911e05c24bb6c6a03fa5",
+        name: "JimDude",
+        tag: "JimDude#7404",
+        pfp: "590672204107350037/60acdd55b6ca60f6cf887400aa333feb",
         bio: `Your average idiot, loves to make money, and runs stupid servers`,
         links: {
             github: "https://github.com/JimDude7404",
@@ -161,7 +161,7 @@ const exploiters = [
     },
     {
         name: "Koaku",
-        pfp: "927240253272645662/c97fabae88685a9a997e5719967e596e",
+        pfp: "927240253272645662/6614bdaa092eff2c53d1848e9cccbc43",
         tag: "koaku#0001",
         bio: "I'm MW's CSS girl. I do all the styling and stuff.",
         links: {
@@ -212,7 +212,7 @@ const advisors = [
     {
         name: "Quite A Fancy Emerald",
         tag: "Quite A Fancy Emerald#0001",
-        pfp: "725438522877804657/a_dba01ef721f49c998bc1ba4578dd3a72",
+        pfp: "725438522877804657/a_6b03bc4e71945b4ca8b06c01829c6b9c",
     },
     {
         name: "aub",
