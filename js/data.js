@@ -207,6 +207,14 @@ const exploiters = [
             email: "allen@ading.dev"
         }
     },
+    {
+        name: "wise tree",
+        pfp: "1066240013488111739/b05821108823f2af63bb271be25d217f",
+        tag: "wisetree",
+        links: {
+          wisetree: "https://postman-echo.com/get?wise=true&tree=true",
+        },
+    },
 ];
 const advisors = [
     {
