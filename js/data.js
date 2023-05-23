@@ -85,7 +85,7 @@ const exploiters = [
     {
         name: "ember",
         tag: "real ember#1491",
-        pfp: "1052344689178722375/5111e483dde044344765cd84dfab858e",
+        pfp: "1052344689178722375/7619dd8e7d281cbee89f91e1d6a9bdc9",
     },
     {
         name: "CVFD",
