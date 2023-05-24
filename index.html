@@ -28,7 +28,7 @@
                 <div class="modal-inner-dumbass-fucking-padding-hack">
                     <span class="modalmembername">
                         <img x-cloak x-show=" membermodal.pfp" class="modal-pfp pfp" x-bind:alt="dev.name"
-                            x-bind:src="!membermodal.pfp.includes('https') ? ('https://cdn.discordapp.com/avatars/' + membermodal.pfp + '.webp?size=80') : membermodal.pfp">
+                            x-bind:src="!membermodal.pfp == 'local' ? ('./assets/pfps/' + membermodal.name + '.webp') : membermodal.pfp">
                         <h1 x-text="membermodal.name"></h1>
                     </span>
 
@@ -80,6 +80,7 @@
 
         </div>
         <!-- god i love alpine -->
+        <!-- (i sure don't) -->
         <template x-for="collection in [['Members',exploiters],['Advisors',advisors]]">
             <div class="" style="width: 100%;">
                 <h1 x-text="collection[0]"></h1>
@@ -88,7 +89,7 @@
                         <div class="box member" x-data="{ expanded: false }" @click="membermodal = dev">
                             <span class="membername">
                                 <img x-cloak x-show="dev.pfp" class="pfp"
-                                    x-bind:src="!dev.pfp.includes('https') ? ('https://cdn.discordapp.com/avatars/' + dev.pfp + '.webp?size=80') : dev.pfp">
+                                    x-bind:src="dev.pfp == 'local' ? ('./assets/pfps/' + dev.name + '.webp') : dev.pfp">
                                 <div x-cloak x-show="!dev.pfp" class="pfp"></div>
                                 <p x-text="dev.name"></p>
                             </span>
