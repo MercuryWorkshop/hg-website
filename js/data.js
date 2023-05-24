@@ -2,7 +2,7 @@ const exploiters = [
     {
         name: "Rafflesia",
         tag: "Rafflesia#8396",
-        pfp: "247349845298249728/704d6d95e5aaf76faa8a8b7f9b84c64c",
+        pfp: "local",
         website: "https://alicesworld.tech",
         github: "https://github.com/ProgrammerIn-wonderland",
         bio: "あたしの名前はRafflesia!!\n\nこの前 友達と MERCURY WORKSHOP CLUB というサークルを組むことにしたよ\n\nアタシたちの 活躍を これから よろしくね!\nアタシたちの 活躍を これから よろしくね！\nhttps://youtu.be/jsaxhdvl8UE",
@@ -10,7 +10,7 @@ const exploiters = [
     {
         name: "r58Playz",
         tag: "r58Playz#3467",
-        pfp: "803355425835188224/59096175f6add3bb28d9f465d9129590",
+        pfp: "local",
         bio: `Middle schooler (soon to be a high schooler) with a passion for programming and security.`,
         links: {
             "Site": "https://r58playz.ml",
@@ -20,24 +20,24 @@ const exploiters = [
     {
         name: "CoolElectronics",
         tag: "CoolElectronics#4683",
-        pfp: "696392247205298207/f119a3c709a3fefb6e3c22957a44d213",
+        pfp: "local",
         bio: `
         programmer who tries to occasionally make games, developed https://sh1mmer.me.
         oneshot, ultrakill and tally hall enthusiast, lover of percury merkshop`,
         website: "https://coolelectronics.me",
         github: "https://github.com/CoolElectronics"
-
+  
     },
     {
         name: "Ultra Blue",
         tag: "Ultra Blue#1850",
-        pfp: "904487572301021265/366e868748ba7d2e50be57cc3e45fa57",
+        pfp: "local",
         bio: "Mercury workshop member who unfortunately passed away on February 7th"
     },
     {
         name: "kaitlin",
         tag: "TheMemeSniper#6065",
-        pfp: "391271835901362198/8fc58755580980450e965d83d2322c68",
+        pfp: "local",
         bio: `
         professional shitposter
         goofnut
@@ -50,12 +50,12 @@ const exploiters = [
     // {
     //     name: "SprinkzMC",
     //     tag: "SprinkzMC#8421",
-    //     pfp: "824066884231495709/6d66d97d0e874a65e8240134fd48ea83",
+    //     pfp: "local",
     // },
     {
         name: "Bypassi",
         tag: "Bypassi#7037",
-        pfp: "904829646145720340/c12ea6aa4c73eb5d1775c62ad9778527",
+        pfp: "local",
         bio: `Proud skidphobic individual. Discovered LTBEEF, [swamp], point-blank, and some more silly Chromebook exploits. I stopped taking life seriously a long time ago.`,
         links: {
             "Click": "javascript:alert('Me trying to resist the urge to do code execution for 0.0001 seconds')",
@@ -66,7 +66,7 @@ const exploiters = [
     {
         name: "OlyB",
         tag: "OlyB#9420",
-        pfp: "476169716998733834/b81090b1228facc23c85ccfc96f0ca5c",
+        pfp: "local",
         bio: `hi`,
         links: {
             github: "https://github.com/BinBashBanana"
@@ -75,22 +75,22 @@ const exploiters = [
     {
         name: "luphoria",
         tag: "luphoria#1313",
-        pfp: "325116477185196033/20fb547c84244c8e4ebff84d76cdba69",
+        pfp: "local",
     },
     {
         name: "Sharp_Jack",
         tag: "Sharp_Jack#4374",
-        pfp: "1006048734708240434/fcc5b5a3b225cb638821ce920ddc045e",
+        pfp: "local",
     },
     {
         name: "ember",
         tag: "real ember#1491",
-        pfp: "1052344689178722375/7619dd8e7d281cbee89f91e1d6a9bdc9",
+        pfp: "local",
     },
     {
         name: "CVFD",
         tag: "CVFD#6480",
-        pfp: "406609409981284374/ed5f3fc6015a0ca8f00b2eeed0948d42",
+        pfp: "local",
     },
     {
         name: "justinchrm",
@@ -98,16 +98,16 @@ const exploiters = [
     },
     {
         name: "zuh",
-        pfp: "314891043038429184/63eb9092f9e85f204aa5c28ff648ee91",
+        pfp: "local",
     },
     {
         name: "8btyh",
-        pfp: "856786186117971979/272609db2b127f30cff89d5a7de07a7b",
+        pfp: "local",
     },
     {
         name: "Down Cat",
         tag: "Down Cat#1408",
-        pfp: "465682780320301077/a99bb8886fa9bd26092074ed105d70a1",
+        pfp: "local",
         bio: `Hey! I’m a student in secondary at the time of writing this. In my free time, I usually find myself reading some fantasy series, coding, breaking my chromebook (def mine), or writing a fun D&D campaign for my friends.`,
         links: {
             website: "https://unciaur.live",
@@ -117,7 +117,7 @@ const exploiters = [
     {
         name: "Bagel",
         tag: "Bagel#6705",
-        pfp: "662424921967951912/2b89289fe5ea970b00567d31031071eb",
+        pfp: "local",
         bio: `professional idiot, SlimeVR contributor. king lurker.`,
         links: {
             github: "https://github.com/LordBagel42",
@@ -128,17 +128,17 @@ const exploiters = [
     {
         name: "colacraft",
         tag: "colacraft#0744",
-        pfp: "727683704528306258/61745b302363e498f3f582bd146a6ea7",
+        pfp: "local",
     },
     {
         name: "Catakang",
         tag: "Catakang#0987",
-        pfp: "402603973959221248/625037142993ec58c8aa6d4e111b4673",
+        pfp: "local",
     },
     {
         name: "JimDude",
         tag: "JimDude#7404",
-        pfp: "590672204107350037/60acdd55b6ca60f6cf887400aa333feb",
+        pfp: "local",
         bio: `Your average idiot, loves to make money, and runs stupid servers`,
         links: {
             github: "https://github.com/JimDude7404",
@@ -147,21 +147,20 @@ const exploiters = [
     {
         name: "Melitha",
         tag: "Melitha#8130",
-        // pfp: "668635787755257887/146e1014a18b807f13ae028196a0726d" ... yeah no i'm not putting that shit on the website
     },
     {
         name: "siggaddj",
         tag: "siggaddj#3621",
-        pfp: "447840815352512552/a_f604a7f980623616f33c38eca76b34c1",
+        pfp: "local",
     },
     {
         name: "c-bass",
-        pfp: "897226891323387905/09e7c6dcbb1035e97626210d9441c528",
+        pfp: "local",
         tag: "c-bass#7433",
     },
     {
         name: "Koaku",
-        pfp: "927240253272645662/6614bdaa092eff2c53d1848e9cccbc43",
+        pfp: "local",
         tag: "koaku#0001",
         bio: "I'm MW's CSS girl. I do all the styling and stuff.",
         links: {
@@ -172,18 +171,17 @@ const exploiters = [
     {
         name: "Violetence",
         tag: "Violetence#0001",
-        pfp: "894587716619108385/a_d518dcaf658155711e2669a227d4e840",
+        pfp: "local",
         bio: `I honestly have no purpose here anymore. I'm useless :/`,
         links: {
             "Website": "https://scarat3k.me",
             "Github": "https://github.com/scaratek",
         }
-
     },
     {
         name: "CyberClone",
         tag: "CyberClone#9080",
-        pfp: "417892585068036096/cfdd012a4359c45e97a7991a0215971c",
+        pfp: "local",
         bio: `High school student with extensive mechanical and electrical engineering experience; ultimately, a love of building new things from the ground up.
         Currently launching a nonprofit organization to promote engineering education in the Bay Area, check it out if interested in getting involved`,
         links: {
@@ -199,7 +197,7 @@ const exploiters = [
     },
     {
         name: "vk6",
-        pfp: "530198926129627146/f7c2cc055eddc57cc385841bca8cc65d",
+        pfp: "local",
         tag: "vk6#7391",
         links: {
             website: "https://ading.dev",
@@ -207,17 +205,17 @@ const exploiters = [
             email: "allen@ading.dev"
         }
     },
-];
-const advisors = [
+  ];
+  const advisors = [
     {
         name: "Quite A Fancy Emerald",
         tag: "Quite A Fancy Emerald#0001",
-        pfp: "725438522877804657/a_6b03bc4e71945b4ca8b06c01829c6b9c",
+        pfp: "local",
     },
     {
         name: "aub",
         tag: "aub#3033",
-        pfp: "327470218005708810/a_ad6a27c8649fbee34e7984989293dc62",
+        pfp: "local",
     },
     // {
     //     name: "peter∆",
@@ -227,7 +225,7 @@ const advisors = [
     {
         name: "Astral",
         tag: "AstralPhnx#1224",
-        pfp: "715087220360347678/c554ca7d610df3b25104e69b7a2a15c2",
+        pfp: "local",
         bio: `Thing doer, VTuber, digital privacy advocate, computer fiddler and gigantic hecking nerd.
         When I'm not messing around with computers you'll find me playing arcade games, slinging around shiny cardboard at Yu-Gi-Oh events and being hopelessly gay on the internet`,
         links: {
@@ -238,9 +236,9 @@ const advisors = [
     {
         name: "Mark",
         tag: "[REDACTED]",
-        pfp: "https://cdn.discordapp.com/attachments/1053451014595940362/1103140153100349510/EC0D9428-7852-4910-8F37-8DA5199CA6E5.png",
+        pfp: "local",
         bio: `Just another Furry doing cybersecurity.
-Chromium Project Member`,
+  Chromium Project Member`,
         links: {
             mastodon: "https://hackers.town/@mark",
         }
