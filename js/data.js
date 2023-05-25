@@ -76,6 +76,7 @@ const exploiters = [
         name: "luphoria",
         tag: "luphoria#1313",
         pfp: "local",
+        bio: "privacy maximalist. 16. trumpeter, vocalist, keyboard, piano, guitar. code, sqli, xss, priv escalation. english/español pls.",
         links: {
             "site": "https://luphoria.com",
             "matrix": "https://matrix.to/#/@trent:gra.im",
