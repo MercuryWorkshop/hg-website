@@ -76,6 +76,12 @@ const exploiters = [
         name: "luphoria",
         tag: "luphoria#1313",
         pfp: "local",
+        links: {
+            "site": "https://luphoria.com",
+            "matrix": "https://matrix.to/#/@trent:gra.im",
+            "email": "mailto:mw@luphoria.com",
+            "pgp": "https://luphoria.com/pgp.txt"
+        }
     },
     {
         name: "Sharp_Jack",
