@@ -36,6 +36,7 @@ p,h1 {
 }
 a{
     text-decoration:none;
+    max-height: 10vh;
 }
 
 h1 {
