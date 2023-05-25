@@ -281,4 +281,14 @@ const projects = [
         desc: "(frogOS) a webOS with x86 applications from a vm",
         link: "https://github.com/MercuryWorkshop/anuraOS",
     },
+    {
+        name: "Halycon",
+        desc: "Bypass for \"The fog\" based on RecoMod",
+        link: "https://fog.gay/",
+    },
+    {
+        name: "RecoMod",
+        desc: "A ChromeOS recovery image modification toolkit",
+        link: "https://github.com/MercuryWorkshop/RecoMod",
+    }
 ];
