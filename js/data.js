@@ -13,7 +13,7 @@ const exploiters = [
         pfp: "local",
         bio: `Middle schooler (soon to be a high schooler) with a passion for programming and security.`,
         links: {
-            "Site": "https://r58playz.ml",
+            "Site": "https://r58playz.dev/",
             "Github": "https://github.com/r58Playz"
         }
     },
