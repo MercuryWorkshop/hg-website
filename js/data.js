@@ -13,7 +13,7 @@ const exploiters = [
         pfp: "local",
         bio: `Middle schooler (soon to be a high schooler) with a passion for programming and security.`,
         links: {
-            "Site": "https://r58playz.ml",
+            "Site": "https://r58playz.dev/",
             "Github": "https://github.com/r58Playz"
         }
     },
@@ -279,8 +279,8 @@ const projects = [
     },
     {
         name: "anuraOS",
-        desc: "(frogOS) a webOS with x86 applications from a vm",
-        link: "https://github.com/MercuryWorkshop/anuraOS",
+        desc: "(frogOS) a webOS with x86 applications from a vm, currently not public and in development",
+        link: "https://github.com/MercuryWorkshop",
     },
     {
         name: "Halycon",
