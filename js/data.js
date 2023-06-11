@@ -122,22 +122,6 @@ const exploiters = [
         }
     },
     {
-        name: "Bagel",
-        tag: "Bagel#6705",
-        pfp: "local",
-        bio: `professional idiot, SlimeVR contributor. king lurker.`,
-        links: {
-            github: "https://github.com/LordBagel42",
-            website: "bagelindustries.cf",
-            click: "https://youtu.be/X_8Nh5XfRw0",
-        }
-    },
-    {
-        name: "colacraft",
-        tag: "colacraft#0744",
-        pfp: "local",
-    },
-    {
         name: "Catakang",
         tag: "Catakang#0987",
         pfp: "local",
@@ -154,11 +138,6 @@ const exploiters = [
     {
         name: "Melitha",
         tag: "Melitha#8130",
-    },
-    {
-        name: "siggaddj",
-        tag: "siggaddj#3621",
-        pfp: "local",
     },
     {
         name: "c-bass",
@@ -193,13 +172,6 @@ const exploiters = [
         Currently launching a nonprofit organization to promote engineering education in the Bay Area, check it out if interested in getting involved`,
         links: {
             nonprofit: "https://engineeringexploration.org/",
-        }
-    },
-    {
-        name: "He",
-        tag: "He#7273",
-        links: {
-            matrix: "chaseddraco:matrix.org",
         }
     },
     {
