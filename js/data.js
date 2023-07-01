@@ -147,8 +147,8 @@ const exploiters = [
     {
         name: "Koaku",
         pfp: "local",
-        tag: "koaku#0001",
-        bio: "I'm MW's CSS girl. I do all the styling and stuff.",
+        tag: "dvcu",
+        bio: "Mercuries frontend developer. I fix y'alls CSS.",
         links: {
             "Github": "https://github.com/MadjikDotPng",
             "Portfolio": "https://madjikware.tech/",
@@ -158,7 +158,7 @@ const exploiters = [
         name: "Violetence",
         tag: "Violetence#0001",
         pfp: "local",
-        bio: `I honestly have no purpose here anymore. I'm useless :/`,
+        bio: `I̶ h̶o̶n̶e̶s̶t̶l̶y̶ h̶a̶v̶e̶ n̶o̶ p̶u̶r̶p̶o̶s̶e̶ h̶e̶r̶e̶ a̶n̶y̶m̶o̶r̶e̶. Cutest Developer Evr <3`,
         links: {
             "Website": "https://scarat3k.me",
             "Github": "https://github.com/scaratek",
