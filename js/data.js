@@ -155,10 +155,10 @@ const exploiters = [
         }
     },
     {
-        name: "Violetence",
-        tag: "Violetence#0001",
+        name: "Smugumin",
+        tag: "Smuguminvt",
         pfp: "local",
-        bio: `I̶ h̶o̶n̶e̶s̶t̶l̶y̶ h̶a̶v̶e̶ n̶o̶ p̶u̶r̶p̶o̶s̶e̶ h̶e̶r̶e̶ a̶n̶y̶m̶o̶r̶e̶. Cutest Developer Evr <3`,
+        bio: `Hi I'm Violet :D I'm a Web Developer and a stupid Transwomen :D`,
         links: {
             "Website": "https://scarat3k.me",
             "Github": "https://github.com/scaratek",
