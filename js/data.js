@@ -145,6 +145,16 @@ const exploiters = [
         tag: "c-bass#7433",
     },
     {
+        name: "Violet",
+        pfp: "local",
+        tag: "atransfemcutie",
+        bio: "MW Member and a Transwomen :D",
+        links: {
+            "Github": "https://github.com/scaratek",
+            "Website": "https://scarat3k.me"
+        }
+    },
+    {
         name: "Koaku",
         pfp: "local",
         tag: "dvcu",
