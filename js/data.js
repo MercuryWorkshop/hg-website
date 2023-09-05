@@ -220,7 +220,7 @@ const exploiters = [
   Contact me @ mark@mercurywork.shop`,
         links: {
             mastodon: "https://hackers.town/@mark",
-            email: "mailto:mark@mercurywork.shop",
+            email: "mark@mercurywork.shop",
         }
     }
 ];
