@@ -214,12 +214,13 @@ const exploiters = [
     },
     {
         name: "Mark",
-        tag: "[REDACTED]",
+        tag: "⁤",
         pfp: "local",
         bio: `Just another Furry doing cybersecurity.
-  Chromium Project Member`,
+  Contact me @ mark@mercurywork.shop`,
         links: {
             mastodon: "https://hackers.town/@mark",
+            email: "mailto:mark@mercurywork.shop",
         }
     }
 ];
