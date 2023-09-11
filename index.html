@@ -1,116 +1,814 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-    <title>Mercury Workshop</title>
-    <link rel="icon" type="image/x-icon" href="style/favicon.ico">
-    <link rel="stylesheet" href="style/style.css">
-    <meta name="darkreader-lock">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description"
-        content="Mercury Workshop - A small team of active developers typically focused around finding flaws in methods of ChromeOS user restriction">
-    <script src="js/p5.min.js" defer></script>
-    <script src="js/script.js" defer></script>
-    <script src="js/data.js"></script>
-    <script src="https://unpkg.com/alpinejs"></script>
-</head>
-
-<body id="body" x-data="{ membermodal: null, projectmodal:null }"
-    x-bind:class="membermodal != null ? 'modal-open' : ''">
-    <div id="hide" rel="preload"></div>
-    <credit made_by="Ember314 and CoolElectronics from Mercury Workshop"></credit>
-
-    <div x-bind:class="membermodal == null ? 'opacityzero' : ''">
-        <div class="modal modal-effect" @click="membermodal = null">
-        </div>
-        <div class="modal">
-            <div class="modal-inner">
-                <div class="modal-inner-dumbass-fucking-padding-hack">
-                    <span class="modalmembername">
-                        <img x-cloak x-show=" membermodal.pfp" class="modal-pfp pfp" x-bind:alt="dev.name"
-                            x-bind:src="!membermodal.pfp == 'local' ? ('./assets/pfps/' + membermodal.name + '.webp') : membermodal.pfp">
-                        <h1 x-text="membermodal.name"></h1>
-                    </span>
-
-                    <p x-text="membermodal.bio"></p>
-                    <table>
-                        <template x-for="link in Object.entries(membermodal.links || {})">
-                            <tr>
-                                <th x-text="link[0]"></th>
-                                <td><a x-bind:href="link[1]" x-text="link[1]"></a></td>
-                            </tr>
-                        </template>
-                        <tr>
-                            <th>discord</th>
-                            <td x-text="membermodal.tag"></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="stars"></div>
-    <div id="grid" x-bind:class="membermodal != null ? 'modal-blur' : ''">
-        <div id="header">
-            <img src="style/mercury.png" id="logo" style="order:1;" alt="Mercury Workshop Logo" width="127px"
-                height="127px">
-            <h1 style="order:2;">Mercury Workshop</h1>
-        </div>
-        <div class="hiddenbox">
-            <p>A small team of active developers typically focused around finding flaws in methods of ChromeOS user
-                restriction.
-            </p>
-        </div>
-        <div class="spacer">
-
-        </div>
-        <div style="width: 100%;">
-            <h1>Public Projects</h1>
-            <div id="projects">
-                <template x-for="project in projects">
-                    <a x-bind:href="project.link" class="project box">
-                        <h1 class="projectname" x-text="project.name">
-
-                        </h1>
-                        <p x-text="project.desc"></p>
-                    </a>
-                </template>
-            </div>
-
-        </div>
-        <!-- god i love alpine -->
-        <!-- (i sure don't) -->
-        <template x-for="collection in [['Members',exploiters],['Advisors',advisors]]">
-            <div class="" style="width: 100%;">
-                <h1 x-text="collection[0]"></h1>
-                <div class="membergrid">
-                    <template x-for="dev in collection[1]">
-                        <div class="box member" x-data="{ expanded: false }" @click="membermodal = dev">
-                            <span class="membername">
-                                <img x-cloak x-show="dev.pfp" class="pfp"
-                                    x-bind:src="dev.pfp == 'local' ? ('./assets/pfps/' + dev.name + '.webp') : dev.pfp">
-                                <div x-cloak x-show="!dev.pfp" class="pfp"></div>
-                                <p x-text="dev.name"></p>
-                            </span>
-                        </div>
-                    </template>
-                </div>
-            </div>
-        </template>
-    </div>
-    <div class="footer">
-
-        <div class="footerSpace">
-            <img src="style/mercury.png" id="footerLogo" alt="Mercury Workshop Logo">
-            <div id="brand">Mercury Workshop</div>
-        </div>
-        <div id="takedown">Legal requests? Contact legal@mercurywork.shop</div>
-        <div id="takedown">Found a security issue? Contact security@mercurywork.shop</div>
-    </div>
-    <div class="modal-blur"></div>
-
-</body>
-
-
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta
+			name="description"
+			content="A small team of active developers typically focused around finding flaws in methods of ChromeOS user restriction"
+		/>
+		<link rel="stylesheet" href="/style/style.css" />
+		<title>Mercury Workshop</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?k" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png?k" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png?k" />
+		<link rel="manifest" href="/site.webmanifest?k" />
+		<link rel="mask-icon" href="/icons/safari-pinned-tab.svg?k" color="#483475" />
+		<link rel="shortcut icon" href="/favicon.ico?" />
+		<meta name="msapplication-TileColor" content="#483475" />
+		<meta name="theme-color" content="#070b34" />
+		<script src="/js/script.js" type="module"></script>
+	</head>
+	<body>
+		<canvas id="bg"></canvas>
+		<img src="/assets/percury.svg" />
+		<h1>Mercury Workshop</h1>
+		<p>A small team of active developers typically focused around finding flaws in methods of ChromeOS user restriction.</p>
+		<h2>Public Projects</h2>
+		<div class="projects">
+			<a href="https://sh1mmer.me" class="glassy">
+				<h3>SH1MMER</h3>
+				A recovery-based enrollment jailbreak targeting ChromeOS devices
+			</a>
+			<a href="https://github.com/MercuryWorkshop/fakemurk" class="glassy">
+				<h3>fakemurk</h3>
+				A set of scripts for spoofing verified on an enrolled Chromebook
+			</a>
+			<a href="https://github.com/MercuryWorkshop/Pollen" class="glassy">
+				<h3>Pollen</h3>
+				A simple and easy-to-use script for modifying ChromeOS user policies
+			</a>
+			<a href="https://github.com/MercuryWorkshop/lilac" class="glassy">
+				<h3>lilac</h3>
+				A not-so simple and not-as easy-to-use script for modifying ChromeOS device policies
+			</a>
+			<a href="https://github.com/MercuryWorkshop/mac-address-randomizer" class="glassy">
+				<h3>MAC Address Randomizer</h3>
+				A simple MAC address randomizer for ChromeOS
+			</a>
+			<a href="https://github.com/MercuryWorkshop" class="glassy">
+				<h3>anuraOS</h3>
+				(aka frogOS) a webOS that can run x86 applications via v86. in development and currently not public
+			</a>
+			<a href="https://github.com/MercuryWorkshop/RecoMod" class="glassy">
+				<h3>RecoMod</h3>
+				A ChromeOS recovery image modification toolkit
+			</a>
+			<a href="https://fog.gay" class="glassy">
+				<h3>E-Halcyon</h3>
+				Bypass for "the fog", based on RecoMod
+			</a>
+		</div>
+		<h2 id="members">Members</h2>
+		<div class="people">
+			<a class="glassy" href="#raff" id="raff">
+				<img src="https://dapi.psm.pm/users/247349845298249728/avatar" />
+				Rafflesia
+			</a>
+			<article>
+				<h2>Rafflesia</h2>
+				<p>
+					あたしの名前はRafflesia!!<br />この前 友達と MERCURY WORKSHOP CLUB というサークルを組むことにしたよ<br />アタシたちの
+					活躍を これから よろしくね!<br />アタシたちの 活躍を これから よろしくね<br />
+					<a href="https://youtu.be/jsaxhdvl8UE">https://youtu.be/jsaxhdvl8UE</a>
+				</p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@aliceindisarray</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#r58" id="r58">
+				<img src="https://dapi.psm.pm/users/803355425835188224/avatar" />
+				r58playz
+			</a>
+			<article>
+				<h2>r58playz</h2>
+				<p>A high school freshman with a passion for programming and security.</p>
+				<table>
+					<tr>
+						<th>site</th>
+						<td><a href="https://r58playz.dev">https://r58playz.dev</a></td>
+					</tr>
+					<tr>
+						<th>github</th>
+						<td><a href="https://github.com/r58playz">r58playz</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@r58playz</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#ce" id="ce">
+				<img src="https://dapi.psm.pm/users/696392247205298207/avatar" />
+				CoolElectronics
+			</a>
+			<article>
+				<h2>CoolElectronics</h2>
+				<p>
+					programmer who tries to occasionally make games, developed https://sh1mmer.me.<br />
+					oneshot, ultrakill and tally hall enthusiast, lover of percury merkshop
+				</p>
+				<table>
+					<tr>
+						<th>site</th>
+						<td><a href="https://coolelectronics.me">https://coolelectronics.me</a></td>
+					</tr>
+					<tr>
+						<th>github</th>
+						<td><a href="https://github.com/CoolElectronics">CoolElectronics</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@coolelectronics</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#ub" id="ub">
+				<img src="https://dapi.psm.pm/users/904487572301021265/avatar" />
+				Ultra Blue
+			</a>
+			<article>
+				<h2>Ultra Blue</h2>
+				<p>Mercury workshop member who unfortunately passed away on February 7th</p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>ULTRA BLUE#1850</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#kait" id="kait">
+				<img src="https://dapi.psm.pm/users/391271835901362198/avatar" />
+				kaitlin
+			</a>
+			<article>
+				<h2>kaitlin</h2>
+				<p>
+					professional shitposter<br />
+					goofnut<br />
+					transgener :3<br />
+					she/her
+				</p>
+				<table>
+					<tr>
+						<th>mastodon</th>
+						<td><a href="https://wetdry.world/@thememesniper">@thememesniper@wetdry.world</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@thememesniper</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#passi" id="passi">
+				<img src="https://dapi.psm.pm/users/904829646145720340/avatar" />
+				Bypassi
+			</a>
+			<article>
+				<h2>Bypassi</h2>
+				<p>
+					Proud skidphobic individual. Discovered LTBEEF, [swamp], point-blank, and some more silly Chromebook
+					exploits. I stopped taking life seriously a long time ago.
+				</p>
+				<table>
+					<tr>
+						<th>click</th>
+						<td>
+							<a href="javascript:alert('Me trying to resist the urge to do code execution for 0.0001 seconds')">
+								javascript:alert('Me trying to resist the urge to do code execution for 0.0001 seconds')
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<th>pyramid scheme simulator</th>
+						<td><a href="https://buymeacoffee.com/bypassi">https://buymeacoffee.com/bypassi</a></td>
+					</tr>
+					<tr>
+						<th>point blank reference</th>
+						<td><a href="about:blank">about:blank</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@bypassi</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#olyb" id="olyb">
+				<img src="https://dapi.psm.pm/users/476169716998733834/avatar" />
+				OlyB
+			</a>
+			<article>
+				<h2>OlyB</h2>
+				<p>hi</p>
+				<table>
+					<tr>
+						<th>github</th>
+						<td><a href="https://github.com/BinBashBanana">BinBashBanana</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@olyb</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#luph" id="luph">
+				<img src="https://dapi.psm.pm/users/325116477185196033/avatar" />
+				luphoria
+			</a>
+			<article>
+				<h2>luphoria</h2>
+				<p>
+					privacy maximalist. 16. trumpeter, vocalist, keyboard, piano, guitar. code, sqli, xss, priv escalation.
+					english/español pls.
+				</p>
+				<table>
+					<tr>
+						<th>site</th>
+						<td><a href="https://luphoria.com">https://luphoria.com</a></td>
+					</tr>
+					<tr>
+						<th>matrix</th>
+						<td><a href="https://matrix.to/#/@trent:gra.im">@trent:gra.im</a></td>
+					</tr>
+					<tr>
+						<th>email</th>
+						<td><a href="mailto:mw@luphoria.com">mw@luphoria.com</a></td>
+					</tr>
+					<tr>
+						<th>pgp</th>
+						<td><a href="https://luphoria.com/pgp.txt">https://luphoria.com/pgp.txt</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@luphoria</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#eoo" id="eoo">
+				<img src="https://dapi.psm.pm/users/725438522877804657/avatar?noanim" />
+				Quite A Fancy Emerald
+			</a>
+			<article>
+				<h2>Quite A Fancy Emerald</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@quiteafancyemerald</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#aub" id="aub">
+				<img src="https://dapi.psm.pm/users/327470218005708810/avatar?noanim" />
+				aub
+			</a>
+			<article>
+				<h2>aub</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@aub</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#ap" id="ap">
+				<img src="https://dapi.psm.pm/users/715087220360347678/avatar" />
+				Astral
+			</a>
+			<article>
+				<h2>Astral</h2>
+				<p>
+					Thing doer, VTuber, digital privacy advocate, computer fiddler and gigantic hecking nerd.<br />
+					When I'm not messing around with computers you'll find me playing arcade games, slinging around shiny
+					cardboard at Yu-Gi-Oh events and being hopelessly gay on the internet
+				</p>
+				<table>
+					<tr>
+						<th>github</th>
+						<td><a href="https://github.com/AstralPhnx">AstralPhnx</a></td>
+					</tr>
+					<tr>
+						<th>twitch</th>
+						<td><a href="https://www.twitch.tv/astral_phnx">astral_phnx</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@astralphnx</td>
+					</tr>
+				</table>
+			</article>
+			<!-- i'm guessing mark doesn't want me to leak his discord user id -->
+			<a class="glassy" href="#mark" id="mark">
+				<img src="/assets/pfps/Mark.webp" />
+				Mark
+			</a>
+			<article>
+				<h2>Mark</h2>
+				<p>Just another Furry doing cybersecurity.</p>
+				<table>
+					<tr>
+						<th>mastodon</th>
+						<td><a href="https://hackers.town/@mark">@mark@hackers.town</a></td>
+					</tr>
+					<tr>
+						<th>email</th>
+						<td><a href="mailto:mark@mercurywork.shop">mark@mercurywork.shop</a></td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#sj" id="sj">
+				<img src="https://dapi.psm.pm/users/1006048734708240434/avatar" />
+				Sharp_Jack
+			</a>
+			<article>
+				<h2>Sharp_Jack</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@sh4rp.tech</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#cvfd" id="cvfd">
+				<img src="https://dapi.psm.pm/users/406609409981284374/avatar" />
+				CVFD
+			</a>
+			<article>
+				<h2>CVFD</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>CVFD#6480</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#chrm" id="chrm">
+				<img src="https://dapi.psm.pm/users/998693757723611136/avatar" />
+				justinchrm
+			</a>
+			<article>
+				<h2>justinchrm</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>justinchrm#3399</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#ssd" id="ssd">
+				<img src="https://dapi.psm.pm/users/856786186117971979/avatar" />
+				ssd
+			</a>
+			<article>
+				<h2>ssd</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@avd3</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#dc" id="dc">
+				<img src="https://dapi.psm.pm/users/465682780320301077/avatar" />
+				Down Cat
+			</a>
+			<article>
+				<h2>Down Cat</h2>
+				<p>
+					Hey! I’m a student in secondary at the time of writing this. In my free time, I usually find myself reading
+					some fantasy series, coding, breaking my chromebook (def mine), or writing a fun D&D campaign for my
+					friends.
+				</p>
+				<table>
+					<tr>
+						<th>site</th>
+						<td><a href="https://unciaur.live">https://unciaur.live</a></td>
+					</tr>
+					<tr>
+						<th>github</th>
+						<td><a href="https://github.com/Unciaur">Unciaur</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@unciaur</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#ck" id="ck">
+				<img src="https://dapi.psm.pm/users/402603973959221248/avatar" />
+				Catakang
+			</a>
+			<article>
+				<h2>Catakang</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@catakang</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#jim" id="jim">
+				<img src="https://dapi.psm.pm/users/590672204107350037/avatar" />
+				JimDude
+			</a>
+			<article>
+				<h2>JimDude</h2>
+				<p>Your average idiot, loves to make money, and runs stupid servers</p>
+				<table>
+					<tr>
+						<th>github</th>
+						<td><a href="https://github.com/JimDude7404">JimDude7404</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@jimdude.</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#cb" id="cb">
+				<img src="https://dapi.psm.pm/users/897226891323387905/avatar" />
+				c-bass
+			</a>
+			<article>
+				<h2>c-bass</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@c.bass.</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#cc" id="cc">
+				<img src="https://dapi.psm.pm/users/417892585068036096/avatar?noanim" />
+				CyberClone
+			</a>
+			<article>
+				<h2>CyberClone</h2>
+				<p>
+					High school student with extensive mechanical and electrical engineering experience; ultimately, a love of
+					building new things from the ground up.<br />
+					Currently launching a nonprofit organization to promote engineering education in the Bay Area, check it out
+					if interested in getting involved
+				</p>
+				<table>
+					<tr>
+						<th>nonprofit</th>
+						<td><a href="https://engineeringexploration.org/">Encouraging Engineering</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@cyberclone</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#vk6" id="vk6">
+				<img src="https://dapi.psm.pm/users/530198926129627146/avatar" />
+				vk6
+			</a>
+			<article>
+				<h2>vk6</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>site</th>
+						<td><a href="https://ading.dev">https://ading.dev</a></td>
+					</tr>
+					<tr>
+						<th>github</th>
+						<td><a href="https://github.com/ading2210">ading2210</a></td>
+					</tr>
+					<tr>
+						<th>email</th>
+						<td><a href="mailto:allen@ading.dev">allen@ading.dev</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@vk6</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#sp" id="sp">
+				<img src="https://dapi.psm.pm/users/339943808584384512/avatar" />
+				spencerpogo
+			</a>
+			<article>
+				<h2>spencerpogo</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@spencerpogo</td>
+					</tr>
+				</table>
+			</article>
+			<a href="#_"></a>
+		</div>
+		<!-- LET'S GOOOOO -->
+		<h2>Licensed</h2>
+		<div class="people">
+			<!-- cool guy fr -->
+			<a class="glassy" href="#psm" id="psm">
+				<img src="https://dapi.psm.pm/users/559076649598058497/avatar" />
+				psm
+			</a>
+			<article>
+				<h2>psm</h2>
+				<p>&lt;p&gt;wait, what am i supposed to put here? just a description? ok one seco&mdash;&lt;/p&gt;</p>
+				<table>
+					<tr>
+						<th>site</th>
+						<td><a href="https://psm.pm">https://psm.pm</a><br />(currently nonexistant)</td>
+					</tr>
+					<tr>
+						<th>github</th>
+						<td><a href="https://github.com/thonkinator">thonkinator</a></td>
+					</tr>
+					<tr>
+						<th>ack coma</th>
+						<td><a href="https://akkoma.mercurywork.shop/psm">@psm@akkoma.mercurywork.shop</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td><a href="https://discord.psm.pm">@psm</a></td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#rift" id="rift">
+				<img src="https://dapi.psm.pm/users/578375908247863296/avatar" />
+				Riftriot
+			</a>
+			<article>
+				<h2>Riftriot</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@riftriot</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#kk" id="kk">
+				<img src="https://dapi.psm.pm/users/927240253272645662/avatar" />
+				Koaku
+			</a>
+			<article>
+				<h2>Koaku</h2>
+				<p>Mercury's frontend developer. I fix y'alls CSS.</p>
+				<table>
+					<tr>
+						<th>site</th>
+						<td><a href="https://madjikware.tech/">https://madjikware.tech/</a></td>
+					</tr>
+					<tr>
+						<th>github</th>
+						<td><a href="https://github.com/MadjikDotPng">MadjikDotPng</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@dvcu</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#rc" id="rc">
+				<img src="https://dapi.psm.pm/users/1094254057750802462/avatar" />
+				raincandy
+			</a>
+			<article>
+				<h2>raincandy</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>site</th>
+						<td><a href="https://scarat3k.me">https://scarat3k.me</a></td>
+					</tr>
+					<tr>
+						<th>github</th>
+						<td><a href="https://github.com/Scaratek">Scaratek</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@entrpix</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#cat" id="cat">
+				<img src="https://dapi.psm.pm/users/523927057722376204/avatar" />
+				Cat
+			</a>
+			<article>
+				<h2>Cat</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@cattn.</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#juliet" id="juliet">
+				<img src="https://dapi.psm.pm/users/768487977381789787/avatar" />
+				Juliet
+			</a>
+			<article>
+				<h2>Juliet</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>site</th>
+						<td><a href="https://juliet.mercurywork.shop">https://juliet.mercurywork.shop</a></td>
+					</tr>
+					<tr>
+						<th>discord</th>
+						<td>@averageemogirl</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#tg" id="tg">
+				<img src="https://dapi.psm.pm/users/915356811190730812/avatar" />
+				The_Gentleman
+			</a>
+			<article>
+				<h2>The_Gentleman</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@the_gentleman69</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#cohen" id="cohen">
+				<img src="https://dapi.psm.pm/users/533081943638671377/avatar" />
+				Cohen
+			</a>
+			<article>
+				<h2>Cohen</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@cohenerickson</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#sig" id="sig">
+				<img src="https://dapi.psm.pm/users/447840815352512552/avatar" />
+				siggaddj
+			</a>
+			<article>
+				<h2>siggaddj</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@siggaddj</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#he" id="he">
+				<img src="https://dapi.psm.pm/users/683141758703501365/avatar" />
+				He
+			</a>
+			<article>
+				<h2>He</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@chaseddraco</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#bagel" id="bagel">
+				<img src="https://dapi.psm.pm/users/662424921967951912/avatar" />
+				Bagel
+			</a>
+			<article>
+				<h2>Bagel</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@lordbagel42</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#mel" id="mel">
+				<img src="https://dapi.psm.pm/users/668635787755257887/avatar" />
+				Melitha
+			</a>
+			<article>
+				<h2>Melitha</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@melitha</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#ccr" id="ccr">
+				<img src="https://dapi.psm.pm/users/786361589400862771/avatar" />
+				colacraft
+			</a>
+			<article>
+				<h2>colacraft</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@alicelabs</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#wrr" id="wrr">
+				<img src="https://dapi.psm.pm/users/1101215020798443732/avatar" />
+				wearr
+			</a>
+			<article>
+				<h2>wearr</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@wearr.</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#ym" id="ym">
+				<img src="https://dapi.psm.pm/users/990280913978003476/avatar" />
+				ymkong
+			</a>
+			<article>
+				<h2>ymkong</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@ymkong</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#ec" id="ec">
+				<img src="https://dapi.psm.pm/users/275787354688585730/avatar" />
+				Endercass
+			</a>
+			<article>
+				<h2>Endercass</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@endercass</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#skid" id="skid">
+				<img src="https://dapi.psm.pm/users/589234871587569686/avatar" />
+				Skiddo
+			</a>
+			<article>
+				<h2>Skiddo</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@skidface</td>
+					</tr>
+				</table>
+			</article>
+			<a class="glassy" href="#vys" id="vys">
+				<img src="https://dapi.psm.pm/users/398304429788626946/avatar" />
+				vys
+			</a>
+			<article>
+				<h2>vys</h2>
+				<p></p>
+				<table>
+					<tr>
+						<th>discord</th>
+						<td>@vyslix</td>
+					</tr>
+				</table>
+			</article>
+			<a href="#_"></a>
+		</div>
+		<footer class="glassy">
+			<img src="/assets/percury.svg" /> Mercury Workshop
+			<div>
+				<p>Legal requests? Contact <a href="mailto:legal@mercurywork.shop">legal@mercurywork.shop</a></p>
+				<p>Found a security issue? Contact <a href="mailto:security@mercurywork.shop">security@mercurywork.shop</a></p>
+			</div>
+		</footer>
+	</body>
 </html>

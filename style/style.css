@@ -1,471 +1,232 @@
 @font-face {
-    font-family: space-grotesk;
-    src: url(SpaceGrotesk-Medium.ttf);
-    font-display: swap;
-}
-
-/*this is the good stuff https://www.schemecolor.com/night-sky-color-palette.php*/
-html {
-    scroll-behavior: smooth;
-    height: auto;
-    background: linear-gradient(190deg, rgba(7, 11, 52, 1) 0%, rgba(20, 24, 82, 1) 35%, rgba(43, 47, 119, 1) 61%, rgba(72, 52, 117, 1) 73%, rgba(107, 73, 132, 1) 87%, rgba(133, 89, 136, 1) 100%);
+	font-family: space-grotesk;
+	src: url(SpaceGrotesk-Medium.ttf);
+	font-display: swap;
 }
 
 * {
-    transition: 0.4s;
+	line-height: calc(4px + 2ex);
+	box-sizing: border-box;
 }
 
+:root {
+	scroll-behavior: smooth;
+	background-image: linear-gradient(
+		#070b34 0%,
+		#141852 35%,
+		#2b2f77 61%,
+		#473475 73%,
+		#6b4984 87%,
+		#855988 calc(100% - 4.5rem),
+		#141852 calc(100% - 1.5rem),
+		#070b34
+	);
+	background-color: #070b34;
+	color: white;
+	font-family: space-grotesk;
+	font-size: calc(15px + 0.390625vw * 1.75);
+	text-align: center;
+	padding-top: 3rem;
+}
 body {
-    width: 99vw;
-    overflow-x: hidden;
-    display: inline-flex;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-p,h1 {
-    text-align: center;
-    font-family: space-grotesk;
-    color: white;
-    font-size: calc(1vh + 1vw);
-    text-decoration: initial;
-}
-a{
-    text-decoration:none;
-    max-height: 10vh;
+body > img {
+	box-shadow: 0 0 55px 15px #fff7;
+	background-color: #fff4;
+	border-radius: 12.5px;
 }
 
 h1 {
-    z-index: 3;
+	font-size: 1.5rem;
+}
+h2 {
+	font-size: 1.25rem;
+	margin-top: 1rem;
+}
+h3 {
+	font-size: 1rem;
+	margin: 0;
+	margin-bottom: 0.5rem;
 }
 
-li {
-    text-align: left;
-    font-family: space-grotesk;
-    color: white;
-    font-size: calc(1vh + 1vw);
-    ;
-    align-self: flex-start;
+body > p {
+	display: block;
+	max-width: 20rem;
 }
 
-.button {
-    transition: 0.5s;
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-    padding: calc(0.5vh + 0.5vw);
-    font-family: space-grotesk;
-    color: white;
-    background-color: rgb(72, 35, 152);
-    border: 1px solid rgba(255, 255, 255, 0.50);
-    margin: 1%;
+.projects {
+	display: grid;
+	grid-auto-rows: 1fr;
+	max-width: 100%;
+	grid-template-columns: 100%;
 }
 
-.button:hover {
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-    padding: calc(0.5vh + 0.5vw);
-    font-family: space-grotesk;
-    color: rgb(140, 171, 229);
-    background-color: rgb(59, 27, 128);
-    border: 1px solid rgba(255, 255, 255, 0.50);
-    margin: 1%;
-    cursor: pointer;
+a {
+	color: white;
+	text-underline-offset: 0.1em;
+	overflow-wrap: anywhere;
+	outline: none;
+}
+.projects a {
+	width: 32rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+	padding: 1rem !important; /* fuck css specificity bro :sob: */
+	max-width: 100%;
 }
 
-.button:active {
-    transition: 0.1s;
-    border-radius: 10px;
-    width: auto;
-    height: auto;
-    padding: calc(0.5vh + 0.5vw);
-    font-family: space-grotesk;
-    color: rgb(140, 171, 229);
-    background-color: rgb(32, 13, 72);
-    border: 1px solid rgba(255, 255, 255, 0.50);
-    margin: 1%;
-    cursor: pointer;
+.glassy {
+	background-color: #fff3;
+	/*
+	removed for now bc it's really freaking laggy
+	backdrop-filter: blur(10px);
+	*/
+	border-radius: 16px;
+	border: thin solid #fff3;
+	padding: 0.5rem;
+	user-select: none;
+}
+a.glassy {
+	transition: background-color 0.25s ease;
+	text-decoration: none;
+}
+a.glassy:hover {
+	background-color: #fff2;
 }
 
-
-.member{
-    display: block;
-    justify-content: left;
-    /* break-inside: avoid-column; */
-    /* page-break-inside: avoid; */
-    cursor: pointer;
-    min-width: 15vw;
+.people {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+	gap: 1rem;
+	width: 100%;
+	max-width: 56rem;
+}
+.people a.glassy {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0 0.75rem;
+	height: 3.5rem;
+	text-align: left;
+	scroll-margin-top: 40vh;
+}
+.people a.glassy img {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
 }
 
-.membergrid{
-    width: 100%;
-    display: grid;
-    grid-gap:calc(0.5vh + 0.5vw);;
-    grid-auto-rows: min-content;
-    grid-template-columns: repeat(4,25fr);
-    justify-content: center;
+.people article {
+	background-color: #5b5466;
+	z-index: 1;
+	position: fixed;
+	top: 50%;
+	top: 50lvh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease, visibility 0s 0.3s;
+	padding: 1.5rem 0.75rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 16px;
+	width: 32rem;
+	max-width: 100%;
+}
+.people h2 {
+	margin-top: 0;
+}
+.people p {
+	max-width: 24rem;
+	margin: 0;
+}
+.people a:target + article,
+.people a:target ~ a[href="#_"] {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+a[href="#_"] {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	height: 100lvh;
+	background-color: #0005;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease, visibility 0s 0.3s;
+	cursor: default;
+	backdrop-filter: blur(4px);
+}
+body:has(.people a:target) {
+	overflow: hidden;
 }
 
-/* btw the shit doesn't work if you put this below the media queries */
-.membername>p{
-    font-size: calc(0.85vh + 0.85vw);
+th,
+td {
+	border: 3px solid #7c7685;
+	padding: 0.5rem;
+	width: min-content;
+}
+table {
+	border-collapse: collapse;
+	margin-top: 1.5rem;
 }
 
-@media only screen and (max-aspect-ratio: 99/100) {
-    .membergrid {
-    grid-template-columns: repeat(3,33fr);
-
-    }
-
-    /* .membername>p {
-        font-size: calc(0.75rem + 0.75vw);
-    } */
-  }
-  @media only screen and (max-aspect-ratio: 80/100) {
-    .membergrid {
-    grid-template-columns: repeat(2,33fr);
-
-    }
-
-    .membername>p {
-        font-size: calc(1vh + 1.15vw);
-
-    }
-  }
-.membername{
-    align-self:flex-start;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+footer {
+	display: flex;
+	width: 60rem;
+	margin: 1rem;
+	margin-top: 1.5rem;
+	align-items: center;
+	gap: 0.5rem;
+	max-width: 100%;
+	flex-wrap: wrap;
+}
+footer img {
+	height: 2.25rem;
+}
+footer div {
+	margin-right: 0.5rem;
+	margin-left: auto;
+}
+footer p {
+	margin: 0;
+	text-align: right;
+}
+@media (max-width: 1000px) {
+	footer {
+		flex-direction: column;
+	}
+	footer div {
+		margin: 0;
+	}
+	footer p {
+		text-align: center;
+	}
 }
 
-.pfp{
-    border-radius: 50%;
-        margin: calc(0.5vh + 0.5vw);;
-        max-width: 40px;
-        max-height: 40px;
+#bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	height: 100lvh;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity 1s ease;
 }
-
-#projects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#bg.show {
+	opacity: 1;
 }
-.spacer{
-    margin: 2em;
-}
-.project{
-    width: 100%;
-    backdrop-filter: blur(10px);
-}
-
-#stars {
-    top: 0px;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    display: block;
-    position: absolute;
-    /*Ember314 and Coolelectronics Mercury Workshop*/
-    filter: blur(1.5px);
-}
-
-#grid {
-    z-index: 2;
-    position: static;
-    display: inline-flex;
-    width: 85%;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-
-.box {
-    transition: background 0.25s;
-    position: static;
-    max-width: 50em;
-    z-index: 3;
-    background: rgba(255, 255, 255, 0.2);
-    pointer-events: all;
-    border-radius: 15px;
-    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    margin: 2%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
-    padding: 3%;
-}
-
-.box:hover {
-    position: static;
-    max-width: 50em;
-    z-index: 3;
-    background: rgba(255, 255, 255, 0.1);
-    pointer-events: all;
-    border-radius: 15px;
-    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    margin: 2%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
-    padding: 3%;
-}
-
-.hiddenbox {
-    max-width: 50em;
-
-}
-
-.modal-pfp{
-        max-width: 80px;
-        max-height: 80px;
-}
-
-.modal p{
-    font-size: calc(0.8vh + 0.8vw);
-}
-.modal td,th {
-    text-align: center;
-    font-family: space-grotesk;
-    color: white;
-    font-size: calc(0.9vh + 0.9vw);
-    padding: 0.7em;
-    border: 3px solid rgba(255, 255, 255, 0.2);
-    text-align: left;
-}
-.modal a{
-    color: rgba(255, 255, 255, 0.6);
-}
-.modal table{
-    border-collapse: collapse;
-}
-.modalmembername{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-inner{
-    position: fixed;
-    width: 50vw;
-    height:fit-content;
-
-    transition: background 0.25s;
-    z-index: 3;
-    background: #5b5466;
-    pointer-events: all;
-    border-radius: 15px;
-    -moz-box-shadow: 0 0 100px 6vw rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0 0 100px 6vw rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 100px 6vw rgba(0, 0, 0, 0.3);
-
-    /* border: 3px solid rgba(255, 255, 255, 0.2); */
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0px;
-    padding: 3%;
-}
-.modal-inner-dumbass-fucking-padding-hack{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-}
-@media only screen and (max-aspect-ratio: 3/4) {
-    .modal-inner {
-        position: fixed;
-        width: 100%;
-        height: fit-content;
-        padding: 0;
-        margin: 0;
-        left: 0;
-        /* right: 0; */
-        bottom: 0;
-        border-radius:0;
-        border-top-left-radius:15px;
-        border-top-right-radius:15px;
-    }
-    .modal-inner-dumbass-fucking-padding-hack{
-        /* for some reason padding breaks 100% and there's no way to compensate unless you either use ugly calc shit or make a wrapper */
-        padding:6vw;
-    }
-    .modal p{
-        font-size: calc(1.2vh + 1.2vw);
-        max-width: 80%;
-    }
-    .modal h1{
-        font-size: calc(2vh + 2vw);
-    }
-
-    /* .modalmembername{
-        justify-content: space-between;
-    } */
-    .modal-pfp{
-        margin: 15px;
-        max-width: 60px;
-        max-height: 60px;
-}
-    .modal td,th {
-        max-width: 80%;
-        font-size: calc(1.2vh + 1.2vw);
-
-    }
-
-  }
-
-.modal{
-    margin-left: auto;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 100;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    pointer-events: none;
-    z-index: 3;
-}
-.modal-effect{
-    background-color: rgb(1, 1, 10);
-    opacity: 60%;
-    pointer-events: all;
-}
-.modal-blur{
-    filter: blur(2.5px);
-}
-
-.opacityzero{
-    opacity: 0;
-}
-
-body.modal-open {
-    overflow: hidden;
-}
-
-#header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin-top: 5%;
-}
-#header >img{
-    width:127px;
-    height:127px;
-}
-
-#logo {
-    height: calc(5vh + 5vw);
-    background-color: rgba(255, 255, 255, 0.25);
-    -moz-box-shadow: 0 0 35px 15px rgba(255, 255, 255, 0.4);
-    -webkit-box-shadow: 0 0 35px 15px rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 55px 15px rgba(255, 255, 255, 0.4);
-    z-index: 3;
-}
-
-#footerLogo {
-    height: calc(2vh + 2vw);
-    align-self: center;
-    justify-self: flex-start;
-    order: 1;
-    margin: 1vw;
-}
-
-#brand {
-    text-align: center;
-    font-family: space-grotesk;
-    color: white;
-    font-size: calc(1vh + 1vw);
-    align-self: center;
-    justify-self: flex-start;
-    order: 2;
-    white-space: nowrap;
-}
-
-.footerSpace {
-    display: flex;
-}
-
-#takedown {
-    font-family: space-grotesk;
-    color: white;
-    font-size: calc(0.75vh + 0.75vw);
-    align-self: center;
-    margin-right: 5em;
-    order: 3;
-    white-space: nowrap;
-}
-
-#hide {
-    margin-left: auto;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: all;
-    overflow: hidden;
-    z-index: 100;
-    background-color: rgb(15, 15, 50);
-}
-
-.footer {
-    position: static;
-    width: 90%;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.2);
-    pointer-events: all;
-    border-radius: 15px;
-    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.2);
-    margin: 2%;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-@media only screen and (max-aspect-ratio: 3/4) {
-    .footer {
-        flex-direction: column;
-        /* justify-content: center !important; */
-        align-items: center;
-        text-align: center;
-
-    }
-    #takedown{
-        /* display: flex;
-        align-items: center;
-        justify-content: center;*/
-        margin-right: 0;
-        margin-bottom: 1em;
-        text-align: center;
-    }
-
-  }
