@@ -1,4 +1,4 @@
-import * as PIXI from "https://esm.sh/pixi.js@7.2.4";
+import * as PIXI from "https://esm.sh/pixi.js@7.2.4?bundle";
 
 // me when i nitpick
 window.addEventListener("hashchange", (e) => {
@@ -17,7 +17,7 @@ const app = new PIXI.Application({
 });
 app.stage.filters = [new PIXI.BlurFilter(2, undefined, window.devicePixelRatio)];
 
-const starSize = 8;
+const starSize = 6;
 const starNum = Math.sqrt(Math.pow(app.screen.height, 2) + Math.pow(app.screen.height, 2)) / 32;
 
 const starTexture = app.renderer.generateTexture(new PIXI.Graphics().beginFill(0xffffff).drawCircle(0, 0, starSize).endFill());
@@ -44,7 +44,8 @@ function mod(n, m) {
 let smoothY = document.documentElement.scrollTop;
 app.ticker.add(() => {
 	smoothY += 0.15 * (document.documentElement.scrollTop - smoothY);
-	app.stage.alpha = 0.7 - (document.documentElement.scrollTop / document.body.scrollHeight) * 1.2;
+	const scrollFrac = document.documentElement.scrollTop / document.body.scrollHeight;
+	app.stage.alpha = 0.7 - scrollFrac * 1.2;
 	stars.forEach((star) => {
 		star.sprite.x = star.x * app.screen.width;
 		star.sprite.y = mod(
