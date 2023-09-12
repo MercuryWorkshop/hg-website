@@ -252,7 +252,7 @@ const projects = [
     },
     {
         name: "anuraOS",
-        desc: "(frogOS) a webOS with x86 applications from a vm, currently not public and in development",
+        desc: "(frogOS) a webOS with x86 applications from a vm, currently in development",
         link: "https://github.com/MercuryWorkshop/anuraOS",
     },
     {
