@@ -27,6 +27,11 @@
 	font-size: calc(15px + 0.390625vw * 1.75);
 	text-align: center;
 	padding-top: 3rem;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+:root::-webkit-scrollbar {
+	display: none;
 }
 body {
 	display: flex;
@@ -181,6 +186,7 @@ td {
 table {
 	border-collapse: collapse;
 	margin-top: 1.5rem;
+	width: 100%;
 }
 
 footer {
@@ -199,6 +205,9 @@ footer img {
 footer div {
 	margin-right: 0.5rem;
 	margin-left: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
 }
 footer p {
 	margin: 0;
