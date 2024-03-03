@@ -17,7 +17,7 @@ window.addEventListener("keyup", ({ code }) => {
 		const clocks = document.createElement("video");
 		const source = document.createElement("source");
 		source.src = "/assets/clocks.mp4";
-		source.type = "video/webm";
+		source.type = "video/mp4";
 		clocks.append(source);
 		clocks.autoplay = true;
 		clocks.id = "clocks";
