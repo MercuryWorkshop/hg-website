@@ -8,6 +8,31 @@ window.addEventListener("hashchange", (e) => {
 	}
 });
 
+let keys = [];
+const code = [];
+window.addEventListener("keyup", ({ code }) => {
+	keys.push(code);
+	keys = keys.slice(-11);
+	if (keys.join("") == "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightKeyBKeyAEnter") {
+		const clocks = document.createElement("video");
+		const source = document.createElement("source");
+		source.src = "/assets/clocks.mp4";
+		source.type = "video/webm";
+		clocks.append(source);
+		clocks.autoplay = true;
+		clocks.id = "clocks";
+		//clocks.playbackRate = 5;
+		clocks.classList.add("glassy");
+		document.body.append(clocks);
+		clocks.addEventListener("ended", () => {
+			clocks.classList.add("out");
+			setTimeout(() => {
+				clocks.remove();
+			}, 100);
+		});
+	}
+});
+
 const canvas = document.getElementById("bg");
 const app = new PIXI.Application({
 	view: canvas,
@@ -48,9 +73,6 @@ app.ticker.add(() => {
 	app.stage.alpha = 0.7 - scrollFrac * 1.2;
 	stars.forEach((star) => {
 		star.sprite.x = star.x * app.screen.width;
-		star.sprite.y = mod(
-			star.y * app.screen.height - smoothY * 2.77 * star.sprite.scale.y,
-			app.screen.height + starSize * window.devicePixelRatio
-		);
+		star.sprite.y = mod(star.y * app.screen.height - smoothY * 2.77 * star.sprite.scale.y, app.screen.height + starSize * window.devicePixelRatio);
 	});
 });

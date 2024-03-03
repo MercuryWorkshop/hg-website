@@ -11,16 +11,7 @@
 
 :root {
 	scroll-behavior: smooth;
-	background-image: linear-gradient(
-		#070b34 0%,
-		#141852 35%,
-		#2b2f77 61%,
-		#473475 73%,
-		#6b4984 87%,
-		#855988 calc(100% - 0rem),
-		#141852 calc(100% - 1.5rem),
-		#070b34
-	);
+	background-image: linear-gradient(#070b34 0%, #141852 35%, #2b2f77 61%, #473475 73%, #6b4984 87%, #855988 calc(100% - 0rem), #141852 calc(100% - 1.5rem), #070b34);
 	background-color: #070b34;
 	color: white;
 	font-family: space-grotesk;
@@ -238,4 +229,35 @@ footer p {
 }
 #bg.show {
 	opacity: 1;
+}
+
+#clocks {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transform-origin: center;
+	animation: 0.6s ease-out in;
+	padding: 1px;
+}
+#clocks.out {
+	animation: 0.1s ease-in out;
+}
+
+@keyframes in {
+	0% {
+		transform: translate(-50%, -50%) rotate(-1.5turn) scale(0);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0turn) scale(1);
+	}
+}
+
+@keyframes out {
+	0% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(0);
+	}
 }
