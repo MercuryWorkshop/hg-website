@@ -10,25 +10,15 @@ window.addEventListener("hashchange", (e) => {
 
 let keys = [];
 const code = [];
+const clocks = document.getElementById("clocks");
 window.addEventListener("keyup", ({ code }) => {
 	keys.push(code);
 	keys = keys.slice(-11);
 	if (keys.join("") == "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightKeyBKeyAEnter") {
-		const clocks = document.createElement("video");
-		const source = document.createElement("source");
-		source.src = "/assets/clocks.mp4";
-		source.type = "video/mp4";
-		clocks.append(source);
-		clocks.autoplay = true;
-		clocks.id = "clocks";
-		//clocks.playbackRate = 5;
-		clocks.classList.add("glassy");
-		document.body.append(clocks);
+		clocks.classList.add("playing");
+		clocks.play();
 		clocks.addEventListener("ended", () => {
-			clocks.classList.add("out");
-			setTimeout(() => {
-				clocks.remove();
-			}, 100);
+			clocks.classList.remove("playing");
 		});
 	}
 });
