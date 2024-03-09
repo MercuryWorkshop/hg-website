@@ -1,4 +1,4 @@
-import * as PIXI from "https://esm.sh/pixi.js@7.2.4?bundle";
+import * as PIXI from "https://esm.sh/pixi.js@7.2.4?bundle-deps";
 
 // me when i nitpick
 window.addEventListener("hashchange", (e) => {
