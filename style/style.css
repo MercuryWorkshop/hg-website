@@ -14,7 +14,7 @@
 	background-image: linear-gradient(#070b34 0%, #141852 35%, #2b2f77 61%, #473475 73%, #6b4984 87%, #855988 calc(100% - 0rem), #141852 calc(100% - 1.5rem), #070b34);
 	background-color: #070b34;
 	color: white;
-	font-family: space-grotesk;
+	font-family: space-grotesk, monospace, system-ui, sans-serif;
 	font-size: calc(15px + 0.390625vw * 1.75);
 	text-align: center;
 	padding-top: 3rem;
