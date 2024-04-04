@@ -1,3 +1,4 @@
+// REMEMBER TO UPDATE min.js BEFORE COMMITTING! THIS FILE IS NOT LOADED IN PRODUCTION!
 import * as PIXI from "https://esm.sh/pixi.js@7.2.4?bundle-deps";
 
 // me when i nitpick
