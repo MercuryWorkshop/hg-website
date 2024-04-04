@@ -192,9 +192,6 @@ footer {
 	max-width: 100%;
 	flex-wrap: wrap;
 }
-footer img {
-	height: 2.25rem;
-}
 footer div {
 	margin-right: 0.5rem;
 	margin-left: auto;
@@ -246,9 +243,4 @@ footer p {
 #clocks.playing {
 	transform: translate(-50%, -50%) rotate(0turn) scale(1);
 	visibility: visible;
-}
-
-svg {
-	height: 0.5em;
-	color: #fff4;
 }
