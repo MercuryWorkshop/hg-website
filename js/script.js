@@ -9,20 +9,37 @@ window.addEventListener("hashchange", (e) => {
 	}
 });
 
-let keys = [];
-const code = [];
+const pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', "Enter"];
+let current = 0;
 const clocks = document.getElementById("clocks");
-window.addEventListener("keyup", ({ code }) => {
-	keys.push(code);
-	keys = keys.slice(-11);
-	if (keys.join("") == "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightKeyBKeyAEnter") {
-		clocks.classList.add("playing");
-		clocks.play();
-		clocks.addEventListener("ended", () => {
-			clocks.classList.remove("playing");
-		});
-	}
-});
+
+function endVid() {
+	clocks.pause();
+	clocks.classList.remove("playing");
+	clocks.classList.add("ending");
+	setTimeout(() => {
+		clocks.classList.remove("ending");
+	}, 500);
+}
+
+window.end = endVid;
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === pattern[current]) {
+    current++;
+    if (current === pattern.length) {
+			clocks.classList.add("playing");
+			clocks.play();
+			clocks.addEventListener("ended", () => {
+				// clocks.classList.remove("playing");
+				endVid();
+			});
+      current = 0;
+    }
+  } else {
+    current = 0;
+  }
+})
 
 const canvas = document.getElementById("bg");
 const app = new PIXI.Application({
