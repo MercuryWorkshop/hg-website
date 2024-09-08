@@ -13,17 +13,6 @@ const pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'A
 let current = 0;
 const clocks = document.getElementById("clocks");
 
-function endVid() {
-	clocks.pause();
-	clocks.classList.remove("playing");
-	clocks.classList.add("ending");
-	setTimeout(() => {
-		clocks.classList.remove("ending");
-	}, 500);
-}
-
-window.end = endVid;
-
 document.addEventListener('keydown', (e) => {
   if (e.key === pattern[current]) {
     current++;
@@ -32,7 +21,12 @@ document.addEventListener('keydown', (e) => {
 			clocks.play();
 			clocks.addEventListener("ended", () => {
 				// clocks.classList.remove("playing");
-				endVid();
+				clocks.pause();
+				clocks.classList.remove("playing");
+				clocks.classList.add("ending");
+				setTimeout(() => {
+					clocks.classList.remove("ending");
+				}, 500);
 			});
       current = 0;
     }
