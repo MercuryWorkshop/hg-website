@@ -1,3 +1,3 @@
 # HG Website
 
-htttps://mercurywork.shop
+https://mercurywork.shop
