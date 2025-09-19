@@ -43,9 +43,9 @@ App.style = css`
 	:scope {
 		margin: 0;
 		/* was meaning to explore this beautiful world-style per-page lighting further.
-		 basically, the homepage is blue, and project/member subpages are pink (300, 30%) - fish*/
-		--page-hs: 215, 20%;
-		// --page-hs: 300, 30%;
+		 basically, the homepage is pink, and project/member subpages are blue (300, 30%) - fish*/
+		// --page-hs: 215, 20%;
+		--page-hs: 300, 30%;
 	}
 
 	#projects {

@@ -46,16 +46,17 @@ Header.style = css`
         height: 4.25rem;
     }
 
-    .logo:hover img {
+    .logo img:hover,
+    .logo:has(h1:hover) img {
         filter: drop-shadow(0 0 0.25rem rgba(255, 255, 255, 0.5));
     }
 
-    .logo:hover span {
+    .logo h1:hover span {
         color: var(--accent);
         text-shadow: 0 0 0.5rem hsla(var(--accent-raw), 0.75);
     }
 
-    .logo:hover span.thin {
+    .logo h1:hover span.thin {
         color: var(--accent2);
         text-shadow: 0 0 0.5rem hsla(var(--accent2-raw), 0.75);
     }
