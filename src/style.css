@@ -97,6 +97,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+  background: hsla(var(--accent2-raw), 0.3);
+  color: var(--accent);
+}
+
 h1,
 h2,
 h3 {
@@ -142,6 +147,15 @@ a:visited {
               0 0 0.5rem rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: 1rem;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -0.125rem;
+}
+
+.card:nth-of-type(even) {
+  outline-color: var(--accent2);
 }
 
 .card.interactable {
