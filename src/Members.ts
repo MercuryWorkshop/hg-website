@@ -79,7 +79,7 @@ export const members: Member[] = [
     },
     {
         name: "luphoria",
-        bio: "privacy maximalist. 17. trumpeter, vocalist, keyboard, piano, guitar. code, sqli, xss, priv escalation. english/español pls.",
+        bio: "TRENT  BREAD\n18   UWM   '28\nMUSIC    SOFTWARE",
         avatarName: "luph.webp",
         profileLinks: [
             { title: "site", content: "https://luphoria.com", url: "https://luphoria.com" },

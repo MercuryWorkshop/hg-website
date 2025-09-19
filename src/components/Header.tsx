@@ -51,13 +51,13 @@ Header.style = css`
     }
 
     .logo:hover span {
-        color: var(--accent2);
-        text-shadow: 0 0 0.5rem hsla(var(--accent2-raw), 0.75);
+        color: var(--accent);
+        text-shadow: 0 0 0.5rem hsla(var(--accent-raw), 0.75);
     }
 
     .logo:hover span.thin {
-        color: var(--accent);
-        text-shadow: 0 0 0.5rem hsla(var(--accent-raw), 0.75);
+        color: var(--accent2);
+        text-shadow: 0 0 0.5rem hsla(var(--accent2-raw), 0.75);
     }
 
     .thin {
