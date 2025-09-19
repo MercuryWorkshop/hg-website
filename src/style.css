@@ -1,9 +1,9 @@
 @font-face {
 	font-family: space-grotesk;
-	src: url("/fonts/SpaceGrotesk-Medium.woff2") format("woff2"), url("/fonts/SpaceGrotesk-Medium.woff") format("woff"), url("/fonts/SpaceGrotesk-Medium.ttf") format("truetype"), local("Space Grotesk");
+	src: url("/fonts/SpaceGrotesk.woff2") format("woff2"), url("/fonts/SpaceGrotesk.woff") format("woff"), url("/fonts/SpaceGrotesk.ttf") format("truetype"), local("Space Grotesk");
 	font-display: swap;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: 300 700;
 }
 
 @font-face {
