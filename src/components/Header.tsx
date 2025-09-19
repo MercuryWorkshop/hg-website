@@ -2,7 +2,7 @@ import { Component, css } from "dreamland/core";
 
 const Header: Component<{}, {}> = function () {
     return (
-        <header>
+        <header class="card">
             <div class="logo">
                 <img src="/assets/percury.svg" alt="Mercury Workshop Logo" width="50" height="50" />
                 <a href="https://github.com/MercuryWorkshop" target="_blank" rel="noopener noreferrer">
