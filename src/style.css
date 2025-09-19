@@ -1,6 +1,6 @@
 @font-face {
 	font-family: space-grotesk;
-	src: url("/fonts/SpaceGrotesk.woff2") format("woff2"), url("/fonts/SpaceGrotesk.woff") format("woff"), url("/fonts/SpaceGrotesk.ttf") format("truetype"), local("Space Grotesk");
+	src: url("/fonts/body/SpaceGrotesk.woff2") format("woff2"), url("/fonts/body/SpaceGrotesk.woff") format("woff"), url("/fonts/body/SpaceGrotesk.ttf") format("truetype"), local("Space Grotesk");
 	font-display: swap;
 	font-style: normal;
 	font-weight: 300 700;
@@ -8,23 +8,88 @@
 
 @font-face {
   font-family: rajdhani;
-  src: url("/fonts/Rajdhani-Bold.woff2") format("woff2"), url("/fonts/Rajdhani-Bold.woff") format("woff"), url("/fonts/Rajdhani-Bold.ttf") format("truetype"), local("Rajdhani");
+  src: url("/fonts/display/Rajdhani-Light.woff2") format("woff2"), url("/fonts/display/Rajdhani-Light.woff") format("woff"), url("/fonts/display/Rajdhani-Light.ttf") format("truetype"), local("Rajdhani");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: rajdhani;
+  src: url("/fonts/display/Rajdhani-Regular.woff2") format("woff2"), url("/fonts/display/Rajdhani-Regular.woff") format("woff"), url("/fonts/display/Rajdhani-Regular.ttf") format("truetype"), local("Rajdhani");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: rajdhani;
+  src: url("/fonts/display/Rajdhani-Medium.woff2") format("woff2"), url("/fonts/display/Rajdhani-Medium.woff") format("woff"), url("/fonts/display/Rajdhani-Medium.ttf") format("truetype"), local("Rajdhani");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: rajdhani;
+  src: url("/fonts/display/Rajdhani-SemiBold.woff2") format("woff2"), url("/fonts/display/Rajdhani-SemiBold.woff") format("woff"), url("/fonts/display/Rajdhani-SemiBold.ttf") format("truetype"), local("Rajdhani");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: rajdhani;
+  src: url("/fonts/display/Rajdhani-Bold.woff2") format("woff2"), url("/fonts/display/Rajdhani-Bold.woff") format("woff"), url("/fonts/display/Rajdhani-Bold.ttf") format("truetype"), local("Rajdhani");
   font-display: swap;
   font-style: normal;
   font-weight: 700;
+}
+
+* {
+  line-height: calc(4px + 2ex);
+  box-sizing: border-box;
 }
 
 :root {
   --font-body: space-grotesk, system-ui, sans-serif;
   --font-display: rajdhani, var(--font-body);
 
+  --bg-hs: 240, 70%;
+  --fg-hs: 300, 100%;
+  --bg2-hs: 240, 14%;
+  --fg2-hs: 300, 20%;
+  --accent-hs: 200, 90%;
+  --accent2-hs: 300, 100%;
+  
+  --bg-raw: var(--bg-hs), 3%;
+  --fg-raw: var(--fg-hs), 98%;
+  --bg2-raw: var(--bg2-hs), 8%;
+  --fg2-raw: var(--fg2-hs), 80%;
+  --accent-raw: var(--accent-hs), 80%;
+  --accent2-raw: var(--accent2-hs), 85%;
+
+  --bg: hsl(var(--bg-raw));
+  --fg: hsl(var(--fg-raw));
+  --bg2: hsl(var(--bg2-raw));
+  --fg2: hsl(var(--fg2-raw));
+  --accent: hsl(var(--accent-raw));
+  --accent2: hsl(var(--accent2-raw));
+
+  /* --bg: hsl(200, 70%, 3%);
+  --fg: hsl(300, 100%, 98%);
+  --bg2: hsl(200, 14%, 8%);
+  --fg2: hsl(300, 20%, 80%);
+  --accent: hsl(200, 90%, 80%);
+  --accent2: hsl(300, 100%, 85%); */
+
   font-family: var(--font-body);
   line-height: 1.5;
   font-weight: 500;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--fg);
+  background-color: var(--bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -37,5 +102,36 @@ h2,
 h3 {
   font-family: var(--font-display);
   font-weight: 700;
-  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-block-start: .75em;
+  margin-block-end: .5em;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-block-start: .75em;
+  margin-block-end: .25em;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-block-start: .5em;
+  margin-block-end: .25em;
+}
+
+p {
+  margin-block: .25em;
+}
+
+a {
+  color: var(--accent);
+  /* text-decoration: none; */
+  transition: color 0.3s ease;
+}
+
+a:visited {
+  color: var(--accent2);
 }
