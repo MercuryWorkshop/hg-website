@@ -15,7 +15,7 @@ const App: Component<
 	this.counter = 0;
 	return (
 		<div>
-			<p>percury work0p</p>
+			<h1>percury work0p</h1>
 			<p>huge todo. will work on this when i have time - fish</p>
 			<button on:click={() => this.counter++}>Click me!</button>
 			<p>{use(this.counter)}</p>

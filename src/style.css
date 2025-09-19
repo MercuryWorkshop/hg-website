@@ -6,10 +6,21 @@
 	font-weight: 500;
 }
 
+@font-face {
+  font-family: rajdhani;
+  src: url("/fonts/Rajdhani-Bold.woff2") format("woff2"), url("/fonts/Rajdhani-Bold.woff") format("woff"), url("/fonts/Rajdhani-Bold.ttf") format("truetype"), local("Rajdhani");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
 :root {
-  font-family: space-grotesk, system-ui, sans-serif;
+  --font-body: space-grotesk, system-ui, sans-serif;
+  --font-display: rajdhani, var(--font-body);
+
+  font-family: var(--font-body);
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -19,4 +30,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin: 0;
 }
