@@ -3,7 +3,7 @@ import { Project } from "../types/Project";
 
 const ProjectCard: Component<{ project: Project }, {}> = function () {
     return (
-        <a class="project-card card interactable" href={this.project.url ?? this.project.repo} target="_blank" rel="noopener noreferrer">
+        <a class="project-card card interactable" href={`project/${this.project.name}`} target="_self">
             <h3 class="name">{this.project.name}</h3>
             <p class="description">{this.project.description}</p>
         </a>

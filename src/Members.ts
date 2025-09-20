@@ -5,7 +5,7 @@ export const members: Member[] = [
     {
         name: "Rafflesia",
         bio: "Founder of Mercury Workshop\nI like programming and bringing people together to work on projects",
-        avatarName: "raff.webp",
+        avatarName: "raff",
         profileLinks: [
             { title: "github", content: "ProgrammerIn-wonderland", url: "https://github.com/ProgrammerIn-wonderland/" },
             { title: "discord", content: "@aliceindisarray", url: undefined },
@@ -15,7 +15,7 @@ export const members: Member[] = [
     {
         name: "Mark",
         bio: "Just another Furry doing cybersecurity.",
-        avatarName: "Mark.webp",
+        avatarName: "Mark",
         profileLinks: [
             { title: "mastodon", content: "@mark@hackers.town", url: "https://hackers.town/@mark" },
             { title: "email", content: "mark@mercurywork.shop", url: "mailto:mark@mercurywork.shop" }
@@ -24,7 +24,7 @@ export const members: Member[] = [
     {
         name: "r58playz",
         bio: "A high school freshman with a passion for programming and security.",
-        avatarName: "r58.webp",
+        avatarName: "r58",
         profileLinks: [
             { title: "site", content: "https://r58playz.dev", url: "https://r58playz.dev" },
             { title: "github", content: "r58playz", url: "https://github.com/r58playz" },
@@ -34,7 +34,7 @@ export const members: Member[] = [
     {
         name: "velzie",
         bio: "feral programmer, neovim evangelist, and eternally cursed bash wizard\ni worked on sh1mmer.me, warfork, and some miscellaneous projects",
-        avatarName: "velzie.webp",
+        avatarName: "velzie",
         profileLinks: [
             { title: "webbed site", content: "https://velzie.rip", url: "https://velzie.rip" },
             { title: "github", content: "velzie", url: "https://github.com/velzie" }
@@ -43,7 +43,7 @@ export const members: Member[] = [
     {
         name: "Ultra Blue",
         bio: "Mercury workshop member who unfortunately passed away on February 7th, 2023",
-        avatarName: "ultrablue.webp",
+        avatarName: "ultrablue",
         profileLinks: [
             { title: "discord", content: "ULTRA BLUE#1850", url: undefined }
         ]
@@ -51,7 +51,7 @@ export const members: Member[] = [
     {
         name: "kaitlin",
         bio: "professional shitposter\ngoofnut\ntransgener :3\nshe/her",
-        avatarName: "kait.webp",
+        avatarName: "kait",
         profileLinks: [
             { title: "mastodon", content: "@thememesniper@wetdry.world", url: "https://wetdry.world/@thememesniper" },
             { title: "discord", content: "@thememesniper", url: undefined }
@@ -60,7 +60,7 @@ export const members: Member[] = [
     {
         name: "Bypassi",
         bio: "Proud skidphobic individual. Discovered LTBEEF, [swamp], point-blank, and some more silly Chromebook exploits. I stopped taking life seriously a long time ago.",
-        avatarName: "passi.webp",
+        avatarName: "passi",
         profileLinks: [
             { title: "click", content: "javascript:alert('Me trying to resist the urge to do code execution for 0.0001 seconds')", url: undefined },
             { title: "pyramid scheme simulator", content: "https://buymeacoffee.com/bypassi", url: "https://buymeacoffee.com/bypassi" },
@@ -71,7 +71,7 @@ export const members: Member[] = [
     {
         name: "OlyB",
         bio: "hi",
-        avatarName: "olyb.webp",
+        avatarName: "olyb",
         profileLinks: [
             { title: "github", content: "BinBashBanana", url: "https://github.com/BinBashBanana" },
             { title: "discord", content: "@olyb", url: undefined }
@@ -80,7 +80,7 @@ export const members: Member[] = [
     {
         name: "luphoria",
         bio: "TRENT  BREAD\n18   UWM   '28\nMUSIC    SOFTWARE",
-        avatarName: "luph.webp",
+        avatarName: "luph",
         profileLinks: [
             { title: "site", content: "https://luphoria.com", url: "https://luphoria.com" },
             { title: "email", content: "mw@luphoria.com", url: "mailto:mw@luphoria.com" },
@@ -91,7 +91,7 @@ export const members: Member[] = [
     {
         name: "Quite A Fancy Emerald",
         bio: "",
-        avatarName: "emerald.webp",
+        avatarName: "emerald",
         profileLinks: [
             { title: "discord", content: "@quiteafancyemerald", url: undefined }
         ]
@@ -99,7 +99,7 @@ export const members: Member[] = [
     {
         name: "aub",
         bio: "",
-        avatarName: "aub.webp",
+        avatarName: "aub",
         profileLinks: [
             { title: "discord", content: "@aub", url: undefined }
         ]
@@ -107,7 +107,7 @@ export const members: Member[] = [
     {
         name: "Astral",
         bio: "Thing doer, VTuber, digital privacy advocate, computer fiddler and gigantic hecking nerd.\nWhen I'm not messing around with computers you'll find me playing arcade games, slinging around shiny cardboard at Yu-Gi-Oh events and being hopelessly gay on the internet",
-        avatarName: "astral.webp",
+        avatarName: "astral",
         profileLinks: [
             { title: "github", content: "AstralPhnx", url: "https://github.com/AstralPhnx" },
             { title: "twitch", content: "astral_phnx", url: "https://www.twitch.tv/astral_phnx" },
@@ -117,7 +117,7 @@ export const members: Member[] = [
     {
         name: "Sharp_Jack",
         bio: "",
-        avatarName: "sharpjack.webp",
+        avatarName: "sharpjack",
         profileLinks: [
             { title: "discord", content: "@sh4rp.tech", url: undefined }
         ]
@@ -125,7 +125,7 @@ export const members: Member[] = [
     {
         name: "CVFD",
         bio: "",
-        avatarName: "cvfd.webp",
+        avatarName: "cvfd",
         profileLinks: [
             { title: "discord", content: "CVFD#6480", url: undefined }
         ]
@@ -133,7 +133,7 @@ export const members: Member[] = [
     {
         name: "justinchrm",
         bio: "",
-        avatarName: "chrm.webp",
+        avatarName: "chrm",
         profileLinks: [
             { title: "discord", content: "justinchrm#3399", url: undefined }
         ]
@@ -141,7 +141,7 @@ export const members: Member[] = [
     {
         name: "ssd",
         bio: "",
-        avatarName: "ssd.webp",
+        avatarName: "ssd",
         profileLinks: [
             { title: "discord", content: "@avd3", url: undefined }
         ]
@@ -149,7 +149,7 @@ export const members: Member[] = [
     {
         name: "Down Cat",
         bio: "Hey! I'm a student in secondary education at the time of writing this. In my free time, I usually find myself reading some book series, coding, or writing a fun D&D campaign for my friends.",
-        avatarName: "downcat.webp",
+        avatarName: "downcat",
         profileLinks: [
             { title: "github", content: "Unciaur", url: "https://github.com/Unciaur" },
             { title: "discord", content: "@unciaur", url: undefined }
@@ -158,7 +158,7 @@ export const members: Member[] = [
     {
         name: "Catakang",
         bio: "",
-        avatarName: "catakang.webp",
+        avatarName: "catakang",
         profileLinks: [
             { title: "discord", content: "@catakang", url: undefined }
         ]
@@ -166,7 +166,7 @@ export const members: Member[] = [
     {
         name: "c-bass",
         bio: "",
-        avatarName: "c-bass.webp",
+        avatarName: "c-bass",
         profileLinks: [
             { title: "discord", content: "@c.bass.", url: undefined }
         ]
@@ -174,7 +174,7 @@ export const members: Member[] = [
     {
         name: "CyberClone",
         bio: "High school student with extensive mechanical and electrical engineering experience; ultimately, a love of building new things from the ground up.\nCurrently launching a nonprofit organization to promote engineering education in the Bay Area, check it out if interested in getting involved",
-        avatarName: "cyberclone.webp",
+        avatarName: "cyberclone",
         profileLinks: [
             { title: "nonprofit", content: "Encouraging Engineering", url: "https://engineeringexploration.org/" },
             { title: "discord", content: "@cyberclone", url: undefined }
@@ -183,7 +183,7 @@ export const members: Member[] = [
     {
         name: "vk6",
         bio: "",
-        avatarName: "vk6.webp",
+        avatarName: "vk6",
         profileLinks: [
             { title: "site", content: "https://ading.dev", url: "https://ading.dev" },
             { title: "github", content: "ading2210", url: "https://github.com/ading2210" },
@@ -194,7 +194,7 @@ export const members: Member[] = [
     {
         name: "spencerpogo",
         bio: "",
-        avatarName: "spencerpogo.webp",
+        avatarName: "spencerpogo",
         profileLinks: [
             { title: "discord", content: "@spencerpogo", url: undefined }
         ]
@@ -202,7 +202,7 @@ export const members: Member[] = [
     {
         name: "Cohen",
         bio: "Full stack hobbyist developer.",
-        avatarName: "cohen.webp",
+        avatarName: "cohen",
         profileLinks: [
             { title: "site", content: "cohenerickson.com", url: "https://cohenerickson.com/" },
             { title: "github", content: "cohenerickson", url: "https://github.com/cohenerickson" },
@@ -212,7 +212,7 @@ export const members: Member[] = [
     {
         name: "rifting",
         bio: "developer for incognito and nebula",
-        avatarName: "rift.webp",
+        avatarName: "rift",
         profileLinks: [
             { title: "github", content: "rifting", url: "https://github.com/rifting" }
         ]
@@ -220,7 +220,7 @@ export const members: Member[] = [
     {
         name: "He",
         bio: "Moral Support",
-        avatarName: "he.webp",
+        avatarName: "he",
         profileLinks: [
             { title: "discord", content: "@chaseddraco", url: undefined }
         ]
@@ -228,7 +228,7 @@ export const members: Member[] = [
     {
         name: "Scaratek",
         bio: "Hi, I'm Scaratek! I do web-development and I am the co-owner of Nebula Proxy",
-        avatarName: "scaratek.webp",
+        avatarName: "scaratek",
         profileLinks: [
             { title: "Website", content: "https://scaratek.dev", url: "https://scaratek.dev/" },
             { title: "Github", content: "Scaratech", url: "https://github.com/scaratech" },
@@ -238,7 +238,7 @@ export const members: Member[] = [
     {
         name: "Skiddo",
         bio: "",
-        avatarName: "skiddo.webp",
+        avatarName: "skiddo",
         profileLinks: [
             { title: "discord", content: "@skidface", url: undefined }
         ]
@@ -246,7 +246,7 @@ export const members: Member[] = [
     {
         name: "Percs",
         bio: "",
-        avatarName: "percs.webp",
+        avatarName: "percs",
         profileLinks: [
             { title: "discord", content: "@updive", url: undefined }
         ]
@@ -254,7 +254,7 @@ export const members: Member[] = [
     {
         name: "ym",
         bio: "",
-        avatarName: "ymkong.webp",
+        avatarName: "ymkong",
         profileLinks: [
             { title: "discord", content: "@ymk00.", url: undefined }
         ]
@@ -262,7 +262,7 @@ export const members: Member[] = [
     {
         name: "The_Gentleman",
         bio: "",
-        avatarName: "thegentleman.webp",
+        avatarName: "thegentleman",
         profileLinks: [
             { title: "discord", content: "@the_gentleman69", url: undefined }
         ]
@@ -270,7 +270,7 @@ export const members: Member[] = [
     {
         name: "psm",
         bio: "want a dreamland sticker????? or a fridge magnet???????????",
-        avatarName: "psm.webp",
+        avatarName: "psm",
         profileLinks: [
             { title: "site", content: "https://psm.pm", url: "https://psm.pm" },
             { title: "github", content: "thonkinator", url: "https://github.com/thonkinator" },
@@ -280,7 +280,7 @@ export const members: Member[] = [
     {
         name: "Leah",
         bio: "dumbass, hardware hacker, and programmer :3",
-        avatarName: "leah.webp",
+        avatarName: "leah",
         profileLinks: [
             { title: "website", content: "leah.chromebooks.lol", url: "https://leah.chromebooks.lol" },
             { title: "email", content: "leah@chromebooks.lol", url: "mailto:leah@chromebooks.lol" },
@@ -290,7 +290,7 @@ export const members: Member[] = [
     {
         name: "Sylvie",
         bio: "",
-        avatarName: "bagel.webp",
+        avatarName: "bagel",
         profileLinks: [
             { title: "pronouns", content: "they/she", url: undefined },
             { title: "discord", content: "@sylviethedev", url: undefined }
@@ -299,7 +299,7 @@ export const members: Member[] = [
     {
         name: "colacraft",
         bio: "",
-        avatarName: "colacraft.webp",
+        avatarName: "colacraft",
         profileLinks: [
             { title: "discord", content: "@alicelabs", url: undefined }
         ]
@@ -307,7 +307,7 @@ export const members: Member[] = [
     {
         name: "wearr",
         bio: "HS Junior, Loves 東方 and Ultrakill!\nExpect fumo gifs if you message me ヽ(⌒▽⌒)ﾉ",
-        avatarName: "wearr.webp",
+        avatarName: "wearr",
         profileLinks: [
             { title: "site", content: "https://wearr.dev", url: "https://wearr.dev" },
             { title: "github", content: "wearrrrr", url: "https://github.com/wearrrrr" },
@@ -317,7 +317,7 @@ export const members: Member[] = [
     {
         name: "Endercass",
         bio: "",
-        avatarName: "endercass.webp",
+        avatarName: "endercass",
         profileLinks: [
             { title: "discord", content: "@endercass", url: undefined }
         ]
@@ -325,7 +325,7 @@ export const members: Member[] = [
     {
         name: "vys",
         bio: "",
-        avatarName: "vys.webp",
+        avatarName: "vys",
         profileLinks: [
             { title: "discord", content: "@vyslix", url: undefined }
         ]
@@ -333,7 +333,7 @@ export const members: Member[] = [
     {
         name: "Crystals",
         bio: "",
-        avatarName: "crystals.webp",
+        avatarName: "crystals",
         profileLinks: [
             { title: "discord", content: "@crazycrystals", url: undefined },
             { title: "matrix", content: "@crystals:omada.cafe", url: undefined },
@@ -344,7 +344,7 @@ export const members: Member[] = [
     {
         name: "illusions",
         bio: "",
-        avatarName: "illusions.webp",
+        avatarName: "illusions",
         profileLinks: [
             { title: "discord", content: "@illusionztba", url: undefined }
         ]
@@ -352,7 +352,7 @@ export const members: Member[] = [
     {
         name: "MotorTruck1221",
         bio: "",
-        avatarName: "mt.webp",
+        avatarName: "mt",
         profileLinks: [
             { title: "discord", content: "@motortruck1221", url: undefined }
         ]
@@ -360,7 +360,7 @@ export const members: Member[] = [
     {
         name: "foxmoss",
         bio: "i make shit",
-        avatarName: "foxmoss.webp",
+        avatarName: "foxmoss",
         profileLinks: [
             { title: "site", content: "foxmoss.com/personal/", url: "https://foxmoss.com/personal/" },
             { title: "github", content: "FoxMoss", url: "https://github.com/FoxMoss" },
@@ -369,18 +369,21 @@ export const members: Member[] = [
     },
     {
         name: "bomberfish",
-        bio: "hacking on random things until something useful happens.",
-        avatarName: "bomberfish.webp",
+        bio: "hacking on random things until something useful happens. also the creator of this iteration of the website.",
+        avatarName: "bomberfish",
         profileLinks: [
-            { title: "site", content: "bomberfish.ca", url: "https://bomberfish.ca" },
+            { title: "website", content: "bomberfish.ca", url: "https://bomberfish.ca" },
+            { title: "fedi", content: "@fish@wetdry.world", url: "https://wetdry.world/@fish" },
+            { title: "x", content: "@bomberfish77", url: "https://x.com/bomberfish77" },
             { title: "github", content: "bomberfish", url: "https://github.com/bomberfish" },
+            { title: "email (noreply for now)", content: "hariz@bomberfish.ca", url: "mailto:hariz@bomberfish.ca" },
             { title: "discord", content: "@bomberfish", url: undefined }
         ]
     },
     {
         name: "ayunami2000",
         bio: "An individual distinguished by an extraordinary cognitive acumen and an intense preoccupation with esoteric or highly specialized domains, often encompassing realms such as advanced technology, theoretical sciences, interactive entertainment, or other intricate subject matters. Such a person is frequently characterized by a proclivity for meticulous analysis, a proclivity for abstruse problem-solving, and a predilection for pursuits that deviate from conventional societal norms. Their intellectual fervor often manifests in profound erudition and an unwavering commitment to their chosen fields of interest.",
-        avatarName: "ayunami.webp",
+        avatarName: "ayunami",
         profileLinks: [
             { title: "discord", content: "@ayunami2000", url: undefined },
             { title: "github", content: "ayunami2000", url: "https://github.com/ayunami2000" }
@@ -389,7 +392,7 @@ export const members: Member[] = [
     {
         name: "Izzy",
         bio: "Formerly known by 'Caffe' and 'Caffefornication,' just mods Cave Story and maintains a piece of it's history.",
-        avatarName: "izzy.webp",
+        avatarName: "izzy",
         profileLinks: [
             { title: "site", content: "Ame Manga Archive", url: "https://ame-archive-manga.github.io/ame-manga-archive/manga.html" },
             { title: "discord", content: "@izzytizzie", url: undefined }
@@ -398,7 +401,7 @@ export const members: Member[] = [
     {
         name: "mr.r, aka simplyrohan",
         bio: "Embedded Systems and Web Development",
-        avatarName: "mrr.webp",
+        avatarName: "mrr",
         profileLinks: [
             { title: "site", content: "https://thatdev.xyz", url: "https://thatdev.xyz" },
             { title: "github", content: "simplyrohan", url: "https://github.com/simplyrohan" },
@@ -408,7 +411,7 @@ export const members: Member[] = [
     {
         name: "dora explora",
         bio: "",
-        avatarName: "dora.webp",
+        avatarName: "dora",
         profileLinks: [
             { title: "github", content: "dora-explora", url: "https://github.com/dora-explora" },
             { title: "discord", content: "@doraexplora.", url: undefined }

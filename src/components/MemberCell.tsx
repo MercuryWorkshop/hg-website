@@ -3,10 +3,10 @@ import { Member } from "../types/Member";
 
 const MemberCell: Component<{ member: Member }, {}> = function () {
     return (
-        <div class="member-cell card interactable">
-            <img class="avatar" src={`/assets/pfps/${this.member.avatarName}`} alt={`${this.member.name}'s avatar`} width="100" height="100" />
+        <a href={`/member/${this.member.avatarName}`} class="member-cell card interactable" target="_self">
+            <img class="avatar" src={`/assets/pfps/${this.member.avatarName}.webp`} alt={`${this.member.name}'s avatar`} width="100" height="100" />
             <span class="name">{this.member.name}</span>
-        </div>
+        </a>
     )
 }
 
@@ -18,6 +18,7 @@ MemberCell.style = css`
         text-align: left;
         gap: 0.75rem;
         min-height: 5rem;
+        text-decoration: none!important;
     }
 
     .avatar {
@@ -31,7 +32,8 @@ MemberCell.style = css`
     .name {
         font-size: 1.25rem;
         font-weight: bold;
-        color: var(--text);
+        color: var(--fg)!important;
+        text-decoration: none!important;
     }
 `
 
