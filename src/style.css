@@ -99,6 +99,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+article {
+		z-index: 3;
+		position: relative;
+		padding: 1.25rem;
+	}
+
 ::selection {
   background: hsla(var(--accent2-raw), 0.3);
   /* color: var(--accent); */
