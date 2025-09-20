@@ -5,7 +5,7 @@ const Header: Component<{}, {}> = function () {
         <header class="card">
             <div class="logo">
                 <img src="/assets/percury.svg" alt="Mercury Workshop Logo" width="50" height="50" />
-                <a href="https://github.com/MercuryWorkshop" target="_blank" rel="noopener noreferrer">
+                <a href="/" target="_self" rel="noopener noreferrer">
                     <h1>
                         <span>Mercury</span>
                         <span class="thin">Workshop</span>

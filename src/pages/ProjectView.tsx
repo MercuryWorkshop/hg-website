@@ -21,9 +21,14 @@ ProjectView.style = css`
 		--page-hs: 215, 20%;
 	}
 
+    h2 {
+        margin-top: 0;
+    }
+
     .card {
         width: 100%;
         height: auto;
+        margin-top: 1rem;
     }
 `;
 
