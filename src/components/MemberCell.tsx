@@ -17,8 +17,6 @@ MemberCell.style = css`
         align-items: center;
         text-align: left;
         gap: 0.75rem;
-        padding: 1rem;
-        border-radius: 1rem;
         min-height: 5rem;
     }
 
