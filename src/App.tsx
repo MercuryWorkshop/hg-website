@@ -74,25 +74,25 @@ App.style = css`
 		--beam-color: var(--page-hue), calc(var(--page-sat) * 3), 80%;
 		background: radial-gradient(
 				ellipse at 50% 2%,
-				hsla(var(--beam-color), 0.475) 0%,
-				hsla(var(--beam-color), 0.15) 4%,
-				hsla(var(--beam-color), 0.05) 9%,
-				hsla(var(--beam-color), 0.02) 14%,
+				hsla(var(--beam-color), 0.5) 0%,
+				hsla(var(--beam-color), 0.2) 4%,
+				hsla(var(--beam-color), 0.1) 9%,
+				hsla(var(--beam-color), 0.05) 14%,
 				transparent 28%
 			),
 			radial-gradient(
 				ellipse at 50% 6%,
-				hsla(var(--beam-color), 0.07) 0%,
-				hsla(var(--beam-color), 0.035) 10%,
-				hsla(var(--beam-color), 0.01) 26%,
+				hsla(var(--beam-color), 0.1) 0%,
+				hsla(var(--beam-color), 0.05) 10%,
+				hsla(var(--beam-color), 0.025) 26%,
 				transparent 48%
 			),
 			conic-gradient(
 				from 200deg at 50% 0%,
-				hsla(var(--beam-color), 0.045) 0deg,
-				hsla(var(--beam-color), 0.015) 22deg,
+				hsla(var(--beam-color), 0.05) 0deg,
+				hsla(var(--beam-color), 0.02) 22deg,
 				transparent 80deg,
-				hsla(var(--beam-color), 0.01) 200deg,
+				hsla(var(--beam-color), 0.025) 200deg,
 				transparent 360deg
 			);
 	}
