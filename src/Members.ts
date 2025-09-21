@@ -244,11 +244,16 @@ export const members: Member[] = [
         ]
     },
     {
-        name: "Percs",
-        bio: "",
+        name: "percs",
+        bio: "high school sophomore. i build things.",
         avatarName: "percs",
         profileLinks: [
-            { title: "discord", content: "@updive", url: undefined }
+            { title: "website", content: "percs.dev", url: "https://percs.dev" },
+            { title: "github", content: "percslol", url: "https://github.com/percslol" },
+            { title: "email", content: "me@percs.dev", url: "mailto:me@percs.dev"},
+            { title: "discord", content: "updive", url: "https://discord.com/users/767559339841683467" },
+            { title: "x", content: "@percsisok", url: "https://x.com/percsisok"},
+            { title: "fedi", content: "@percs@fedi.omada.cafe", url: "https://fedi.omada.cafe/@percs" }
         ]
     },
     {
