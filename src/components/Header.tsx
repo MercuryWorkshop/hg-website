@@ -35,6 +35,26 @@ Header.style = css`
         user-select: none;
     }
 
+    @media (max-width: 30rem) {
+        :scope {
+            justify-content: center;
+        }
+
+        .logo {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 22rem) {
+        .logo h1 {
+            display: none;
+        }
+
+        .logo {
+            gap: 0;
+        }
+    }
+
     .logo span {
         transition: color 0.25s ease, text-shadow 0.25s ease;
         cursor: pointer;
