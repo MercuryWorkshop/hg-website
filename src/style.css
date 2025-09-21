@@ -59,15 +59,15 @@
   --fg-hs: 300, 97.5%;
   --bg2-hs: 215, 15%;
   --fg2-hs: 240, 4%;
-  --accent-hs: 300, 75%;
-  --accent2-hs: 215, 100%;
+  --accent-hs: 340, 100%;
+  --accent2-hs: 200, 40%;
 
   --bg-raw: var(--bg-hs), 3%;
   --fg-raw: var(--fg-hs), 97.5%;
   --bg2-raw: var(--bg2-hs), 8%;
   --fg2-raw: var(--fg2-hs), 60%;
-  --accent-raw: var(--accent-hs), 85%;
-  --accent2-raw: var(--accent2-hs), 82.5%;
+  --accent-raw: var(--accent-hs), 87.5%;
+  --accent2-raw: var(--accent2-hs), 87.5%;
 
   --bg: hsl(var(--bg-raw));
   --fg: hsl(var(--fg-raw));
@@ -76,12 +76,6 @@
   --accent: hsl(var(--accent-raw));
   --accent2: hsl(var(--accent2-raw));
 
-  /* --bg: hsl(200, 70%, 3%);
-  --fg: hsl(300, 100%, 98%);
-  --bg2: hsl(200, 14%, 8%);
-  --fg2: hsl(300, 20%, 80%);
-  --accent: hsl(200, 90%, 80%);
-  --accent2: hsl(300, 100%, 85%); */
 
   font-family: var(--font-body);
   line-height: 1.5;

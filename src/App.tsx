@@ -39,8 +39,8 @@ App.style = css`
 		/* was meaning to explore this beautiful world-style per-page lighting further.
 		 basically, the homepage is pink, and project/member subpages are blue  - fish*/
 		// --page-hs: 215, 30%;
-		--page-hue: ${window.location.pathname === "/" ? "300" : "215"};
-		--page-sat:  ${window.location.pathname === "/" ? "15%" : "35%"};
+		--page-hue: ${window.location.pathname === "/" ? "340" : "215"};
+		--page-sat:  ${window.location.pathname === "/" ? "27.5%" : "60%"};
 		--page-hs: var(--page-hue), var(--page-sat);
 	}
 
@@ -71,7 +71,7 @@ App.style = css`
 		pointer-events: none;
 		mix-blend-mode: screen;
 		filter: blur(40px);
-		--beam-color: var(--page-hue), calc(var(--page-sat) * 3), 80%;
+		--beam-color: var(--page-hue), calc(var(--page-sat) * 3), 90%;
 		background: radial-gradient(
 				ellipse at 50% 2%,
 				hsla(var(--beam-color), 0.5) 0%,
