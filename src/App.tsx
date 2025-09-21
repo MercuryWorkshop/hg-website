@@ -40,7 +40,7 @@ App.style = css`
 		 basically, the homepage is pink, and project/member subpages are blue  - fish*/
 		// --page-hs: 215, 30%;
 		--page-hue: ${window.location.pathname === "/" ? "340" : "215"};
-		--page-sat:  ${window.location.pathname === "/" ? "27.5%" : "60%"};
+		--page-sat:  ${window.location.pathname.startsWith("/member") ? "15%" : window.location.pathname === "/" ? "45%" : "90%"};
 		--page-hs: var(--page-hue), var(--page-sat);
 	}
 
