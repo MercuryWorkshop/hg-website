@@ -13,7 +13,7 @@ const Homepage: Component<{}, {}> = function () {
             <Header />
             <h2>About Us</h2>
             <section id="about">
-                <p>We are an organization of developers dedicated to writing free and open-source software for everyone.</p>
+                <p>We're an organization of developers dedicated to writing free and open-source software for everyone.</p>
             </section>
             <h2>Our Projects</h2>
             <section id="projects">
