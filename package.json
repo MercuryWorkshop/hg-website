@@ -1,18 +1,22 @@
 {
-  "name": "hg-website",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "typescript": "~5.8.3",
-    "vite": "^7.1.6"
-  },
-  "dependencies": {
-    "dreamland": "github:mercuryworkshop/dreamlandjs#vdom"
-  }
+	"name": "hg-website",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build:client": "tsc && vite build --ssrManifest .vite/ssr-manifest.json --outDir dist/static",
+		"build:server": "tsc && vite build --ssr src/main-server.ts --outDir dist/server",
+		"build": "pnpm run build:client && pnpm run build:server && node prerender.js",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"typescript": "~5.9.2",
+		"vite": "^7.1.6",
+		"@literals/rollup-plugin-html-css-minifier": "^3.0.1",
+		"prettier": "^3.6.2"
+	},
+	"dependencies": {
+		"dreamland": "github:mercuryworkshop/dreamlandjs#vdom"
+	}
 }

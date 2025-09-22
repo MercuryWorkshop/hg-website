@@ -1,24 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+	<head>
+		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<meta name="description" content="An organization of developers dedicated to writing free and open source software for everyone" />
+		<meta
+			name="description"
+			content="An organization of developers dedicated to writing free and open source software for everyone"
+		/>
 		<meta name="darkreader-lock" />
 		<meta name="msapplication-TileColor" content="#483475" />
 		<meta name="theme-color" content="#070b34" />
 		<title>Mercury Workshop</title>
 		<base target="_blank" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png?k" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png?k" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png?k" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/icons/apple-touch-icon.png?k"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/icons/favicon-32x32.png?k"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/icons/favicon-16x16.png?k"
+		/>
 		<link rel="manifest" href="/site.webmanifest?k" />
-		<link rel="mask-icon" href="/icons/safari-pinned-tab.svg?k" color="#483475" />
+		<link
+			rel="mask-icon"
+			href="/icons/safari-pinned-tab.svg?k"
+			color="#483475"
+		/>
 		<link rel="shortcut icon" href="/favicon.ico?" />
-		<link rel="preload" href="/fonts/SpaceGrotesk-Medium.woff2" as="font" type="font/woff2" crossorigin />
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/App.tsx"></script>
-  </body>
+		<link
+			rel="preload"
+			href="/fonts/SpaceGrotesk-Medium.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<!--ssr-head-->
+	</head>
+	<body>
+		<!--ssr-body-->
+		<script type="module" src="/src/main-client.ts"></script>
+	</body>
 </html>

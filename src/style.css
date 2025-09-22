@@ -1,196 +1,225 @@
 @font-face {
 	font-family: space-grotesk;
-	src: url("/fonts/body/SpaceGrotesk.woff2") format("woff2"), url("/fonts/body/SpaceGrotesk.woff") format("woff"), url("/fonts/body/SpaceGrotesk.ttf") format("truetype"), local("Space Grotesk");
+	src:
+		url("/fonts/body/SpaceGrotesk.woff2") format("woff2"),
+		url("/fonts/body/SpaceGrotesk.woff") format("woff"),
+		url("/fonts/body/SpaceGrotesk.ttf") format("truetype"),
+		local("Space Grotesk");
 	font-display: swap;
 	font-style: normal;
 	font-weight: 300 700;
 }
 
 @font-face {
-  font-family: rajdhani;
-  src: url("/fonts/display/Rajdhani-Light.woff2") format("woff2"), url("/fonts/display/Rajdhani-Light.woff") format("woff"), url("/fonts/display/Rajdhani-Light.ttf") format("truetype"), local("Rajdhani");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 300;
+	font-family: rajdhani;
+	src:
+		url("/fonts/display/Rajdhani-Light.woff2") format("woff2"),
+		url("/fonts/display/Rajdhani-Light.woff") format("woff"),
+		url("/fonts/display/Rajdhani-Light.ttf") format("truetype"),
+		local("Rajdhani");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 300;
 }
 
 @font-face {
-  font-family: rajdhani;
-  src: url("/fonts/display/Rajdhani-Regular.woff2") format("woff2"), url("/fonts/display/Rajdhani-Regular.woff") format("woff"), url("/fonts/display/Rajdhani-Regular.ttf") format("truetype"), local("Rajdhani");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
+	font-family: rajdhani;
+	src:
+		url("/fonts/display/Rajdhani-Regular.woff2") format("woff2"),
+		url("/fonts/display/Rajdhani-Regular.woff") format("woff"),
+		url("/fonts/display/Rajdhani-Regular.ttf") format("truetype"),
+		local("Rajdhani");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
 }
 
 @font-face {
-  font-family: rajdhani;
-  src: url("/fonts/display/Rajdhani-Medium.woff2") format("woff2"), url("/fonts/display/Rajdhani-Medium.woff") format("woff"), url("/fonts/display/Rajdhani-Medium.ttf") format("truetype"), local("Rajdhani");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 500;
+	font-family: rajdhani;
+	src:
+		url("/fonts/display/Rajdhani-Medium.woff2") format("woff2"),
+		url("/fonts/display/Rajdhani-Medium.woff") format("woff"),
+		url("/fonts/display/Rajdhani-Medium.ttf") format("truetype"),
+		local("Rajdhani");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 500;
 }
 
 @font-face {
-  font-family: rajdhani;
-  src: url("/fonts/display/Rajdhani-SemiBold.woff2") format("woff2"), url("/fonts/display/Rajdhani-SemiBold.woff") format("woff"), url("/fonts/display/Rajdhani-SemiBold.ttf") format("truetype"), local("Rajdhani");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 600;
+	font-family: rajdhani;
+	src:
+		url("/fonts/display/Rajdhani-SemiBold.woff2") format("woff2"),
+		url("/fonts/display/Rajdhani-SemiBold.woff") format("woff"),
+		url("/fonts/display/Rajdhani-SemiBold.ttf") format("truetype"),
+		local("Rajdhani");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 600;
 }
 
 @font-face {
-  font-family: rajdhani;
-  src: url("/fonts/display/Rajdhani-Bold.woff2") format("woff2"), url("/fonts/display/Rajdhani-Bold.woff") format("woff"), url("/fonts/display/Rajdhani-Bold.ttf") format("truetype"), local("Rajdhani");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 700;
+	font-family: rajdhani;
+	src:
+		url("/fonts/display/Rajdhani-Bold.woff2") format("woff2"),
+		url("/fonts/display/Rajdhani-Bold.woff") format("woff"),
+		url("/fonts/display/Rajdhani-Bold.ttf") format("truetype"),
+		local("Rajdhani");
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
 }
 
 * {
-  line-height: calc(4px + 2ex);
-  box-sizing: border-box;
+	line-height: calc(4px + 2ex);
+	box-sizing: border-box;
 }
 
 :root {
-  --font-body: space-grotesk, system-ui, sans-serif;
-  --font-display: rajdhani, var(--font-body);
+	--font-body: space-grotesk, system-ui, sans-serif;
+	--font-display: rajdhani, var(--font-body);
 
-  --bg-hs: 215, 72.5%;
-  --fg-hs: 300, 97.5%;
-  --bg2-hs: 215, 15%;
-  --fg2-hs: 240, 4%;
-  --accent-hs: 340, 85%;
-  --accent2-hs: 200, 70%;
+	--bg-hs: 215, 72.5%;
+	--fg-hs: 300, 97.5%;
+	--bg2-hs: 215, 15%;
+	--fg2-hs: 240, 4%;
+	--accent-hs: 340, 85%;
+	--accent2-hs: 200, 70%;
 
-  --bg-raw: var(--bg-hs), 3%;
-  --fg-raw: var(--fg-hs), 97.5%;
-  --bg2-raw: var(--bg2-hs), 8%;
-  --fg2-raw: var(--fg2-hs), 60%;
-  --accent-raw: var(--accent-hs), 85%;
-  --accent2-raw: var(--accent2-hs), 80%;
+	--bg-raw: var(--bg-hs), 3%;
+	--fg-raw: var(--fg-hs), 97.5%;
+	--bg2-raw: var(--bg2-hs), 8%;
+	--fg2-raw: var(--fg2-hs), 60%;
+	--accent-raw: var(--accent-hs), 85%;
+	--accent2-raw: var(--accent2-hs), 80%;
 
-  --bg: hsl(var(--bg-raw));
-  --fg: hsl(var(--fg-raw));
-  --bg2: hsl(var(--bg2-raw));
-  --fg2: hsl(var(--fg2-raw));
-  --accent: hsl(var(--accent-raw));
-  --accent2: hsl(var(--accent2-raw));
+	--bg: hsl(var(--bg-raw));
+	--fg: hsl(var(--fg-raw));
+	--bg2: hsl(var(--bg2-raw));
+	--fg2: hsl(var(--fg2-raw));
+	--accent: hsl(var(--accent-raw));
+	--accent2: hsl(var(--accent2-raw));
 
+	font-family: var(--font-body);
+	line-height: 1.5;
+	font-weight: 500;
 
-  font-family: var(--font-body);
-  line-height: 1.5;
-  font-weight: 500;
+	color-scheme: light dark;
+	color: var(--fg);
+	background-color: var(--bg);
 
-  color-scheme: light dark;
-  color: var(--fg);
-  background-color: var(--bg);
+	accent-color: var(--accent);
 
-  accent-color: var(--accent);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 article {
-		z-index: 3;
-		position: relative;
-		padding: 1.25rem;
-	}
+	z-index: 3;
+	position: relative;
+	padding: 1.25rem;
+}
 
 ::selection {
-  background: hsla(var(--accent2-raw), 0.3);
-  /* color: var(--accent); */
+	background: hsla(var(--accent2-raw), 0.3);
+	/* color: var(--accent); */
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--font-display);
-  font-weight: 700;
+	font-family: var(--font-display);
+	font-weight: 700;
 }
 
 h1 {
-  font-size: 2.5rem;
-  margin-block-start: .75em;
-  margin-block-end: .5em;
+	font-size: 2.5rem;
+	margin-block-start: 0.75em;
+	margin-block-end: 0.5em;
 }
 
 h2 {
-  font-size: 1.8rem;
-  margin-block-start: .75em;
-  margin-block-end: .25em;
+	font-size: 1.8rem;
+	margin-block-start: 0.75em;
+	margin-block-end: 0.25em;
 }
 
 h3 {
-  font-size: 1.3rem;
-  margin-block-start: .5em;
-  margin-block-end: .25em;
+	font-size: 1.3rem;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.25em;
 }
 
 p {
-  margin-block: .25em;
+	margin-block: 0.25em;
 }
 
 a {
-  color: var(--accent2);
-  /* text-decoration: none; */
-  transition: color 0.3s ease;
+	color: var(--accent2);
+	/* text-decoration: none; */
+	transition: color 0.3s ease;
 }
 
 a:visited {
-  color: var(--accent);
+	color: var(--accent);
 }
 
-
 .card {
-  --highlight: var(--accent-raw);
-  background-color: hsla(var(--bg2-raw), 0.2);
-  backdrop-filter: blur(2px);
-  box-shadow: inset 0 0 0.05rem 0.075rem hsla(var(--fg2-raw), 0.075),
-              0 0 0.5rem rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  corner-shape: superellipse(1.25);
-  border-radius: 1.25rem;
-  mix-blend-mode: multiply;
+	--highlight: var(--accent-raw);
+	background-color: hsla(var(--bg2-raw), 0.2);
+	backdrop-filter: blur(2px);
+	box-shadow:
+		inset 0 0 0.05rem 0.075rem hsla(var(--fg2-raw), 0.075),
+		0 0 0.5rem rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	corner-shape: superellipse(1.25);
+	border-radius: 1.25rem;
+	mix-blend-mode: multiply;
 }
 
 .card:nth-of-type(even) {
-  --highlight: var(--accent2-raw);
+	--highlight: var(--accent2-raw);
 }
 
 .card:focus-visible {
-  outline: 2px solid hsl(var(--highlight));
-  outline-offset: -0.125rem;
+	outline: 2px solid hsl(var(--highlight));
+	outline-offset: -0.125rem;
 }
 
 .card.interactable {
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+	cursor: pointer;
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
 }
 
 .card.interactable:hover {
-  transform: translateY(-0.2rem);
-  box-shadow: inset 0 0 0.2rem 0.08rem hsla(var(--highlight), 0.9),
-              0 0 0.75rem rgba(0, 0, 0, 0.15);
+	transform: translateY(-0.2rem);
+	box-shadow:
+		inset 0 0 0.2rem 0.08rem hsla(var(--highlight), 0.9),
+		0 0 0.75rem rgba(0, 0, 0, 0.15);
 }
 
 .card.flat {
-  box-shadow: inset 0 0 0.05rem 0.06rem hsla(var(--fg2-raw), 0.04);
+	box-shadow: inset 0 0 0.05rem 0.06rem hsla(var(--fg2-raw), 0.04);
 }
 
 .card.flat.interactable:hover {
-  box-shadow: inset 0 0 0.2rem 0.065rem hsla(var(--highlight), 0.5),
-              0 0 0.35rem rgba(0, 0, 0, 0.12);
+	box-shadow:
+		inset 0 0 0.2rem 0.065rem hsla(var(--highlight), 0.5),
+		0 0 0.35rem rgba(0, 0, 0, 0.12);
 }
 
 .card.emphasis {
-  box-shadow: inset 0 0 0.06rem 0.09rem hsla(var(--fg2-raw), 0.07),
-              0 0 0.9rem rgba(0, 0, 0, 0.2);
+	box-shadow:
+		inset 0 0 0.06rem 0.09rem hsla(var(--fg2-raw), 0.07),
+		0 0 0.9rem rgba(0, 0, 0, 0.2);
 }
 
 .card.emphasis.interactable:hover {
-  box-shadow: inset 0 0 0.25rem 0.095rem hsla(var(--highlight), 1),
-              0 0 1.1rem rgba(0, 0, 0, 0.28);
+	box-shadow:
+		inset 0 0 0.25rem 0.095rem hsla(var(--highlight), 1),
+		0 0 1.1rem rgba(0, 0, 0, 0.28);
 }
