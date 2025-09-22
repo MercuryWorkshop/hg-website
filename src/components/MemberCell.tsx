@@ -1,5 +1,5 @@
 import { Component, css } from "dreamland/core";
-import { Member } from "../types/Member";
+import Member from "../types/Member";
 
 const MemberCell: Component<{ member: Member }, {}> = function () {
 	return (

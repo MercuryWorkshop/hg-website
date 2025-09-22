@@ -1,5 +1,5 @@
 import { Component, css } from "dreamland/core";
-import { Member } from "../types/Member";
+import Member from "../types/Member";
 import Header from "../components/Header";
 
 const MemberView: Component<{ member: Member }, {}> = function () {

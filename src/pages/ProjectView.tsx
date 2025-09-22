@@ -1,6 +1,6 @@
 import { Component, css } from "dreamland/core";
 import Header from "../components/Header";
-import { Project } from "../types/Project";
+import Project from "../types/Project";
 
 const ProjectView: Component<{ project: Project }, {}> = function () {
 	return (

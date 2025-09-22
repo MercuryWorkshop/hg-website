@@ -1,5 +1,5 @@
 import { Component, css } from "dreamland/core";
-import { Project } from "../types/Project";
+import Project from "../types/Project";
 
 const ProjectCard: Component<{ project: Project }, {}> = function () {
 	return (

@@ -1,4 +1,4 @@
-export interface Project {
+interface Project {
 	name: string;
 	description: string;
 	longDescription?: string;
@@ -6,3 +6,5 @@ export interface Project {
 	url: string | undefined;
 	repo: string;
 }
+
+export default Project;
