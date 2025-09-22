@@ -38,8 +38,18 @@ const App: Component<{}, {}> = function (cx) {
 	];
 
 	return (
-		<main>
+		<main id="app">
 			<div class="stage"></div>
+			<div style="width: 0; height: 0; overflow: hidden;">
+				<video
+					id="clocks"
+					class="glassy"
+					disablepictureinpicture
+					disableremoteplayback
+				>
+					<source src="/assets/clocks.mp4" type="video/mp4" preload="auto" />
+				</video>
+			</div>
 			<Router>
 				{routes.map((route) => (
 					<Route path={route.path} show={route.show} />
@@ -125,10 +135,34 @@ App.style = css`
 				hsla(0, 0%, 0%, 0.35) 100%
 			);
 	}
+
+	#clocks {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(0turn) scale(0);
+		transform-origin: center;
+		padding: 1px;
+		transition: transform 0.5s ease;
+		visibility: hidden;
+		box-shadow: 0 0 2rem 1rem hsla(var(--fg-raw), 0.2);
+		border: none;
+		border-radius: 1rem;
+		z-index: 2;
+	}
+
+	#clocks.playing {
+		transform: translate(-50%, -50%) rotate(1turn) scale(1);
+		visibility: visible;
+	}
+
+	#clocks.ending {
+		transform: translate(-50%, -50%) rotate(0turn) scale(0);
+		visibility: visible;
+	}
 `;
 
 export default (path?: string) => {
-	console.log("rendering path:", path);
 	page.url = path;
 	return <App />;
 };
