@@ -86,7 +86,7 @@
 	--accent-hs: 340, 85%;
 	--accent2-hs: 200, 70%;
 
-	--bg-raw: var(--bg-hs), 3%;
+	--bg-raw: var(--bg-hs), 1%;
 	--fg-raw: var(--fg-hs), 97.5%;
 	--bg2-raw: var(--bg2-hs), 8%;
 	--fg2-raw: var(--fg2-hs), 60%;
@@ -184,8 +184,9 @@ a:visited {
 }
 
 .card:focus-visible {
-	outline: 2px solid hsl(var(--highlight));
-	outline-offset: -0.125rem;
+	outline: none;
+	accent-color: hsl(var(--highlight));
+	outline-color: hsl(var(--highlight));
 }
 
 .card.interactable {
@@ -195,6 +196,7 @@ a:visited {
 		box-shadow 0.2s ease;
 }
 
+.card.interactable:focus-visible,
 .card.interactable:hover {
 	transform: translateY(-0.2rem);
 	box-shadow:

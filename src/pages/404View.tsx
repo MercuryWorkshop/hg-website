@@ -1,26 +1,25 @@
 import { Component, css } from "dreamland/core";
+import Stage from "../components/Stage";
 
 const NotFoundView: Component = function () {
 	return (
-		<article>
+		<main>
+			<Stage pageHue={340} pageSat="45%" />
+			<article>
 			<h1>404</h1>
 			<p>The page you are looking for does not exist.</p>
-		</article>
+			</article>
+		</main>
 	);
 };
 
 NotFoundView.style = css`
-	:global(*) {
-		--page-hue: 340;
-		--page-sat: 45%;
-	}
-
-	h1 {
+	article h1 {
 		font-size: 15vw;
 		margin: 1rem;
 	}
 
-	p {
+	article p {
 		font-size: 1.5rem;
 	}
 

@@ -1,10 +1,13 @@
 import { Component, css } from "dreamland/core";
 import Member from "../types/Member";
 import Header from "../components/Header";
+import Stage from "../components/Stage";
 
 const MemberView: Component<{ member: Member }, {}> = function () {
 	return (
-		<article>
+		<main>
+			<Stage pageHue={215} pageSat="15%" />
+			<article>
 			<Header />
 			<div class="info card">
 				<img
@@ -41,18 +44,14 @@ const MemberView: Component<{ member: Member }, {}> = function () {
 					)}
 				</section>
 			)}
-		</article>
+			</article>
+		</main>
 	);
 };
 
 MemberView.style = css`
 	:scope {
 		display: block;
-	}
-
-	:global(*) {
-		--page-hue: 215;
-		--page-sat: 15%;
 	}
 
 	.pfp {
@@ -66,7 +65,7 @@ MemberView.style = css`
 		margin-top: 1rem;
 	}
 
-	h2 {
+	article h2 {
 		margin: 0;
 	}
 

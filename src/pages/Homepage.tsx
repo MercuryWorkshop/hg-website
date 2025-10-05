@@ -1,5 +1,6 @@
 import { Component, css } from "dreamland/core";
 import Header from "../components/Header";
+import Stage from "../components/Stage";
 
 import MemberCell from "../components/MemberCell";
 import { members } from "../Members";
@@ -9,7 +10,9 @@ import { projects } from "../Projects";
 
 const Homepage: Component<{}, {}> = function () {
 	return (
-		<article>
+		<main>
+			<Stage pageHue={340} pageSat="45%" />
+			<article>
 			<Header />
 			<h2>About Us</h2>
 			<section id="about">
@@ -30,16 +33,12 @@ const Homepage: Component<{}, {}> = function () {
 					<MemberCell member={member} />
 				))}
 			</section>
-		</article>
+			</article>
+		</main>
 	);
 };
 
 Homepage.style = css`
-	:global(*) {
-		--page-hue: 340;
-		--page-sat: 45%;
-	}
-
 	#projects {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));

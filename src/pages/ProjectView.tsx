@@ -1,10 +1,13 @@
 import { Component, css } from "dreamland/core";
 import Header from "../components/Header";
 import Project from "../types/Project";
+import Stage from "../components/Stage";
 
 const ProjectView: Component<{ project: Project }, {}> = function () {
 	return (
-		<article>
+		<main>
+			<Stage pageHue={215} pageSat="90%" />
+			<article>
 			<Header />
 			<div class="card">
 				<h2 class="name">{this.project.name}</h2>
@@ -28,17 +31,13 @@ const ProjectView: Component<{ project: Project }, {}> = function () {
 					</a>
 				</p>
 			</div>
-		</article>
+			</article>
+		</main>
 	);
 };
 
 ProjectView.style = css`
-	:global(*) {
-		--page-hue: 215;
-		--page-sat: 90%;
-	}
-
-	h2 {
+	article h2 {
 		margin-top: 0;
 	}
 
