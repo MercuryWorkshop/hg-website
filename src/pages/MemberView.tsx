@@ -53,7 +53,6 @@ MemberView.style = css`
 	:global(*) {
 		--page-hue: 215;
 		--page-sat: 15%;
-		--page-hs: var(--page-hue), var(--page-sat);
 	}
 
 	.pfp {

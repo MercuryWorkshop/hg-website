@@ -30,7 +30,7 @@ Header.style = css`
 	a,
 	a:visited {
 		text-decoration: none;
-		color: inherit;
+		color: var(--fg)!important;
 	}
 
 	.logo {

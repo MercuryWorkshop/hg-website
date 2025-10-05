@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       dreamland:
-        specifier: github:mercuryworkshop/dreamlandjs#vdom
-        version: https://codeload.github.com/mercuryworkshop/dreamlandjs/tar.gz/0c2818a310ad0e19220480ae18cc9d2170081ae7
+        specifier: 0.1.0
+        version: 0.1.0
     devDependencies:
       '@literals/rollup-plugin-html-css-minifier':
         specifier: ^3.0.1
@@ -377,9 +377,8 @@ packages:
   dot-case@3.0.4:
     resolution: {integrity: sha512-Kv5nKlh6yRrdrGvxeJ2e5y2eRUpkUosIW4A2AS38zwSz27zu7ufDwQPi5Jhs3XAlGNetl3bmnGhQsMtkKJnj3w==}
 
-  dreamland@https://codeload.github.com/mercuryworkshop/dreamlandjs/tar.gz/0c2818a310ad0e19220480ae18cc9d2170081ae7:
-    resolution: {tarball: https://codeload.github.com/mercuryworkshop/dreamlandjs/tar.gz/0c2818a310ad0e19220480ae18cc9d2170081ae7}
-    version: 0.1.0
+  dreamland@0.1.0:
+    resolution: {integrity: sha512-Hb34xTWnws2RqibLDEOxKNZY+67h3f1huqHaapCnU6Ql2i+G9IvkPh7Yod0Yn1WYFSjZdyzTe3J2PIDdZoYnXw==}
 
   entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
@@ -788,7 +787,7 @@ snapshots:
       no-case: 3.0.4
       tslib: 2.8.1
 
-  dreamland@https://codeload.github.com/mercuryworkshop/dreamlandjs/tar.gz/0c2818a310ad0e19220480ae18cc9d2170081ae7:
+  dreamland@0.1.0:
     dependencies:
       dom-serializer: 2.0.0
       domhandler: 5.0.3

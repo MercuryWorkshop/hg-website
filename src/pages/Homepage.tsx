@@ -38,7 +38,6 @@ Homepage.style = css`
 	:global(*) {
 		--page-hue: 340;
 		--page-sat: 45%;
-		--page-hs: var(--page-hue), var(--page-sat);
 	}
 
 	#projects {

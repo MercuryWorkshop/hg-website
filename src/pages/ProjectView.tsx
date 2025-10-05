@@ -36,7 +36,6 @@ ProjectView.style = css`
 	:global(*) {
 		--page-hue: 215;
 		--page-sat: 90%;
-		--page-hs: var(--page-hue), var(--page-sat);
 	}
 
 	h2 {

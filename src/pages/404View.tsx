@@ -11,9 +11,8 @@ const NotFoundView: Component = function () {
 
 NotFoundView.style = css`
 	:global(*) {
-		--page-hue: 215;
-		--page-sat: 90%;
-		--page-hs: var(--page-hue), var(--page-sat);
+		--page-hue: 340;
+		--page-sat: 45%;
 	}
 
 	h1 {

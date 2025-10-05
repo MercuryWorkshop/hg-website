@@ -62,6 +62,7 @@ const App: Component<{}, {}> = function (cx) {
 App.style = css`
 	:scope {
 		margin: 0;
+		--page-hs: var(--page-hue), var(--page-sat);
 	}
 
 	.stage {
