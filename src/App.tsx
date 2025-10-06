@@ -47,7 +47,6 @@ const App: Component<{}, {}> = function (cx) {
 			<div style="width: 0; height: 0; overflow: hidden;">
 				<video
 					id="clocks"
-					class="glassy"
 					disablepictureinpicture
 					disableremoteplayback
 				>

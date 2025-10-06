@@ -88,7 +88,7 @@
 
 	--bg-raw: var(--bg-hs), 1%;
 	--fg-raw: var(--fg-hs), 97.5%;
-	--bg2-raw: var(--bg2-hs), 8%;
+	--bg2-raw: var(--bg2-hs), 5%;
 	--fg2-raw: var(--fg2-hs), 60%;
 	--accent-raw: var(--accent-hs), 85%;
 	--accent2-raw: var(--accent2-hs), 80%;
@@ -169,14 +169,13 @@ a:visited {
 .card {
 	--highlight: var(--accent-raw);
 	background-color: hsla(var(--bg2-raw), 0.2);
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(4px) saturate(1.2) brightness(0.9);
 	box-shadow:
-		inset 0 0 0.05rem 0.075rem hsla(var(--fg2-raw), 0.075),
+		inset 0 0 0.05rem 0.075rem hsla(var(--fg2-raw), 0.125),
 		0 0 0.5rem rgba(0, 0, 0, 0.1);
 	padding: 1rem;
 	corner-shape: superellipse(1.25);
 	border-radius: 1.25rem;
-	mix-blend-mode: multiply;
 }
 
 .card:nth-of-type(even) {
