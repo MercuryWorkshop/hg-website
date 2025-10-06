@@ -6,7 +6,7 @@ import Stage from "../components/Stage";
 const ProjectView: Component<{ project: Project }, {}> = function () {
 	return (
 		<main>
-			<Stage pageHue={215} pageSat="90%" />
+			<Stage pageHue={215} pageSat="60%" />
 			<article>
 			<Header />
 			<div class="card">

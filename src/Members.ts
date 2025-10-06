@@ -519,9 +519,9 @@ export const members: Member[] = [
 				url: "https://github.com/bomberfish",
 			},
 			{
-				title: "email (noreply for now)",
-				content: "hariz@bomberfish.ca",
-				url: "mailto:hariz@bomberfish.ca",
+				title: "email",
+				content: "me@bomberfish.ca",
+				url: "mailto:me@bomberfish.ca",
 			},
 			{ title: "discord", content: "@bomberfish", url: undefined },
 		],

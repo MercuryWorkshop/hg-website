@@ -8,74 +8,61 @@ const Stage: Component<{ pageHue: number; pageSat: string }, {}> = function () {
                 "--page-hue": this.pageHue,
                 "--page-sat": this.pageSat,
             }}
-        ></div>
+        >
+            <div class="stage__beam"></div>
+        </div>
     );
 };
 
 Stage.style = css`
-    .stage{
+    .stage {
         position: fixed;
         inset: 0;
+        width: 100vw;
+        height: 120vh;
+        min-height: 100vh;
+        overflow: hidden;
+        transform-origin: center top;
+        rotate: -1deg;
+        z-index: -10;
+        --color: hsla(var(--page-hue), var(--page-sat), 75%, 0.2);
+        background: linear-gradient(
+            to bottom,
+            hsl(var(--page-hue), var(--page-sat), 4%) 0%,
+            hsl(var(--page-hue), var(--page-sat), 6%) 100%
+        );
+    }
+
+    .stage__beam {
+        position: absolute;
+        inset: 0;
+        top: -15vh;
         width: 100%;
         height: 100%;
-        min-height: 100vh;
-        z-index: 1;
-        overflow: hidden;
-        min-height:100vh;
-        
-    }
-
-    /* main light - narrow cone with faint streaks, blurred */
-    .stage::before{
-        content:"";
-        position:absolute;
-        left:50%;
-        top:-22%;
-        width:160vmax;
-        height:120vmax;
-        transform:translateX(-50%);
-        pointer-events:none;
-        mix-blend-mode:screen; /* lets the bright beam add to dark background */
-        filter:blur(44px);
         background:
-            /* bright narrow source near top center */
-            radial-gradient(ellipse at 50% 2%,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.95) 0%,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.30) 4%,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.10) 9%,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.04) 14%,
-                transparent 28%),
-
-            /* soft cone shape */
-            radial-gradient(ellipse at 50% 6%,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.14) 0%,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.07) 10%,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.02) 26%,
-                transparent 48%),
-
-            /* directional streaks - twin highlights mirrored across center */
-            conic-gradient(from 270deg at 50% 0%,
-                transparent 0deg,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.04) 12deg,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.10) 26deg,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.04) 44deg,
-                transparent 58deg,
-                transparent 302deg,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.04) 316deg,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.10) 334deg,
-                hsla(var(--page-hue), var(--page-sat), 70%, 0.04) 348deg,
-                transparent 360deg);
-    }
-
-    /* global vignette / falloff so sides stay very dark */
-    .stage::after{
-        content:"";
-        position:absolute;
-        inset:0;
-        pointer-events:none;
-        background:
-            radial-gradient(ellipse at 50% 40%, transparent 30%, rgba(0,0,0,0.45) 70%),
-            linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.35) 100%);
+            conic-gradient(
+                at 50% 5%,
+                transparent 30%,
+                var(--color) 40%,
+                var(--color) 60%,
+                transparent 70%
+            ),
+            50% -25px / 100% 100%;
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+        mix-blend-mode: screen;
+        opacity: 1;
+        filter: blur(10px);
+        -webkit-mask-image: radial-gradient(
+            circle at 50% 0%,
+            black 5%,
+            transparent 80%
+        );
+        mask-image: radial-gradient(
+            circle at 50% 0%,
+            black 5%,
+            transparent 80%
+        );
     }
 `;
 

@@ -11,7 +11,7 @@ import { projects } from "../Projects";
 const Homepage: Component<{}, {}> = function () {
 	return (
 		<main>
-			<Stage pageHue={340} pageSat="45%" />
+			<Stage pageHue={310} pageSat="35%" />
 			<article>
 			<Header />
 			<h2>About Us</h2>

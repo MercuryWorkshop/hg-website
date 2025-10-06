@@ -83,8 +83,8 @@
 	--fg-hs: 300, 97.5%;
 	--bg2-hs: 215, 15%;
 	--fg2-hs: 240, 4%;
-	--accent-hs: 340, 85%;
-	--accent2-hs: 200, 70%;
+	--accent-hs: 310, 90%;
+	--accent2-hs: 200, 80%;
 
 	--bg-raw: var(--bg-hs), 1%;
 	--fg-raw: var(--fg-hs), 97.5%;
