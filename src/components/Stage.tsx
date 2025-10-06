@@ -23,18 +23,21 @@ Stage.style = css`
         min-height: 100vh;
         overflow: hidden;
         transform-origin: center top;
-        rotate: -1deg;
+        transform-origin: 50% 0%;
         z-index: -10;
         --color: hsla(var(--page-hue), var(--page-sat), 75%, 0.2);
         background: linear-gradient(
             to bottom,
             hsl(var(--page-hue), var(--page-sat), 4%) 0%,
-            hsl(var(--page-hue), var(--page-sat), 6%) 100%
+            hsl(var(--page-hue), var(--page-sat), 2%) 100%
         );
     }
 
     .stage__beam {
-        position: absolute;
+        // animation: stage-breathe 8s ease-in-out infinite;
+        // filter: blur(10px);
+        transform: scaleY(1);
+        position: absolute;            
         inset: 0;
         top: -15vh;
         width: 100%;
@@ -64,6 +67,22 @@ Stage.style = css`
             transparent 80%
         );
     }
+
+    @keyframes stage-breathe {
+        0%,
+        100% {
+            opacity: 0.4;
+            filter: blur(8px);
+            transform: scaleY(1);
+        }
+
+        50% {
+            opacity: 1;
+            filter: blur(12px);
+            transform: scaleY(1.08);
+        }
+    }
+
 `;
 
 export default Stage;

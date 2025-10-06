@@ -75,7 +75,7 @@
 	box-sizing: border-box;
 }
 
-:root {
+html {
 	--font-body: space-grotesk, system-ui, sans-serif;
 	--font-display: rajdhani, var(--font-body);
 
