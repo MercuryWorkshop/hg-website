@@ -13,26 +13,26 @@ const Homepage: Component<{}, {}> = function () {
 		<main>
 			<Stage pageHue={310} pageSat="35%" />
 			<article>
-			<Header />
-			<h2>About Us</h2>
-			<section id="about">
-				<p>
-					We're an organization of developers dedicated to writing free and
-					open-source software for everyone.
-				</p>
-			</section>
-			<h2>Our Projects</h2>
-			<section id="projects">
-				{projects.map((project) => (
-					<ProjectCard project={project} />
-				))}
-			</section>
-			<h2>Members</h2>
-			<section id="members">
-				{members.map((member) => (
-					<MemberCell member={member} />
-				))}
-			</section>
+				<Header />
+				<h2>About Us</h2>
+				<section id="about">
+					<p>
+						We're an organization of developers dedicated to writing free and
+						open-source software for everyone.
+					</p>
+				</section>
+				<h2>Our Projects</h2>
+				<section id="projects">
+					{projects.map((project) => (
+						<ProjectCard project={project} />
+					))}
+				</section>
+				<h2>Members</h2>
+				<section id="members">
+					{members.map((member) => (
+						<MemberCell member={member} />
+					))}
+				</section>
 			</article>
 		</main>
 	);

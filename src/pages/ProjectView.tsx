@@ -8,29 +8,33 @@ const ProjectView: Component<{ project: Project }, {}> = function () {
 		<main>
 			<Stage pageHue={215} pageSat="60%" />
 			<article>
-			<Header />
-			<div class="card">
-				<h2 class="name">{this.project.name}</h2>
-				<p class="description">{this.project.description}</p>
-				{this.project.url && (
+				<Header />
+				<div class="card">
+					<h2 class="name">{this.project.name}</h2>
+					<p class="description">{this.project.description}</p>
+					{this.project.url && (
+						<p>
+							Website:{" "}
+							<a
+								href={this.project.url}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								{this.project.url}
+							</a>
+						</p>
+					)}
 					<p>
-						Website:{" "}
+						Repository:{" "}
 						<a
-							href={this.project.url}
+							href={this.project.repo}
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							{this.project.url}
+							{this.project.repo}
 						</a>
 					</p>
-				)}
-				<p>
-					Repository:{" "}
-					<a href={this.project.repo} target="_blank" rel="noopener noreferrer">
-						{this.project.repo}
-					</a>
-				</p>
-			</div>
+				</div>
 			</article>
 		</main>
 	);

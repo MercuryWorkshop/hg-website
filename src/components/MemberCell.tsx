@@ -1,12 +1,16 @@
 import { Component, css } from "dreamland/core";
+import { router } from "dreamland/router";
 import Member from "../types/Member";
 
-const MemberCell: Component<{ member: Member }, {}> = function () {
+const MemberCell: Component<{ member: Member }, {}> = function (cx) {
 	return (
 		<a
 			href={`/member/${this.member.avatarName}`}
 			class="member-cell card interactable"
-			target="_self"
+			on:click={(e: MouseEvent) => {
+				e.preventDefault();
+				router.navigate((cx.root as HTMLAnchorElement).href);
+			}}
 		>
 			<img
 				class="avatar"

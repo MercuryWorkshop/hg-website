@@ -6,8 +6,8 @@ const NotFoundView: Component = function () {
 		<main>
 			<Stage pageHue={340} pageSat="45%" />
 			<article>
-			<h1>404</h1>
-			<p>The page you are looking for does not exist.</p>
+				<h1>404</h1>
+				<p>The page you are looking for does not exist.</p>
 			</article>
 		</main>
 	);

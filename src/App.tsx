@@ -45,11 +45,7 @@ const App: Component<{}, {}> = function (cx) {
 				))}
 			</Router>
 			<div style="width: 0; height: 0; overflow: hidden;">
-				<video
-					id="clocks"
-					disablepictureinpicture
-					disableremoteplayback
-				>
+				<video id="clocks" disablepictureinpicture disableremoteplayback>
 					<source src="/assets/clocks.mp4" type="video/mp4" preload="auto" />
 				</video>
 			</div>
@@ -75,7 +71,7 @@ App.style = css`
 		box-shadow: 0 0 2rem 1rem hsla(var(--fg-raw), 0.2);
 		border: none;
 		border-radius: 1rem;
-		z-index: 2;
+		z-index: 10;
 	}
 
 	#clocks.playing {

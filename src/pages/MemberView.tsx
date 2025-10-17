@@ -8,42 +8,42 @@ const MemberView: Component<{ member: Member }, {}> = function () {
 		<main>
 			<Stage pageHue={215} pageSat="15%" />
 			<article>
-			<Header />
-			<div class="info card">
-				<img
-					class="pfp"
-					src={`/assets/pfps/${this.member.avatarName}.webp`}
-					alt={`${this.member.name}'s avatar`}
-					width="90"
-					height="90"
-				/>
-				<div class="details">
-					<h2 class="name">{this.member.name}</h2>
-					<p class="bio">{this.member.bio}</p>
+				<Header />
+				<div class="info card">
+					<img
+						class="pfp"
+						src={`/assets/pfps/${this.member.avatarName}.webp`}
+						alt={`${this.member.name}'s avatar`}
+						width="90"
+						height="90"
+					/>
+					<div class="details">
+						<h2 class="name">{this.member.name}</h2>
+						<p class="bio">{this.member.bio}</p>
+					</div>
 				</div>
-			</div>
-			{this.member.profileLinks.length > 0 && (
-				<section id="profile-links">
-					{this.member.profileLinks.map((link) =>
-						link.url ? (
-							<a
-								class="profile-link card interactable"
-								href={link.url}
-								target="_blank"
-								rel="me"
-							>
-								<span class="title">{link.title}</span>
-								<span class="content">{link.content}</span>
-							</a>
-						) : (
-							<div class="profile-link card">
-								<span class="title">{link.title}</span>
-								<span class="content">{link.content}</span>
-							</div>
-						)
-					)}
-				</section>
-			)}
+				{this.member.profileLinks.length > 0 && (
+					<section id="profile-links">
+						{this.member.profileLinks.map((link) =>
+							link.url ? (
+								<a
+									class="profile-link card interactable"
+									href={link.url}
+									target="_blank"
+									rel="me"
+								>
+									<span class="title">{link.title}</span>
+									<span class="content">{link.content}</span>
+								</a>
+							) : (
+								<div class="profile-link card">
+									<span class="title">{link.title}</span>
+									<span class="content">{link.content}</span>
+								</div>
+							)
+						)}
+					</section>
+				)}
 			</article>
 		</main>
 	);

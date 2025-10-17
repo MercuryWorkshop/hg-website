@@ -1,4 +1,5 @@
 import { Component, css } from "dreamland/core";
+import { router } from "dreamland/router";
 
 const Header: Component<{}, {}> = function () {
 	return (
@@ -10,7 +11,12 @@ const Header: Component<{}, {}> = function () {
 					width="50"
 					height="50"
 				/>
-				<a href="/" target="_self" rel="noopener noreferrer">
+				<a
+					on:click={(e: MouseEvent) => {
+						e.preventDefault();
+						router.navigate("/");
+					}}
+				>
 					<h1>
 						<span>Mercury</span>
 						<span class="thin">Workshop</span>
@@ -35,7 +41,7 @@ Header.style = css`
 	a,
 	a:visited {
 		text-decoration: none;
-		color: var(--fg)!important;
+		color: var(--fg) !important;
 	}
 
 	.logo {
