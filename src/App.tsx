@@ -22,34 +22,20 @@ const App: Component<{}, {}> = function (cx) {
 		}
 	};
 
-	const routes = [
-		{ path: undefined, show: <Homepage /> },
-		{ path: "member", show: <NotFoundView /> },
-		...members.map((member) => ({
-			path: `member/${member.avatarName}`,
-			show: <MemberView member={member} />,
-		})),
-		{ path: "project", show: <NotFoundView /> },
-		...projects.map((project) => ({
-			path: `project/${project.name}`,
-			show: <ProjectView project={project} />,
-		})),
-		{ path: "*", show: <NotFoundView /> },
-	];
-
 	return (
-		<app id="app">
+		<div id="app">
 			<Router>
-				{routes.map((route) => (
-					<Route path={route.path} show={route.show} />
-				))}
+				<Route show={<Homepage />} />
+				{...members.map((member) => <Route path={`member/${member.avatarName}`} show={<MemberView member={member} />} />)}
+				{...projects.map((project) => <Route path={`project/${project.name}`} show={<ProjectView project={project} />} />)}
+				<Route path="*" show={<NotFoundView />} />
 			</Router>
 			<div style="width: 0; height: 0; overflow: hidden;">
 				<video id="clocks" disablepictureinpicture disableremoteplayback>
 					<source src="/assets/clocks.mp4" type="video/mp4" preload="auto" />
 				</video>
 			</div>
-		</app>
+		</div>
 	);
 };
 

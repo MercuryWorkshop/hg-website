@@ -1,5 +1,4 @@
 import Member from "./types/Member";
-import ProfileLink from "./types/ProfileLink";
 
 export const members: Member[] = [
 	{

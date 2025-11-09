@@ -1,4 +1,8 @@
-import ProfileLink from "./ProfileLink";
+interface ProfileLink {
+	title: string;
+	content: string;
+	url: string | undefined;
+}
 
 interface Member {
 	name: string;
