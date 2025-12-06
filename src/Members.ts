@@ -348,12 +348,14 @@ export const members: Member[] = [
 				content: "updive",
 				url: "https://discord.com/users/767559339841683467",
 			},
+			{ title: "signal", content: "percs.01", url: "https://signal.me/#eu/vxUhAa-YsPDRNc0BKGMeS_NklIm9AYnBvhGwodheym6ATgr3y6RG76XFJSa2FHrx"},
 			{ title: "x", content: "@percsisok", url: "https://x.com/percsisok" },
+			{ title: "bluesky", content: "percs.dev", url: "https://bsky.app/profile/did:plc:oo7qxx7qeuu77cy74n7mxprf"},
 			{
 				title: "fedi",
 				content: "@percs@fedi.omada.cafe",
 				url: "https://fedi.omada.cafe/@percs",
-			},
+			}
 		],
 	},
 	{
