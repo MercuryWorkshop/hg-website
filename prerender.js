@@ -11,6 +11,7 @@ const entry = await import(resolve("dist/server/main-server.js"));
 
 entry.default("/");
 const paths = entry.router.ssgables();
+paths.push(["/404", "/404.html"])
 
 let template = await readFile(resolve("dist/static/index.html"), "utf8");
 
