@@ -359,16 +359,6 @@ export const members: Member[] = [
 		],
 	},
 	{
-		name: "Leah",
-		bio: "dumbass, hardware hacker, and programmer :3",
-		avatarName: "leah",
-		profileLinks: [
-			{ title: "website", content: "leah.chromebooks.lol", url: "https://leah.chromebooks.lol" },
-			{ title: "email", content: "leah@chromebooks.lol", url: "mailto:leah@chromebooks.lol" },
-			{ title: "discord", content: "@leahonbrainrot", url: "https://discord.com/users/833087679063130162" },
-		]
-	},
-	{
 		name: "The_Gentleman",
 		bio: "",
 		avatarName: "thegentleman",
