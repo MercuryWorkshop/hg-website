@@ -92,8 +92,8 @@ export const members: Member[] = [
 			{
 				title: "click",
 				content:
-					"javascript:alert('Me trying to resist the urge to do code execution for 0.0001 seconds')",
-				url: undefined,
+					"click",
+				url: "javascript:alert('Me trying to resist the urge to do code execution for 0.0001 seconds')",
 			},
 			{
 				title: "pyramid scheme simulator",
