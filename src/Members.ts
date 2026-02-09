@@ -359,12 +359,6 @@ export const members: Member[] = [
 		],
 	},
 	{
-		name: "ym",
-		bio: "",
-		avatarName: "ymkong",
-		profileLinks: [{ title: "discord", content: "@ymk00.", url: undefined }],
-	},
-	{
 		name: "The_Gentleman",
 		bio: "",
 		avatarName: "thegentleman",
