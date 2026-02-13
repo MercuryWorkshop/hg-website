@@ -308,21 +308,21 @@ export const members: Member[] = [
 		],
 	},
 	{
-		name: "Scaratek",
-		bio: "Hi, I'm Scaratek! I do web-development and I am the co-owner of Nebula Proxy",
-		avatarName: "scaratek",
+		name: "Entrpix",
+		bio: "[YOU ARE WOUNDED]",
+		avatarName: "entrpix",
 		profileLinks: [
 			{
 				title: "Website",
-				content: "https://scaratek.dev",
-				url: "https://scaratek.dev/",
+				content: "entr.pics",
+				url: "https://entr.pics",
 			},
 			{
-				title: "Github",
-				content: "Scaratech",
-				url: "https://github.com/scaratech",
+				title: "GitHub",
+				content: "Entrpixx",
+				url: "https://github.com/entrpixx",
 			},
-			{ title: "Discord", content: "scaratek.dev", url: undefined },
+			{ title: "Discord", content: "@entrpix", url: "https://discord.com/users/1468435099275231365" },
 		],
 	},
 	{
