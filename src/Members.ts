@@ -385,8 +385,8 @@ export const members: Member[] = [
 			{ title: "site", content: "https://psm.pm", url: "https://psm.pm" },
 			{
 				title: "github",
-				content: "psm",
-				url: "https://github.com/psm",
+				content: "psmpm",
+				url: "https://github.com/psmpm",
 			},
 			{ title: "discord", content: "@psm", url: undefined },
 		],
