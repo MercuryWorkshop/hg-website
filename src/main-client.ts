@@ -17,7 +17,7 @@ const pattern = [
 let current = 0;
 
 document.addEventListener("keydown", (e) => {
-	if (e.key === pattern[current]) {
+	if (e.key === pattern[current] || e.key.toLowerCase() === pattern[current]) {
 		console.log("Key matched:", e.key);
 		current++;
 		if (current === pattern.length) {
