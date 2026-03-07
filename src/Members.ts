@@ -91,8 +91,7 @@ export const members: Member[] = [
 		profileLinks: [
 			{
 				title: "click",
-				content:
-					"click",
+				content: "click",
 				url: "javascript:alert('Me trying to resist the urge to do code execution for 0.0001 seconds')",
 			},
 			{
@@ -322,7 +321,11 @@ export const members: Member[] = [
 				content: "Entrpixx",
 				url: "https://github.com/entrpixx",
 			},
-			{ title: "Discord", content: "@entrpix", url: "https://discord.com/users/1468435099275231365" },
+			{
+				title: "Discord",
+				content: "@entrpix",
+				url: "https://discord.com/users/1468435099275231365",
+			},
 		],
 	},
 	{
@@ -348,14 +351,22 @@ export const members: Member[] = [
 				content: "updive",
 				url: "https://discord.com/users/767559339841683467",
 			},
-			{ title: "signal", content: "percs.01", url: "https://signal.me/#eu/vxUhAa-YsPDRNc0BKGMeS_NklIm9AYnBvhGwodheym6ATgr3y6RG76XFJSa2FHrx"},
+			{
+				title: "signal",
+				content: "percs.01",
+				url: "https://signal.me/#eu/vxUhAa-YsPDRNc0BKGMeS_NklIm9AYnBvhGwodheym6ATgr3y6RG76XFJSa2FHrx",
+			},
 			{ title: "x", content: "@percsisok", url: "https://x.com/percsisok" },
-			{ title: "bluesky", content: "percs.dev", url: "https://bsky.app/profile/did:plc:oo7qxx7qeuu77cy74n7mxprf"},
+			{
+				title: "bluesky",
+				content: "percs.dev",
+				url: "https://bsky.app/profile/did:plc:oo7qxx7qeuu77cy74n7mxprf",
+			},
 			{
 				title: "fedi",
 				content: "@percs@fedi.omada.cafe",
 				url: "https://fedi.omada.cafe/@percs",
-			}
+			},
 		],
 	},
 	{
@@ -374,8 +385,8 @@ export const members: Member[] = [
 			{ title: "site", content: "https://psm.pm", url: "https://psm.pm" },
 			{
 				title: "github",
-				content: "thonkinator",
-				url: "https://github.com/thonkinator",
+				content: "psm",
+				url: "https://github.com/psm",
 			},
 			{ title: "discord", content: "@psm", url: undefined },
 		],
