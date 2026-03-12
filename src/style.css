@@ -168,8 +168,10 @@ a:visited {
 
 .card {
 	--highlight: var(--accent-raw);
-	background-color: hsla(var(--bg2-raw), 0.2);
-	backdrop-filter: blur(4px) saturate(1.2) brightness(0.9);
+	background-color: hsla(310, 50%, 1%, 0.2);
+	/* firefox performance increase 4 trillion percent by commenting out this ONE LINE!!
+       doctors HATE HIM!!! */
+	/* backdrop-filter: blur(4px) saturate(1.2) brightness(0.9); */
 	box-shadow:
 		inset 0 0 0.05rem 0.075rem hsla(var(--fg2-raw), 0.125),
 		0 0 0.5rem rgba(0, 0, 0, 0.1);
