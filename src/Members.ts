@@ -456,12 +456,12 @@ export const members: Member[] = [
 	},
 	{
 		name: "Crystals",
-		bio: "",
+		bio: "I do general homelab things",
 		avatarName: "crystals",
 		profileLinks: [
+			{ title: "signal", content: "@crystal.01", url: "https://https://signal.me/#eu/1MTBJoUiTupaMa3JP1Xdh8T5-ynJEbwjLTnD4n1pBaOW7Uo4FNhApKN72SpFsgSk" },
 			{ title: "discord", content: "@crazycrystals", url: undefined },
-			{ title: "matrix", content: "@crystals:omada.cafe", url: undefined },
-			{ title: "XMPP", content: "crazycrystals@macaw.me", url: undefined },
+			{ title: "matrix", content: "@crystal:omada.cafe", url: undefined },
 			{ title: "fedi", content: "@crystals@fedi.omada.cafe", url: undefined },
 		],
 	},
