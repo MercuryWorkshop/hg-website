@@ -16,18 +16,22 @@ function App(this: FC<{ url?: string }>) {
 			<Router initial={this.url ? [this.url, "http://127.0.0.1:5173"] : []}>
 				<Route layout={Layout}>
 					<Route show={<Homepage />} />
-					{...members.map((member) => (
-						<Route
-							path={`member/${member.avatarName}`}
-							show={<MemberView member={member} />}
-						/>
-					))}
-					{...projects.map((project) => (
-						<Route
-							path={`project/${project.name}`}
-							show={<ProjectView project={project} />}
-						/>
-					))}
+					<Route path="member">
+						{...members.map((member) => (
+							<Route
+								path={member.avatarName}
+								show={<MemberView member={member} />}
+							/>
+						))}
+					</Route>
+					<Route path="project">
+						{...projects.map((project) => (
+							<Route
+								path={project.name}
+								show={<ProjectView project={project} />}
+							/>
+						))}
+					</Route>
 				</Route>
 				<Route path="*" show={<NotFoundView />} />
 			</Router>
