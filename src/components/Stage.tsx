@@ -1,12 +1,12 @@
-import { Component, css } from "dreamland/core";
+import { css, type FC } from "dreamland/core";
 
-const Stage: Component<{ pageHue: number; pageSat: string }, {}> = function () {
+function Stage(this: FC<{ pageHue: number; pageSat: string }>) {
 	return (
 		<div
 			class="stage"
 			style={{
-				"--page-hue": this.pageHue,
-				"--page-sat": this.pageSat,
+				"--page-hue": use(this.pageHue),
+				"--page-sat": use(this.pageSat),
 			}}
 		>
 			<div class="stage__beam"></div>

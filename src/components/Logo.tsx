@@ -1,7 +1,7 @@
-import { Component, css } from "dreamland/core";
+import { css, type FC } from "dreamland/core";
 import { router } from "dreamland/router";
 
-const Logo: Component<{}, {}> = function () {
+function Logo(this: FC) {
 	return (
 		<div class="logo">
 			<img

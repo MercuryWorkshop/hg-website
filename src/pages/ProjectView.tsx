@@ -1,47 +1,33 @@
-import { Component, css } from "dreamland/core";
-import Header from "../components/Header";
+import { css, type FC } from "dreamland/core";
 import Project from "../types/Project";
-import Stage from "../components/Stage";
 
-const ProjectView: Component<{ project: Project }, {}> = function () {
+function ProjectView(this: FC<{ project: Project }>) {
+	this.cx.pageHue = 215;
+	this.cx.pageSat = "60%";
 	return (
-		<main>
-			<Stage pageHue={215} pageSat="60%" />
-			<article>
-				<Header />
-				<div class="card">
-					<h2 class="name">{this.project.name}</h2>
-					<p class="description">{this.project.description}</p>
-					{this.project.url && (
-						<p>
-							Website:{" "}
-							<a
-								href={this.project.url}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{this.project.url}
-							</a>
-						</p>
-					)}
-					<p>
-						Repository:{" "}
-						<a
-							href={this.project.repo}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							{this.project.repo}
-						</a>
-					</p>
-				</div>
-			</article>
-		</main>
+		<div class="card">
+			<h2 class="name">{this.project.name}</h2>
+			<p class="description">{this.project.description}</p>
+			{this.project.url && (
+				<p>
+					Website:{" "}
+					<a href={this.project.url} target="_blank" rel="noopener noreferrer">
+						{this.project.url}
+					</a>
+				</p>
+			)}
+			<p>
+				Repository:{" "}
+				<a href={this.project.repo} target="_blank" rel="noopener noreferrer">
+					{this.project.repo}
+				</a>
+			</p>
+		</div>
 	);
 };
 
 ProjectView.style = css`
-	article h2 {
+	h2 {
 		margin-top: 0;
 	}
 

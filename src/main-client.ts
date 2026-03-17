@@ -1,5 +1,12 @@
 import { hydrate } from "dreamland/ssr/client";
-import App from "./App";
+import App from "./main";
+
+hydrate(
+	App,
+	document.querySelector("#app")!,
+	document.head,
+	document.querySelector("[dlssr-d]")!
+);
 
 const pattern = [
 	"ArrowUp",
@@ -41,10 +48,3 @@ document.addEventListener("keydown", (e) => {
 		current = 0;
 	}
 });
-
-hydrate(
-	App,
-	document.querySelector("#app")!,
-	document.head,
-	document.querySelector("[dlssr-d]")!
-);

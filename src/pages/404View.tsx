@@ -1,29 +1,18 @@
-import { Component, css } from "dreamland/core";
-import Stage from "../components/Stage";
+import { css, type FC } from "dreamland/core";
 
-const NotFoundView: Component = function () {
+function NotFoundView(this: FC) {
+	this.cx.pageHue = 340;
+	this.cx.pageSat = "45%";
 	return (
-		<main>
-			<Stage pageHue={340} pageSat="45%" />
-			<article>
-				<h1>404</h1>
-				<p>The page you are looking for does not exist.</p>
-			</article>
-		</main>
+		<div>
+			<h1>404</h1>
+			<p>The page you are looking for does not exist.</p>
+		</div>
 	);
 };
 
 NotFoundView.style = css`
-	article h1 {
-		font-size: 15vw;
-		margin: 1rem;
-	}
-
-	article p {
-		font-size: 1.5rem;
-	}
-
-	article {
+	:scope {
 		inset: 0;
 		overflow: 0;
 		width: 100vw;
@@ -32,6 +21,15 @@ NotFoundView.style = css`
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+	}
+
+	h1 {
+		font-size: 15vw;
+		margin: 1rem;
+	}
+
+	p {
+		font-size: 1.5rem;
 	}
 `;
 

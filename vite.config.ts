@@ -4,11 +4,11 @@ import { literalsHtmlCssMinifier } from "@literals/rollup-plugin-html-css-minifi
 
 export default defineConfig({
 	plugins: [
-		literalsHtmlCssMinifier({
-			include: ["src/**/*.tsx"],
-		}),
 		devSsr({
 			entry: "/src/main-server.ts",
+		}),
+		literalsHtmlCssMinifier({
+			include: ["src/**/*.tsx"],
 		}),
 	],
 });

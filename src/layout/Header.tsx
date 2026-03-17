@@ -1,7 +1,7 @@
-import { Component, css } from "dreamland/core";
-import Logo from "./Logo";
+import { css, type FC } from "dreamland/core";
+import Logo from "../components/Logo";
 
-const Header: Component<{}, {}> = function () {
+function Header(this: FC) {
 	return (
 		<header class="card">
 			<Logo />
