@@ -20,7 +20,6 @@ function Layout(this: FC<{ routerState: RouterState }, { pageHue: number; pageSa
 				<article>
 					<Header />
 					{use(this.routerState.outlet)}
-					<Footer />
 				</article>
 			</main>
 		</div>

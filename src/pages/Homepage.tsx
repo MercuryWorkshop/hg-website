@@ -1,5 +1,5 @@
 import { css, type FC } from "dreamland/core";
-import Logo from "../components/Logo";
+import Footer from "../layout/Footer";
 
 import MemberCell from "../components/MemberCell";
 import { members } from "../Members";
@@ -31,6 +31,7 @@ function Homepage(this: FC) {
 					<MemberCell member={member} />
 				))}
 			</section>
+			<Footer />
 		</div>
 	);
 };
