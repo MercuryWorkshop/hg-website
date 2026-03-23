@@ -35,11 +35,6 @@ function App(this: FC<{ url?: string }>) {
 				</Route>
 				<Route path="*" show={<NotFoundView />} />
 			</Router>
-			<div id="clock-container" style="width: 0; height: 0; overflow: hidden;">
-				<video id="clocks" disablepictureinpicture disableremoteplayback>
-					<source src="/assets/clocks.mp4" type="video/mp4" preload="auto" />
-				</video>
-			</div>
 		</div>
 	);
 };
@@ -47,32 +42,6 @@ function App(this: FC<{ url?: string }>) {
 App.style = css`
 	:scope {
 		margin: 0;
-		--page-hs: var(--page-hue), var(--page-sat);
-	}
-
-	#clocks {
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%) rotate(0turn) scale(0);
-		transform-origin: center;
-		padding: 1px;
-		transition: transform 0.5s ease;
-		visibility: hidden;
-		box-shadow: 0 0 2rem 1rem hsla(var(--fg-raw), 0.2);
-		border: none;
-		border-radius: 1rem;
-		z-index: 10;
-	}
-
-	#clocks.playing {
-		transform: translate(-50%, -50%) rotate(1turn) scale(1);
-		visibility: visible;
-	}
-
-	#clocks.ending {
-		transform: translate(-50%, -50%) rotate(0turn) scale(0);
-		visibility: visible;
 	}
 `;
 
