@@ -72,21 +72,12 @@ export const projects: Project[] = [
 		repo: "https://github.com/MercuryWorkshop/RecoMod",
 	},
 	{
-		name: "Pollen",
+		name: "cros.download",
 		description:
-			"A simple and easy-to-use script for modifying ChromeOS user policies.",
+			"A website providing downloads for ChromeOS recovery images and RMA shims.",
 		longDescription: undefined,
 		screenshotURL: undefined,
-		url: undefined,
-		repo: "https://github.com/MercuryWorkshop/Pollen",
-	},
-	{
-		name: "lilac",
-		description:
-			"A not-so-simple and not-as-easy-to-use script for modifying ChromeOS device policies.",
-		longDescription: undefined,
-		screenshotURL: undefined,
-		url: undefined,
-		repo: "https://github.com/MercuryWorkshop/lilac",
+		url: "https://cros.download/",
+		repo: undefined,
 	},
 ];
