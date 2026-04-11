@@ -4,7 +4,7 @@ interface Project {
 	longDescription?: string;
 	screenshotURL?: string;
 	url: string | undefined;
-	repo: string;
+	repo: string | undefined;
 }
 
 export default Project;

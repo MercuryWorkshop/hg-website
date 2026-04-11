@@ -24,16 +24,18 @@ const ProjectView: Component<{ project: Project }, {}> = function () {
 							</a>
 						</p>
 					)}
-					<p>
-						Repository:{" "}
-						<a
-							href={this.project.repo}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							{this.project.repo}
-						</a>
-					</p>
+					{this.project.repo && (
+						<p>
+							Repository:{" "}
+							<a
+								href={this.project.repo}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								{this.project.repo}
+							</a>
+						</p>
+					)}
 				</div>
 			</article>
 		</main>
