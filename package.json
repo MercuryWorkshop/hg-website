@@ -11,10 +11,10 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
-		"@literals/rollup-plugin-html-css-minifier": "^3.0.1",
-		"prettier": "^3.7.4",
-		"typescript": "~5.9.3",
-		"vite": "^8.0.0"
+		"@literals/rollup-plugin-html-css-minifier": "^4.0.1",
+		"prettier": "^3.8.3",
+		"typescript": "~6.0.2",
+		"vite": "^8.0.8"
 	},
 	"dependencies": {
 		"dreamland": "github:MercuryWorkshop/dreamlandjs"
