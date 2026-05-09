@@ -145,9 +145,24 @@ export const members: Member[] = [
 	},
 	{
 		name: "Quite A Fancy Emerald",
-		bio: "",
+		bio: "VFX/EDITING, YouTube.\nI have a slight passion for a little bit of everything.\nCoffee fan",
 		avatarName: "emerald",
 		profileLinks: [
+			{
+				title: "website",
+				content: "https://quiteafancyemerald.com",
+				url: "https://quiteafancyemerald.com",
+			},
+			{
+				title: "github",
+				content: "QuiteAFancyEmerald",
+				url: "https://github.com/QuiteAFancyEmerald",
+			},
+			{
+				title: "email",
+				content: "admin@quiteafancyemerald.com",
+				url: "mailto:admin@quiteafancyemerald.com",
+			},
 			{ title: "discord", content: "@quiteafancyemerald", url: undefined },
 		],
 	},
