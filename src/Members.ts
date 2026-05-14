@@ -122,7 +122,7 @@ export const members: Member[] = [
 	},
 	{
 		name: "luphoria",
-		bio: "TRENT  BREAD\n18   UWM   '28\nMUSIC    SOFTWARE",
+		bio: "Trent//19//trumpeter//teacher//programmer//MKE,WI",
 		avatarName: "luph",
 		profileLinks: [
 			{
