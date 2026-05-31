@@ -604,4 +604,27 @@ export const members: Member[] = [
 			{ title: "discord", content: "@doraexplora.", url: undefined },
 		],
 	},
+	{
+		name: "bog",
+		bio: "game site enthusiast, reverse engineer.",
+		avatarName: "bog",
+		profileLinks: [
+			{
+				title: "site",
+				content: "https://bog.lat",
+				url: "https://bog.lat",
+			},
+			{
+				title: "github",
+				content: "aukak",
+				url: "https://github.com/aukak",
+			},
+			{
+				title: "email",
+				content: "bog@truffled.lol",
+				url: "mailto:bog@truffled.lol",
+			},
+			{ title: "discord", content: "@boogibuck", url: undefined },
+		],
+	},
 ];
