@@ -322,28 +322,6 @@ export const members: Member[] = [
 		],
 	},
 	{
-		name: "Entrpix",
-		bio: "[YOU ARE WOUNDED]",
-		avatarName: "entrpix",
-		profileLinks: [
-			{
-				title: "Website",
-				content: "entr.pics",
-				url: "https://entr.pics",
-			},
-			{
-				title: "GitHub",
-				content: "Entrpixx",
-				url: "https://github.com/entrpixx",
-			},
-			{
-				title: "Discord",
-				content: "@entrpix",
-				url: "https://discord.com/users/1468435099275231365",
-			},
-		],
-	},
-	{
 		name: "Skiddo",
 		bio: "",
 		avatarName: "skiddo",
