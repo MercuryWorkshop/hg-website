@@ -545,7 +545,7 @@ export const members: Member[] = [
 		profileLinks: [
 			{
 				title: "site",
-				content: "Izzy Tizzy Time",
+				content: "izzytizzie.neocities.org",
 				url: "https://izzytizzie.neocities.org",
 			},
 			{
