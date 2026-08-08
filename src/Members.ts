@@ -540,15 +540,20 @@ export const members: Member[] = [
 	},
 	{
 		name: "Izzy",
-		bio: "Formerly known by 'Caffe' and 'Caffefornication,' just mods Cave Story and maintains a piece of it's history.",
+		bio: "IT Support wannabe, Official (enough) Old-Gen Terraria expert, and artificial sweetener supremacist.",
 		avatarName: "izzy",
 		profileLinks: [
 			{
 				title: "site",
-				content: "Ame Manga Archive",
-				url: "https://ame-archive-manga.github.io/ame-manga-archive/manga.html",
+				content: "izzytizzie.neocities.org",
+				url: "https://izzytizzie.neocities.org",
 			},
-			{ title: "discord", content: "@izzytizzie", url: undefined },
+			{
+				title: "email",
+				content: "izzylurama@icloud.com",
+				url: "mailto:izzylurama@icloud.com",
+			},
+			{ title: "discord", content: "@pupcup.png", url: undefined },
 		],
 	},
 	{
