@@ -545,8 +545,13 @@ export const members: Member[] = [
 		profileLinks: [
 			{
 				title: "site",
-				content: "Personal Site",
+				content: "Izzy Tizzy Time",
 				url: "https://izzytizzie.neocities.org",
+			},
+			{
+				title: "email",
+				content: "izzylurama@icloud.com",
+				url: "mailto:izzylurama@icloud.com",
 			},
 			{ title: "discord", content: "@pupcup.png", url: undefined },
 		],
