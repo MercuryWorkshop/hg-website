@@ -64,14 +64,6 @@ export const projects: Project[] = [
 		repo: "https://github.com/MercuryWorkshop/celeste-wasm",
 	},
 	{
-		name: "RecoMod",
-		description: "A ChromeOS recovery image modification toolkit.",
-		longDescription: undefined,
-		screenshotURL: undefined,
-		url: undefined,
-		repo: "https://github.com/MercuryWorkshop/RecoMod",
-	},
-	{
 		name: "cros.download",
 		description:
 			"A website providing downloads for ChromeOS recovery images and RMA shims.",
